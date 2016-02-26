@@ -5,5 +5,12 @@
 # Home page
 GET     /                           controllers.Application.index()
 
+# Profile page
+GET     /perfil                     controllers.Application.perfil()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+#GET     /images/*file               controllers.Assets.at(path="public/images", file)
+
+GET     /assets/img/canguru.jpg     controllers.Assets.at(path="/public", file="/images/canguru.jpg")

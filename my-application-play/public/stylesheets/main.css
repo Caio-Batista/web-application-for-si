@@ -1,0 +1,8 @@
+#mydiv {
+    background-color: blueviolet;
+    /*background-image:url('/public/motoqueiro.jpg'); */
+    background-repeat: repeat-x;
+    width: 20px;
+    height: 20px;
+    padding: 20px;
+}
