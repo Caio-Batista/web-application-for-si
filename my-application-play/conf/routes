@@ -8,6 +8,10 @@ GET     /                           controllers.Application.index()
 # Profile page
 GET     /perfil                     controllers.Application.perfil()
 
+GET     /login                     controllers.Application.login()
+
+GET     /rideRequest                     controllers.Application.rideRequest()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 

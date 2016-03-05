@@ -16,4 +16,12 @@ public class Application extends Controller {
         return ok(perfil.render());
     }
 
+    public Result login(){
+        return ok(login.render());
+    }
+
+    public Result rideRequest(){
+        return ok(rideRequest.render());
+    }
+
 }
