@@ -24,4 +24,8 @@ public class Application extends Controller {
         return ok(rideRequest.render());
     }
 
+    public Result infoDriver(){
+        return ok(tela.render());
+    }
+
 }
