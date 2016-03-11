@@ -16,7 +16,6 @@ public class Application extends Controller {
         return ok(perfil.render());
     }
 
-
     public Result solicitacoes() {
         return ok(solicitacoes.render());
     }
