@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Informações do motorista</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+        <link rel="stylesheet" href="styles.css">
+        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+        <script type="text/css">
+        #page-header{
+        text-align: center;
+        background: grey !important;
+        }
+
+        body{
+        background: blue;
+        background-color: #1b6d85 !important;
+        }
+
+    </script>
+    </head>
+
+    <body style="color: #1b6d85">
+        <div class="page-header" align="center" style="background-clip: border-box">
+            <h1>Informações do motorista</h1>
+        </div>
+        <div class="row" style="background-color: #1b6d85">
+            <div class="col-sm-6 col-md-4">
+                    <div class="thumbnail" style="margin: 10px">
+                        <img src="@routes.Assets.versioned("images/motoqueiro.jpg")" alt="...">
+                        <div class="caption">
+                            <h3>Fulano motorista</h3>
+                        </div>
+                    </div>
+            </div>
+            <div class="col-sm-6" style="margin-top: 10px">
+                <ul class="list-group">
+                    <li class="list-group-item">Nome: Motorista da Silva</li>
+                    <li class="list-group-item">Matrícula (ou id): 99999</li>
+                    <li class="list-group-item">Telefone residencial: (99) 99999-9999</li>
+                    <li class="list-group-item">Genero: M </li>
+                    <li class="list-group-item">Mais informacoes: não tem</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

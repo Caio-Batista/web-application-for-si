@@ -1,3 +1,4 @@
+
 # Routes
 # This file defines all application routes (Higher priority routes first)
 # ~~~~
@@ -8,13 +9,17 @@ GET     /                           controllers.Application.index()
 # Profile page
 GET     /perfil                     controllers.Application.perfil()
 
+
 # Requests page and also main menu
 GET     /solicitacoes               controllers.Application.solicitacoes()
 
+GET     /login                     controllers.Application.login()
+
+GET     /rideRequest                     controllers.Application.rideRequest()
+
+GET     /infoDriver                     controllers.Application.infoDriver()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
-
-#GET     /images/*file               controllers.Assets.at(path="public/images", file)
 
 GET     /assets/img/canguru.jpg     controllers.Assets.at(path="/public", file="/images/canguru.jpg")

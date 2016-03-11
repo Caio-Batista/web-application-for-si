@@ -12,11 +12,23 @@ public class Application extends Controller {
         return ok(index.render("Let's rock at this major!"));
     }
 
-    public Result perfil(){
+    public Result perfil() {
         return ok(perfil.render());
     }
 
-    public Result solicitacoes(){
+
+    public Result solicitacoes() {
         return ok(solicitacoes.render());
+    }
+
+    public Result login() {
+        return ok(login.render());
+    }
+
+    public Result rideRequest() {
+        return ok(rideRequest.render());
+    }
+
+    public Result infoDriver() {return ok(infoDriver.render());
     }
 }
