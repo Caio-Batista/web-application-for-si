@@ -30,4 +30,13 @@ public class Application extends Controller {
 
     public Result infoDriver() {return ok(infoDriver.render());
     }
+
+    public Result rideSubmit(){
+        return ok(rideSubmit.render());
+    }
+
+    public Result invitationAcceptance(){
+        return ok(invitationAcceptance.render());
+    }
+    
 }

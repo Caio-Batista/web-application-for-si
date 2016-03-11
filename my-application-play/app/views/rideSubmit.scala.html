@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="UTF-8" />
+  <title>Carona</title>
+  <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+  *{
+    margin: 0 auto; /*centraliza o conteudo da pagina*/
+    font-family: Consolas;
+
+  /*background-color: transparent;*/
+  }
+
+    #input-password{
+      margin-bottom: 10px;
+    }
+
+    #fields-sign-up{
+    width:70%;
+    height: 500px;
+    border:1px solid #D9D9D9;
+    text-align: center;
+    border-radius: 5px;
+    position: relative
+    }
+
+    .input{
+    margin-top:10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
+
+    .login-button{
+      float: none;
+    }
+
+    .etc-login-form{
+      margin-top: 10px;
+      text-align: right;
+      margin-right: 5px;
+
+ 
+    }
+
+  </style>
+
+
+
+
+</head>
+
+<body style="text-align: center;   background: #efefef; padding: 10px; font-family: Varela Round'">
+
+  <div id="header">
+    <h1>Carona</h1>
+  </div>
+
+
+
+  <div id="fields-sign-up">
+
+    <div id="Login"class="text-center">
+      <div class="logo" style="margin-top:15px;font-size:150%">Informações do Passageiro</div>
+      </div>
+
+    <div style="margin-top: 40px">
+
+      <form>
+        <p>Username: José Pedro da Silva </p>
+      </form>
+    </div> 
+
+
+    <div style="margin-top: 15px">
+      <form method="post">
+        <label for="username">Data da Carona:</label>
+        <input type="date" name="depart" />
+        <input type="submit" value="Submit" />
+
+      </form>
+
+    </div>
+
+    <div style="margin-top: 15px">
+     <label for="username">Horário de Partida:</label>
+      <input type="time" required="required" maxlength="8" name="hour" pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" />
+      <input type="submit" value="Submit" />
+    </div>
+
+        <div style="margin-top: 15px">
+     <label for="username">Horário de Retorno:</label>
+      <input type="time" required="required" maxlength="8" name="hour" pattern="[0-9]{2}:[0-9]{2} [0-9]{2}$" />
+      <input type="submit" value="Submit" />
+    </div>
+
+    <div style="margin-top: 15px">
+      <br/ >
+      Volterei para o mesmo lugar de Partida?
+      <input id="female" type="radio" name="gender" value="f">
+      <label for="female">Sim</label>
+      <input id="male" type="radio" name="gender" value="m">
+      <label for="male">Não</label>
+    </div>
+
+
+    <div style="margin-top: 15px">
+
+      <form>
+        <p>Endereço de retorno:
+          <input type="text" name="username" size="60" maxlength="50"></input>
+        </p>
+      </form>
+    </div>
+
+
+
+
+        <div style="margin-top: 140px">
+
+      <form>
+        <p>OBS: Não é necessário preencher o endereço de retorno, caso vá retornar ao mesmo ponto de partida </p>
+      </form>
+    </div> 
+
+
+       
+
+    
+
+
+  </div>
+
+
+  <footer class="well well-lg" style="text-align: center">
+            Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+
+  </footer>
+
+ 
+
+</body>
+</html>

@@ -18,6 +18,10 @@ GET     /rideRequest                     controllers.Application.rideRequest()
 
 GET     /infoDriver                     controllers.Application.infoDriver()
 
+GET		/rideSubmit						controllers.Application.rideSubmit() 
+
+GET		/invitationAcceptance						controllers.Application.invitationAcceptance()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
