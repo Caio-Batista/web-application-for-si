@@ -9,7 +9,6 @@ GET     /                           controllers.Application.index()
 # Profile page
 GET     /perfil                     controllers.Application.perfil()
 
-
 # Requests page and also main menu
 GET     /solicitacoes               controllers.Application.solicitacoes()
 
