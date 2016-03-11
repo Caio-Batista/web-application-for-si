@@ -25,7 +25,7 @@ public class Application extends Controller {
     }
 
     public Result infoDriver(){
-        return ok(tela.render());
+        return ok(infoDriver.render());
     }
 
 }
