@@ -4,7 +4,7 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index()
+GET     /                           controllers.Application.login()
 
 # Profile page
 GET     /perfil                     controllers.Application.perfil()
@@ -18,7 +18,7 @@ GET     /rideRequest                     controllers.Application.rideRequest()
 
 GET     /infoDriver                     controllers.Application.infoDriver()
 
-GET		/rideSubmit						controllers.Application.rideSubmit() 
+GET		/rideSubmit						controllers.Application.rideSubmit()
 
 GET		/invitationAcceptance						controllers.Application.invitationAcceptance()
 
