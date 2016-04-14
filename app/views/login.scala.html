@@ -1,0 +1,68 @@
+@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean)
+
+@main("Carona"){
+<!DOCTYPE html>
+  <head>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="UTF-8" />
+    <title>Carona</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/login-style.css")">
+
+  </head>
+  <body>
+
+    <div id="header">
+      <h1>Carona</h1>
+    </div>
+
+    <div id="login-form" class="forms">
+      <div id="Login" class="text-center">
+        <div class="logo">Login</div>
+      </div>
+
+      @if(errorMenssage != null && !errorMenssage.trim().equals("")) {
+        @if(isError) {
+          <div class="alert alert-danger">
+            <p>@(errorMenssage)</p>
+          </div>
+        } else {
+          <div class="alert alert-success">
+            <p>@(errorMenssage)</p>
+          </div>
+        }
+      }
+
+      @helper.form(routes.UserController.authenticate()) {
+        <div id="input-email" class="input">
+          <input type="email" class="form-control" name="email" required autofocus placeholder="Email" value="@form("email").value"/>
+        </div>
+
+        <div id="input-password" class="input">
+          <input type="password" class="form-control" name="password" required placeholder="Password">
+        </div>
+
+        <button id="btn-login" type="submit" class="login-button"> Login
+          <i class="fa fa-chevron-right"></i>
+        </button>
+      }
+
+      <div id="sign-up" class="etc-login-form" >
+        Do you don't have an account? <a href="#" onclick="sign_up_click()">Sign up now</a>
+      </div>
+    </div>
+
+    <footer class="well well-lg">
+      Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+    </footer>
+
+    <script>
+            function sign_up_click(){
+              window.location.href = "http://localhost:9000/register"
+            };
+    </script>
+
+  </body>
+  </html>
+}
+

@@ -1,0 +1,129 @@
+@(form: play.data.Form[controllers.Models.User], errorMesage: String)
+
+@main("Carona") {
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="UTF-8" />
+      <title>Carona</title>
+      <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/login-style.css")">
+
+    </head>
+    <body>
+
+      <div id="header">
+        <h1>Carona</h1>
+      </div>
+
+      <div id="fields-sign-up" class="forms">
+
+        <div id="Register"class="text-center" >
+          <div class="logo">Register</div>
+        </div>
+
+        @if(errorMesage != null && !errorMesage.trim().equals("")) {
+          <div class="alert alert-danger">
+            <p>@(errorMesage)</p>
+          </div>
+        }
+
+        @helper.form(routes.UserController.register()) {
+          <div id="input-name" class="input">
+            <input type="text" name="name" class="form-control" placeholder="Name"/>
+          </div>
+
+          <div id="input-registration" class="input">
+            <input type="text" name="registration" class="form-control" placeholder="Registration"/>
+          </div>
+
+          <div id="input-phone-number" class="input">
+            <input type="text" name="phone-number" class="form-control" placeholder="Phone Number"/>
+          </div>
+
+          <div id="input-email" class="input">
+            <input type="email" name="email" class="form-control" placeholder="Email"/>
+          </div>
+
+          <div id="input-password" class="input">
+            <input type="password" name="password" class="form-control" placeholder="Password">
+          </div>
+
+          <div id="input-new-password" class="input">
+            <input type="password" name="new-password" class="form-control" placeholder="Confirm password">
+          </div>
+
+          <div id="input-adress" class="input">
+            <input type="text" name="district" class="form-control" placeholder="District"/>
+          </div>
+
+          <div id="input-adress" class="input">
+            <input type="text" name="house-number" class="form-control" placeholder="House Number"/>
+          </div>
+
+          <div id="choose-type-user">
+            <input type="radio" name="driver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Driver
+            <input type="radio"  name="passenger" onclick="hide_n_vagas()" id="is-passenger" checked />Passenger
+          </div>
+
+          <div id="input-number-passenger" class="input" style="visibility: hidden;display: none">
+            <input type="text" name ="numberPassenges" class="form-control" placeholder="Number of Passenger"/>
+          </div>
+
+          <button id="btn-register" type="submit" class="login-button"> Register
+            <i class="fa fa-chevron-right"></i></button>
+
+        }
+
+        <div id="login-now" class="etc-login-form" style="margin-bottom: 30px;">
+          Do you have an account? <a href="#" onclick="login_click()">Login now</a>
+        </div>
+
+      </div>
+
+      <footer class="well well-lg" style="text-align: center">
+        Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+      </footer>
+
+
+      <script>
+              function hide_n_vagas(){
+                var remember = document.getElementById('is-passenger');
+                var driver = document.getElementById('is-driver');
+                if (remember.checked){
+                  driver.checked = false;
+                  document.getElementById('input-number-passenger').setAttribute('style','visibility:hidden; display:none');
+
+                }else{
+                  driver.checked = true;
+                  document.getElementById('input-number-passenger').setAttribute('style','visibility:visible;margin-bottom: 10px');
+                }
+              };
+
+
+              function show_n_vagas(){
+                var remember = document.getElementById('is-driver');
+                var passenger = document.getElementById('is-passenger');
+                if (remember.checked){
+                  passenger.checked = false;
+                  document.getElementById('input-number-passenger').setAttribute('style','visibility:visible;margin-bottom: 10px');
+
+                }else{
+                  passenger.checked = true;
+                  document.getElementById('input-number-passenger').setAttribute('style','visibility:hidden; display:none');
+                }
+              };
+
+              function login_click(){
+                window.location.href = "http://localhost:9000/login"
+              };
+
+
+      </script>
+
+
+    </body>
+  </html>
+
+}
