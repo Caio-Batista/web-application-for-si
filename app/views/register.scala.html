@@ -58,13 +58,14 @@
             <input type="text" name="district" class="form-control" placeholder="District"/>
           </div>
 
-          <div id="input-adress" class="input">
-            <input type="text" name="house-number" class="form-control" placeholder="House Number"/>
+          <div id="input-road" class="input">
+            <input type="text" name="road" class="form-control" placeholder="Road"/>
           </div>
 
           <div id="choose-type-user">
-            <input type="radio" name="driver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Driver
-            <input type="radio"  name="passenger" onclick="hide_n_vagas()" id="is-passenger" checked />Passenger
+    	    Are you a driver?
+            <input type="radio" name="isDriver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Yes
+            <input type="radio"  name="isPassenger" onclick="hide_n_vagas()" id="is-passenger" checked />No
           </div>
 
           <div id="input-number-passenger" class="input" style="visibility: hidden;display: none">
@@ -73,7 +74,6 @@
 
           <button id="btn-register" type="submit" class="login-button"> Register
             <i class="fa fa-chevron-right"></i></button>
-
         }
 
         <div id="login-now" class="etc-login-form" style="margin-bottom: 30px;">

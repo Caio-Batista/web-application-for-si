@@ -1,5 +1,9 @@
 package controllers.Models;
 
+import controllers.Models.Carona;
+
+import java.util.ArrayList;
+
 /**
  * Created by carlos on 27/03/16.
  */
@@ -7,53 +11,51 @@ public class User {
 
     private String registration;
 
-    private String email,password, district, name, destinationAddress, departureTime, returnTime;
-
-    private int houseNumber;
+    private String email,password, district, road, name, destinationAddress, departureTime, returnTime;
 
     private boolean isDriver;
 
-    private boolean isFirstLogin;
+    private int numberOfVacancies;
+
+    private ArrayList<Carona> myCaronasCreateds;
 
     public User() {}
 
-    public User(String name, String registration, String email, String password, boolean isDriver, String district, int houseNumber) throws Exception
-    {
+    public User(String name, String registration, String email,
+                String password, boolean isDriver, String district, String road) throws Exception {
         this.registration = registration;
         setEmail(email);
         setPassword(password);
         setDestinationAddress(district);
-        setHouseNumber(houseNumber);
+        setRoad(road);
         setName(name);
         this.isDriver = isDriver;
-        isFirstLogin = true;
+        myCaronasCreateds = new ArrayList<Carona>();
     }
 
-    public boolean getIsFirstLogin()
-    {
-        return isFirstLogin;
+    public User(String name, String registration, String email, String password, boolean isDriver,
+                String district, String road, int numberOfVacancies) throws Exception{
+        this(name, registration, email, password, isDriver, district, road);
+        this.numberOfVacancies = numberOfVacancies;
     }
 
-    public void setIsFirstLogin(boolean isFirstLogin)
+    public void setRoad(String road) throws Exception
     {
-        this.isFirstLogin = isFirstLogin;
+        if(road == null || road.trim().equals(""))
+        {
+            throw new Exception("Invalid road");
+        }
+
+        this.road = road;
     }
+
+    public ArrayList<Carona> getMyCaronasCreateds(){ return myCaronasCreateds;}
 
     public String getName(){ return name;}
 
     public boolean getIsDriver()
     {
         return isDriver;
-    }
-
-    public void setHouseNumber(int number)
-    {
-        houseNumber = number;
-    }
-
-    public int getHouseNumber()
-    {
-        return houseNumber;
     }
 
     public void setDestinationAddress(String destinationAddress) throws Exception

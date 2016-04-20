@@ -19,8 +19,9 @@ public class DBManager {
         User u2 = null;
 
         try {
-            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Ali", 321);
-            u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", 123);
+            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Ali", "rua1");
+            u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2");
+
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -70,5 +71,6 @@ public class DBManager {
 
         return true;
     }
+
 
 }

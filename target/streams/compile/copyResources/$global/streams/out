@@ -1,3 +1,4 @@
 [0m[[0mdebug[0m] [0mCopy resource mappings: [0m
-[0m[[0mdebug[0m] [0m	(/home/carlos/git/web-app-si-v2/conf/routes,/home/carlos/git/web-app-si-v2/target/scala-2.11/classes/routes)[0m
-[0m[[0mdebug[0m] [0m	(/home/carlos/git/web-app-si-v2/conf/application.conf,/home/carlos/git/web-app-si-v2/target/scala-2.11/classes/application.conf)[0m
+[0m[[0mdebug[0m] [0m	(/home/carlos/git/web-application-for-si/conf/routes,/home/carlos/git/web-application-for-si/target/scala-2.11/classes/routes)[0m
+[0m[[0mdebug[0m] [0m	(/home/carlos/git/web-application-for-si/conf/routes~,/home/carlos/git/web-application-for-si/target/scala-2.11/classes/routes~)[0m
+[0m[[0mdebug[0m] [0m	(/home/carlos/git/web-application-for-si/conf/application.conf,/home/carlos/git/web-application-for-si/target/scala-2.11/classes/application.conf)[0m

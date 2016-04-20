@@ -89,13 +89,14 @@ Seq[Any](format.raw/*1.70*/("""
             <input type="text" name="district" class="form-control" placeholder="District"/>
           </div>
 
-          <div id="input-adress" class="input">
-            <input type="text" name="house-number" class="form-control" placeholder="House Number"/>
+          <div id="input-road" class="input">
+            <input type="text" name="road" class="form-control" placeholder="Road"/>
           </div>
 
           <div id="choose-type-user">
-            <input type="radio" name="driver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Driver
-            <input type="radio"  name="passenger" onclick="hide_n_vagas()" id="is-passenger" checked />Passenger
+    	    Are you a driver?
+            <input type="radio" name="isDriver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Yes
+            <input type="radio"  name="isPassenger" onclick="hide_n_vagas()" id="is-passenger" checked />No
           </div>
 
           <div id="input-number-passenger" class="input" style="visibility: hidden;display: none">
@@ -104,7 +105,6 @@ Seq[Any](format.raw/*1.70*/("""
 
           <button id="btn-register" type="submit" class="login-button"> Register
             <i class="fa fa-chevron-right"></i></button>
-
         """)))}),format.raw/*77.10*/("""
 
         """),format.raw/*79.9*/("""<div id="login-now" class="etc-login-form" style="margin-bottom: 30px;">
@@ -178,10 +178,10 @@ Seq[Any](format.raw/*1.70*/("""
 object register extends register_Scope0.register
               /*
                   -- GENERATED --
-                  DATE: Fri Apr 08 14:14:18 BRT 2016
-                  SOURCE: /home/carlos/git/web-app-si-v2/app/views/register.scala.html
-                  HASH: 26cca4dfc9b13ab23afd81bc3be441eb3b290db6
-                  MATRIX: 791->1|954->69|982->72|1004->86|1043->88|1070->89|1316->309|1330->315|1403->367|1532->469|1547->475|1617->523|1897->776|1963->833|2003->835|2042->846|2118->895|2152->908|2214->939|2252->950|2267->956|2315->995|2355->997|2394->1008|4388->2971|4425->2981|4860->3388|4889->3389|4934->3406|5122->3566|5151->3567|5198->3586|5392->3752|5421->3753|5453->3757|5482->3758|5529->3777|5729->3948|5759->3949|5803->3964|5833->3965|5903->4006|5933->4007|5979->4024|6171->4187|6201->4188|6249->4207|6454->4383|6484->4384|6517->4388|6547->4389|6595->4408|6791->4575|6821->4576|6865->4591|6895->4592|6963->4631|6993->4632|7039->4649|7135->4716|7165->4717|7242->4763
+                  DATE: Wed Apr 20 00:54:59 BRT 2016
+                  SOURCE: /home/carlos/git/web-application-for-si/app/views/register.scala.html
+                  HASH: cd490204cc41c3f728ce530b1940d93462acb147
+                  MATRIX: 791->1|954->69|982->72|1004->86|1043->88|1070->89|1316->309|1330->315|1403->367|1532->469|1547->475|1617->523|1897->776|1963->833|2003->835|2042->846|2118->895|2152->908|2214->939|2252->950|2267->956|2315->995|2355->997|2394->1008|4390->2973|4427->2983|4862->3390|4891->3391|4936->3408|5124->3568|5153->3569|5200->3588|5394->3754|5423->3755|5455->3759|5484->3760|5531->3779|5731->3950|5761->3951|5805->3966|5835->3967|5905->4008|5935->4009|5981->4026|6173->4189|6203->4190|6251->4209|6456->4385|6486->4386|6519->4390|6549->4391|6597->4410|6793->4577|6823->4578|6867->4593|6897->4594|6965->4633|6995->4634|7041->4651|7137->4718|7167->4719|7244->4765
                   LINES: 27->1|32->1|34->3|34->3|34->3|35->4|40->9|40->9|40->9|42->11|42->11|42->11|57->26|57->26|57->26|58->27|59->28|59->28|61->30|63->32|63->32|63->32|63->32|64->33|108->77|110->79|122->91|122->91|123->92|125->94|125->94|126->95|129->98|129->98|129->98|129->98|130->99|132->101|132->101|133->102|133->102|136->105|136->105|137->106|139->108|139->108|140->109|143->112|143->112|143->112|143->112|144->113|146->115|146->115|147->116|147->116|149->118|149->118|150->119|151->120|151->120|160->129
                   -- GENERATED --
               */

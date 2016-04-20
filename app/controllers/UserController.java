@@ -10,6 +10,9 @@ import play.mvc.Controller;
 import play.data.Form;
 import play.mvc.Result;
 import DBManager.*;
+import controllers.Models.*;
+import LogFile.*;
+
 
 public class UserController extends Controller{
 
@@ -23,17 +26,6 @@ public class UserController extends Controller{
 
     public static Result showLogin() {
         return showLogin("", false);
-    }
-
-    private static boolean validar(String email, String senha, DBManager dataBaseManager) {
-        User user = dataBaseManager.searchUserByEmail(email);
-        if (user == null) {
-            return false;
-        }
-        if (!user.getPassword().equals(senha)) {
-            return false;
-        }
-        return true;
     }
 
     public static Result showPerfil(){
@@ -62,18 +54,18 @@ public class UserController extends Controller{
         String senha = form.field("password").value();
 
         if (email == null || senha == null) {
-            return showLogin("Ocorreu um erro. Tente novamente.", true);
-        } else if (!validar(email, senha, db)) {
-            return showLogin("E-mail ou senha Inválidos", true);
+            LogFile.writeInLog("An user try to loggin, but an error ocurred.");
+            return showLogin("An error ocurred. Please, try again.", true);
+        } else if (!Validate.validateLogin(email, senha, db)) {
+            LogFile.writeInLog("An user try to loggin, but the email or password is invalid.");
+            return showLogin("E-mail or password invalid", true);
         } else {
             User user = db.searchUserByEmail(email);
+            LogFile.writeInLog(user.getName() + " user logged.");
             actualUser = user;
             session().clear();
             session("email", user.getEmail());
-            if(user.getIsFirstLogin())
-            {
-                user.setIsFirstLogin(false);
-            }
+            //aqui nao será perfil.. sera a US2 e US7
             return showPerfil();
         }
     }
@@ -98,12 +90,17 @@ public class UserController extends Controller{
 
     private static boolean isRegistrationValid(String registration)
     {
+        if(registration.trim().equals(""))
+        {
+            return false;
+        }
+
         int intRegistration = Integer.parseInt(registration);
 
         return (!registration.trim().equals("")) && (registration.length() == 9) && (intRegistration > 100000000 && intRegistration < 115199999);
     }
 
-    public static Result register() {
+    public static Result register(){
 
         if(db == null) {
             try {
@@ -121,66 +118,84 @@ public class UserController extends Controller{
         String email = form.field("email").value();
         String password = form.field("password").value();
         String newPassword = form.field("new-password").value();
-        String driver = form.field("driver").value();
-        String passenger = form.field("passenger").value();
+        String driver = form.field("isDriver").value();
+        String passenger = form.field("isPassenger").value();
         String numberPassenges = form.field("numberPassenges").value();
-        String destinationAddress = form.field("district").value();
-        String houseNumber = form.field("house-number").value();
+        String district = form.field("district").value();
+        String road = form.field("road").value();
 
 
         boolean isDriver = false;
 
-        if (name == null || email == null || password == null ||registration == null || destinationAddress == null
-                || houseNumber == null) {
+        if (name == null || email == null || password == null ||registration == null || district == null
+                || road == null) {
             return showRegister("An error ocurred. Please, try again.");
 
         } else if(name.trim().equals("")){
+            LogFile.writeInLog("An user try to register, but the name is invalid.");
             return showRegister("Invalid name");
+
         } else if(!isRegistrationValid(registration)) {
+            LogFile.writeInLog("An user try to register, but the resgistration is invalid.");
             return showRegister("Invalid Registration");
 
         } else if (db.searchUserByRegistration(registration) != null) {
+            LogFile.writeInLog("An user try to register, but the registration aready registered.");
             return showRegister("Registration aready registered");
 
         } else if(email.trim().equals("")) {
+            LogFile.writeInLog("An user try to register, but the email is invalid.");
             return showRegister("Invalid Email");
 
         } else if (isRegisteredEmail(email)) {
+            LogFile.writeInLog("An user try to register, but the email already registered.");
             return showRegister("E-mail already registered");
 
         } else if (password.trim().equals("")) {
+            LogFile.writeInLog("An user try to register, but the password is invalid.");
             return showRegister("Invalid Password");
 
         } else if(!password.equals(newPassword)) {
+            LogFile.writeInLog("An user try to register, but the passwords don't match.");
             return showRegister("The passwords don't match");
 
-        }else if (destinationAddress.trim().equals("")){
+        }else if (district.trim().equals("")){
+            LogFile.writeInLog("An user try to register, but the district is invalid.");
             return showRegister("Invalid District");
 
-        }else if(houseNumber.trim().equals(""))
-        {
-            return showRegister("House number invalid");
-        }
-        else if (driver == null && passenger == null){
-            return showRegister("Select the type of user, Driver or Passenger.");
+        }else if(road.trim().equals("")) {
+            LogFile.writeInLog("An user try to register, but the road is invalid.");
+            return showRegister("Invalid Road");
 
         } else if(driver != null) {
             if(numberPassenges == null || numberPassenges.trim().equals("")) {
+                LogFile.writeInLog("An user try to register, but it is a driver and don't put the number os passenger.");
                 return showRegister("If you are a driver, put the number of passenger");
             }
+            else if(Integer.parseInt(numberPassenges) <= 0){
+                LogFile.writeInLog("An user try to register, but it is a driver and the number of passenger is zero or negative.");
+                return showRegister("Please, put the number of passenger greater than zero");
+            }
             isDriver = true;
-
-        } else {
-            User user = null;
-            try {
-                user = new User(name, registration, email, password, isDriver, destinationAddress, Integer.parseInt(houseNumber));
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-            if(user != null) {
-                db.writeInDataBase(user);
-            }
         }
+
+        User user = null;
+        try {
+            if(isDriver) {
+                user = new User(name, registration, email, password, isDriver, district, road, Integer.parseInt(numberPassenges));
+            }
+            else{
+                user = new User(name, registration, email, password, isDriver, district, road);
+            }
+            LogFile.writeInLog(user.getName() + " user registred.");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        if(user != null) {
+            db.writeInDataBase(user);
+        }
+
 
         return showLogin("User successfully registered", false);
 
@@ -188,6 +203,7 @@ public class UserController extends Controller{
 
     public static Result logout() {
         session().clear();
+        LogFile.writeInLog("The user logout.");
         return showLogin("Deslogado com sucesso", false);
     }
 
