@@ -1,0 +1,22 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET     /index                           controllers.Application.index()
+
+GET     /perfilDriver                   controllers.UserController.showPerfil()
+
+GET     /                                controllers.UserController.showLogin()
+GET     /login                           controllers.UserController.showLogin()
+GET     /registerr                        controllers.UserController.showRegister()
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file                    controllers.Assets.at(path="/public", file)
+POST    /login                           controllers.UserController.authenticate()
+POST    /registerr                        controllers.UserController.register()
+
+GET     /assets/*file                    controllers.Assets.versioned(path="/public", file: Asset)
+
+    
