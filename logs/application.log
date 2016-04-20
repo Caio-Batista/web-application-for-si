@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 2016-04-19 23:08:55,486 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-6-thread-2 - Starting application default Akka system: application
 2016-04-19 23:08:55,560 [INFO] from play.core.server.NettyServer in pool-6-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
 2016-04-19 23:09:05,382 [WARN] from application in ForkJoinPool-1-worker-1 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
@@ -777,3 +778,7 @@ play.sbt.PlayExceptions$CompilationException: Compilation error[error: ';' expec
 	... 6 common frames omitted
 2016-04-20 00:02:29,459 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-4-thread-4 - Shutdown application default Akka system: application
 >>>>>>> 846be630752e95e30284d2f38ccd7e94ac0ad1ef
+=======
+2016-04-20 01:27:11,134 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-4-thread-5 - Starting application default Akka system: application
+2016-04-20 01:27:11,483 [INFO] from play.core.server.NettyServer in pool-4-thread-5 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
+>>>>>>> e6d3ad3b97b6751784b0479512835837a5051830
