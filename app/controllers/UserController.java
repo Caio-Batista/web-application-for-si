@@ -100,6 +100,8 @@ public class UserController extends Controller{
         return (!registration.trim().equals("")) && (registration.length() == 9) && (intRegistration > 100000000 && intRegistration < 115199999);
     }
 
+    
+
     public static Result register(){
 
         if(db == null) {
