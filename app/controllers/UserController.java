@@ -6,6 +6,7 @@ import static play.data.Form.form;
 import java.util.List;
 
 import controllers.Models.User;
+import controllers.Models.Carona;
 import play.mvc.Controller;
 import play.data.Form;
 import play.mvc.Result;
@@ -68,6 +69,13 @@ public class UserController extends Controller{
             //aqui nao será perfil.. sera a US2 e US7
             return showPerfil();
         }
+    }
+
+    public static Result selectSolicitation(){
+        Form<Carona> form = form(Carona.class).bindFromRequest();
+        int indice = form.field("linha");
+
+        //return ok(views.html.perfilPassenger.render());
     }
 
     public static User getUser() {
