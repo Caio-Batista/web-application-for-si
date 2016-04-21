@@ -20,7 +20,7 @@ GET      /assets/*file                  controllers.Assets.at(path="/public", fi
 
 POST    /login                          controllers.UserController.authenticate()
 
-POST    /                               controllers.UserController.logout()
+GET    /logout                         controllers.UserController.logout()
 
 POST    /perfilDriver                   controllers.UserController.selectSolicitation()
 

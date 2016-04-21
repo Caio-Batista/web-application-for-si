@@ -21,15 +21,15 @@ import play.data._
 import play.api.data.Field
 import play.mvc.Http.Context.Implicit._
 
-class perfilDriver extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template1[controllers.Models.User,play.twirl.api.HtmlFormat.Appendable] {
+class perfilDriver extends BaseScalaTemplate[play.twirl.api.HtmlFormat.Appendable,Format[play.twirl.api.HtmlFormat.Appendable]](play.twirl.api.HtmlFormat) with play.twirl.api.Template2[controllers.Models.User,play.data.Form[controllers.Models.User],play.twirl.api.HtmlFormat.Appendable] {
 
   /**/
-  def apply/*1.2*/(usuario: controllers.Models.User):play.twirl.api.HtmlFormat.Appendable = {
+  def apply/*1.2*/(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User]):play.twirl.api.HtmlFormat.Appendable = {
     _display_ {
       {
 
 
-Seq[Any](format.raw/*1.36*/("""
+Seq[Any](format.raw/*1.83*/("""
 
 """),_display_(/*3.2*/main("Carona")/*3.16*/ {_display_(Seq[Any](format.raw/*3.18*/("""
 
@@ -65,68 +65,41 @@ Seq[Any](format.raw/*1.36*/("""
                 <div class="thumbnail" style="margin: 10px">
                     <img src=""""),_display_(/*35.32*/routes/*35.38*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*35.80*/("""" alt="...">
                     <div class="caption">
-                        <h3>"""),_display_(/*37.30*/(usuario.getName())),format.raw/*37.49*/(""", motorista</h3>
+                        <h3>"""),_display_(/*37.30*/(usuario.getName())),format.raw/*37.49*/(""", motorista <br>(0 vagas em seu veículo)</br></h3>
                     </div>
+                    <div class="caption">
+                        <h4 style="color: #2b669a"><u>New ride</u></h4>
+                    </div>
+                    <div class="caption">
+                        <h4 style="color: #2b669a"><u>Update data</u></h4>
+                    </div>
+                    <div class="caption" style="margin-top: 0px">
+                        <a href="/logout">Logout</a>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-6" style="margin-top: 10px">
-                <div style="color: #000000">
-                    <h1>Solicitations:</h1>
+                <div class="row">
+                    <h1 style="color: #000000">Solicitations:</h1>
                 </div>
                 <ul class="list-group">
-                    <li class="list-group-item">
-                        <a href="#" style="text-decoration: none;">
-                        <ul class="list-group" style="display: inline;">
-                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*49.120*/routes/*49.126*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*49.168*/("""" alt="..."></div>
-                            <div style="margin-left:10px;">Name: Carlos Interaminense</div>
-                            <div style="margin-left:10px;">Destino: Centenário</div>
-                            <div style="margin-left:10px;">Horário: 8h:30m</div>
-                        </ul>
-                        </a>
-                    </li>
-
-
-                    <li class="list-group-item">
-                        <a href="#" style="text-decoration: none;">
-                        <ul class="list-group" style="display: inline;">
-                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*61.120*/routes/*61.126*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*61.168*/("""" alt="..."></div>
-                            <div style="margin-left:10px;">Nome: Izabella Antonino</div>
-                            <div style="margin-left:10px;">Destino: Centenário</div>
-                            <div style="margin-left:10px;">Horário: 8h:30m</div>
-                        </ul>
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#" style="text-decoration: none;">
-                        <ul class="list-group" style="display: inline;">
-                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*71.120*/routes/*71.126*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*71.168*/("""" alt="..."></div>
-                            <div style="margin-left:10px;">Nome: Jeffs</div>
-                            <div style="margin-left:10px;">Destino: Centenário</div>
-                            <div style="margin-left:10px;">Horário: 8h:30m</div>
-                        </ul>
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#" style="text-decoration: none;">
-                        <ul class="list-group" style="display: inline;">
-                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*81.120*/routes/*81.126*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*81.168*/("""" alt="..."></div>
-                            <div style="margin-left:10px;">Nome: Caio Oliveira</div>
-                            <div style="margin-left:10px;">Destino: Centenário</div>
-                            <div style="margin-left:10px;">Horário: 8h:30m</div>
-                        </ul>
-                        </a>
-                    </li>
-                    <li class="list-group-item">
-                        <a href="#" style="text-decoration: none;">
-                        <ul class="list-group" style="display: inline;">
-                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*91.120*/routes/*91.126*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*91.168*/("""" alt="..."></div>
-                            <div style="margin-left:10px;">Nome: Yago</div>
-                            <div style="margin-left:10px;">Destino: Centenário</div>
-                            <div style="margin-left:10px;">Horário: 8h:30m</div>
-                        </ul>
-                        </a>
-                    </li>
-                </ul>
+                    int vagas = """),_display_(/*56.34*/usuario/*56.41*/.getMyCaronasCreateds()),format.raw/*56.64*/(""";
+                    """),_display_(/*57.22*/for(solicitationsIndex <- 0 to 3) yield /*57.55*/{_display_(Seq[Any](format.raw/*57.56*/("""
+                        """),_display_(/*58.26*/helper/*58.32*/.form(routes.UserController.selectSolicitation())/*58.81*/ {_display_(Seq[Any](format.raw/*58.83*/("""
+                        """),format.raw/*59.25*/("""<li class="list-group-item", id="solicitationsIndex", name="linha">
+                            <button type="submit" href="#" value=""""),_display_(/*60.68*/solicitationsIndex),format.raw/*60.86*/("""" name="solicitationsIndex">
+                                <ul class="list-group" style="display: inline;">
+                                    <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*62.128*/routes/*62.134*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*62.176*/("""" alt="..."></div>
+                                    <div style="margin-left:10px;">Name: Carlos Interaminense</div>
+                                    <div style="margin-left:10px;">Destino: Centenário</div>
+                                    <div style="margin-left:10px;">Horário: 8h:30m</div>
+                                </ul>
+                            </button>
+                        </li>
+                        """)))}),format.raw/*69.26*/("""
+                    """)))}),format.raw/*70.22*/("""
+                """),format.raw/*71.17*/("""</ul>
             </div>
         </div>
         <footer class="well well-lg" style="text-align: center">
@@ -138,15 +111,15 @@ Seq[Any](format.raw/*1.36*/("""
         </script>
     </body>
 </html>
-""")))}),format.raw/*110.2*/("""
+""")))}),format.raw/*83.2*/("""
 """))
       }
     }
   }
 
-  def render(usuario:controllers.Models.User): play.twirl.api.HtmlFormat.Appendable = apply(usuario)
+  def render(usuario:controllers.Models.User,form:play.data.Form[controllers.Models.User]): play.twirl.api.HtmlFormat.Appendable = apply(usuario,form)
 
-  def f:((controllers.Models.User) => play.twirl.api.HtmlFormat.Appendable) = (usuario) => apply(usuario)
+  def f:((controllers.Models.User,play.data.Form[controllers.Models.User]) => play.twirl.api.HtmlFormat.Appendable) = (usuario,form) => apply(usuario,form)
 
   def ref: this.type = this
 
@@ -159,19 +132,11 @@ Seq[Any](format.raw/*1.36*/("""
 object perfilDriver extends perfilDriver_Scope0.perfilDriver
               /*
                   -- GENERATED --
-<<<<<<< HEAD
-                  DATE: Tue Apr 19 23:08:36 BRT 2016
+                  DATE: Thu Apr 21 12:57:38 BRT 2016
                   SOURCE: /home/carlos/git/web-application-for-si/app/views/perfilDriver.scala.html
-                  HASH: fad13241d8444fb327fda7fc7767ee59ccf714c2
-                  MATRIX: 776->1|905->35|933->38|955->52|994->54|1022->56|1239->246|1254->252|1328->304|1380->329|1395->335|1457->376|1569->460|1598->461|1630->466|1714->523|1742->524|1775->530|1806->534|1835->535|1867->540|1958->604|1986->605|2019->611|2429->994|2444->1000|2507->1042|2618->1126|2658->1145|3293->1752|3309->1758|3373->1800|4074->2473|4090->2479|4154->2521|4850->3189|4866->3195|4930->3237|5614->3893|5630->3899|5694->3941|6386->4605|6402->4611|6466->4653|7236->5392
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|46->15|48->17|48->17|50->19|50->19|50->19|51->20|53->22|53->22|55->24|66->35|66->35|66->35|68->37|68->37|80->49|80->49|80->49|92->61|92->61|92->61|102->71|102->71|102->71|112->81|112->81|112->81|122->91|122->91|122->91|141->110
-=======
-                  DATE: Tue Apr 19 23:42:38 BRT 2016
-                  SOURCE: /home/caio/web-application-for-si/app/views/perfilDriver.scala.html
-                  HASH: 68c05618d9c57ee7c09909b9d61b0935d40fc598
-                  MATRIX: 776->1|905->35|933->38|955->52|994->54|1022->56|1239->246|1254->252|1328->304|1380->329|1395->335|1457->376|1569->460|1598->461|1630->466|1714->523|1742->524|1775->530|1806->534|1835->535|1867->540|1958->604|1986->605|2019->611|2429->994|2444->1000|2507->1042|2618->1126|2658->1145|3293->1752|3309->1758|3373->1800|4074->2473|4090->2479|4154->2521|4850->3189|4866->3195|4930->3237|5614->3893|5630->3899|5694->3941|6386->4605|6402->4611|6466->4653
-                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|46->15|48->17|48->17|50->19|50->19|50->19|51->20|53->22|53->22|55->24|66->35|66->35|66->35|68->37|68->37|80->49|80->49|80->49|92->61|92->61|92->61|102->71|102->71|102->71|112->81|112->81|112->81|122->91|122->91|122->91
->>>>>>> 846be630752e95e30284d2f38ccd7e94ac0ad1ef
+                  HASH: c714b72bf519b4cc7dde927feed85166b83cca93
+                  MATRIX: 816->1|992->82|1020->85|1042->99|1081->101|1109->103|1326->293|1341->299|1415->351|1467->376|1482->382|1544->423|1656->507|1685->508|1717->513|1801->570|1829->571|1862->577|1893->581|1922->582|1954->587|2045->651|2073->652|2106->658|2516->1041|2531->1047|2594->1089|2705->1173|2745->1192|3581->2001|3597->2008|3641->2031|3691->2054|3740->2087|3779->2088|3832->2114|3847->2120|3905->2169|3945->2171|3998->2196|4160->2331|4199->2349|4464->2586|4480->2592|4544->2634|5007->3066|5060->3088|5105->3105|5512->3482
+                  LINES: 27->1|32->1|34->3|34->3|34->3|36->5|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|46->15|48->17|48->17|50->19|50->19|50->19|51->20|53->22|53->22|55->24|66->35|66->35|66->35|68->37|68->37|87->56|87->56|87->56|88->57|88->57|88->57|89->58|89->58|89->58|89->58|90->59|91->60|91->60|93->62|93->62|93->62|100->69|101->70|102->71|114->83
                   -- GENERATED --
               */
           

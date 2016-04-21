@@ -73,9 +73,14 @@ public class UserController extends Controller{
 
     public static Result selectSolicitation(){
         Form<User> form = form(User.class).bindFromRequest();
-        String indice = form.field("linha").value();
+        String indices = form.field("solicitationsIndex").value();
 
-        return showLogin(indice, true);
+        if(indices == null)
+        {
+            return showRegister();
+        }
+
+        return showLogin(""+indices, true);
     }
 
     public static User getUser() {
@@ -214,7 +219,7 @@ public class UserController extends Controller{
     public static Result logout() {
         session().clear();
         LogFile.writeInLog("The user logout.");
-        return showLogin("Deslogado com sucesso", false);
+        return showLogin("Sucess logout", false);
     }
 
 }

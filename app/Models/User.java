@@ -15,6 +15,8 @@ public class User {
 
     private boolean isDriver;
 
+    private int numberOfVacancies;
+
     private ArrayList<Carona> myCaronasCreateds;
 
     public User() {}
@@ -29,6 +31,48 @@ public class User {
         setName(name);
         this.isDriver = isDriver;
         myCaronasCreateds = new ArrayList<Carona>();
+    }
+
+    public User(String name, String registration, String email, String password, boolean isDriver,
+                String district, String road, int numberOfVacancies) throws Exception{
+        this(name, registration, email, password, isDriver, district, road);
+        this.numberOfVacancies = numberOfVacancies;
+    }
+
+    public String getRoad() {
+        return road;
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public void setDepartureTime(String departureTime) {
+        this.departureTime = departureTime;
+    }
+
+    public String getReturnTime() {
+        return returnTime;
+    }
+
+    public void setReturnTime(String returnTime) {
+        this.returnTime = returnTime;
+    }
+
+    public boolean isDriver() {
+        return isDriver;
+    }
+
+    public void setDriver(boolean driver) {
+        isDriver = driver;
+    }
+
+    public int getNumberOfVacancies() {
+        return numberOfVacancies;
+    }
+
+    public void setNumberOfVacancies(int numberOfVacancies) {
+        this.numberOfVacancies = numberOfVacancies;
     }
 
     public void setRoad(String road) throws Exception

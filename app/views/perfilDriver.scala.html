@@ -42,11 +42,10 @@
                     <div class="caption">
                         <h4 style="color: #2b669a"><u>Update data</u></h4>
                     </div>
-                    @helper.form(routes.UserController.logout()) {
-                        <div class="caption" style="margin-top: 0px">
-                            <h4 style="color: #2b669a"><u>Logout</u></h4>
-                        </div>
-                    }
+                    <div class="caption" style="margin-top: 0px">
+                        <a href="/logout">Logout</a>
+                    </div>
+
                 </div>
             </div>
             <div class="col-sm-6" style="margin-top: 10px">
@@ -58,14 +57,14 @@
                     @for(solicitationsIndex <- 0 to 3){
                         @helper.form(routes.UserController.selectSolicitation()) {
                         <li class="list-group-item", id="solicitationsIndex", name="linha">
-                            <a href="#" style="text-decoration: none;">
+                            <button type="submit" href="#" value="@solicitationsIndex" name="solicitationsIndex">
                                 <ul class="list-group" style="display: inline;">
                                     <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/motoqueiro.jpg")" alt="..."></div>
                                     <div style="margin-left:10px;">Name: Carlos Interaminense</div>
                                     <div style="margin-left:10px;">Destino: Centenário</div>
                                     <div style="margin-left:10px;">Horário: 8h:30m</div>
                                 </ul>
-                            </a>
+                            </button>
                         </li>
                         }
                     }

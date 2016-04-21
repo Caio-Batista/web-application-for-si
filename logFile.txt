@@ -61,3 +61,37 @@ Carlos user logged.  -  2016/04/21 02:08:35
 Carlos user logged.  -  2016/04/21 02:08:48
 Carlos user logged.  -  2016/04/21 02:48:52
 Carlos user logged.  -  2016/04/21 02:48:54
+Carlos user logged.  -  2016/04/21 11:35:43
+Carlos user logged.  -  2016/04/21 11:38:02
+Carlos user logged.  -  2016/04/21 11:38:19
+Carlos user logged.  -  2016/04/21 11:39:30
+Carlos user logged.  -  2016/04/21 11:43:26
+Carlos user logged.  -  2016/04/21 11:45:12
+Carlos user logged.  -  2016/04/21 11:47:07
+Carlos user logged.  -  2016/04/21 11:51:16
+Carlos user logged.  -  2016/04/21 11:53:04
+Carlos user logged.  -  2016/04/21 11:57:27
+Carlos user logged.  -  2016/04/21 12:02:25
+Carlos user logged.  -  2016/04/21 12:04:06
+Carlos user logged.  -  2016/04/21 12:04:48
+Carlos user logged.  -  2016/04/21 12:05:21
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 12:07:19
+Carlos user logged.  -  2016/04/21 12:07:24
+Carlos user logged.  -  2016/04/21 12:12:02
+Carlos user logged.  -  2016/04/21 12:12:16
+Carlos user logged.  -  2016/04/21 12:13:27
+Carlos user logged.  -  2016/04/21 12:16:29
+Carlos user logged.  -  2016/04/21 12:19:01
+Carlos user logged.  -  2016/04/21 12:28:15
+Carlos user logged.  -  2016/04/21 12:35:06
+Carlos user logged.  -  2016/04/21 12:36:12
+The user logout.  -  2016/04/21 12:36:16
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 12:36:22
+Carlos user logged.  -  2016/04/21 12:51:10
+Carlos user logged.  -  2016/04/21 12:51:25
+Carlos user logged.  -  2016/04/21 12:51:53
+Carlos user logged.  -  2016/04/21 12:52:12
+Carlos user logged.  -  2016/04/21 12:52:54
+Carlos user logged.  -  2016/04/21 12:54:38
+Carlos user logged.  -  2016/04/21 12:56:27
+Carlos user logged.  -  2016/04/21 12:57:44
