@@ -9,3 +9,823 @@
 2016-04-20 21:19:35,777 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
 2016-04-20 21:19:35,872 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
 2016-04-20 21:19:36,115 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-20 23:22:41,044 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2llhlm - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Expected '}' but found 'EOF']
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:23:13,063 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2lndba - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Expected '}' but found 'EOF']
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:23:22,876 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2lo1oj - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Expected '}' but found 'EOF']
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:23:40,020 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2lp183 - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value selectSolicitation is not a member of controllers.ReverseUserController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:24:10,895 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2m0kph - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value selectSolicitation is not a member of controllers.ReverseUserController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:24:59,503 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2m3en5 - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value selectSolicitation is not a member of controllers.ReverseUserController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:25:44,751 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2m63ld - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value selectSolicitation is not a member of controllers.ReverseUserController]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:26:10,449 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2m7fln - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: method render in class perfilDriver cannot be applied to given types;]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:37:34,210 [ERROR] from application in New I/O worker #1 - 
+
+! @6po2nkd84 - Internal server error, for (GET) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: method render in class perfilDriver cannot be applied to given types;]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:39:51,347 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-20 23:39:52,623 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-20 23:39:53,237 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-20 23:39:53,348 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-20 23:39:53,469 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-20 23:55:02,235 [ERROR] from application in New I/O worker #7 - 
+
+! @6po3023go - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[Expected '}' but found 'EOF']
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:55:32,756 [ERROR] from application in New I/O worker #7 - 
+
+! @6po303mkn - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: method render in class perfilDriver cannot be applied to given types;]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:56:13,180 [ERROR] from application in New I/O worker #7 - 
+
+! @6po3064fi - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:57:01,766 [ERROR] from application in New I/O worker #7 - 
+
+! @6po308ocb - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: cannot find symbol]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-20 23:57:48,587 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-11 - Shutdown application default Akka system: application
+2016-04-20 23:57:48,699 [WARN] from application in application-akka.actor.default-dispatcher-11 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-20 23:57:48,871 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-11 - Starting application default Akka system: application
+2016-04-20 23:57:48,922 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-11 - Application started (Dev)
+2016-04-20 23:57:48,994 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:00:23,927 [ERROR] from application in New I/O worker #7 - 
+
+! @6po30kbd8 - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[error: incompatible types: Object cannot be converted to User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-21 00:05:05,824 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Shutdown application default Akka system: application
+2016-04-21 00:05:05,915 [WARN] from application in application-akka.actor.default-dispatcher-4 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:05:06,304 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Starting application default Akka system: application
+2016-04-21 00:05:06,354 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-21 00:05:06,410 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:06:15,884 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 00:06:16,171 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:06:16,514 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 00:06:16,707 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 00:06:16,753 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:06:47,473 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 00:06:47,610 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:06:47,890 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 00:06:47,939 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 00:06:47,966 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:14:27,794 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 00:14:27,947 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:14:28,059 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 00:14:28,128 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 00:14:28,157 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:32:36,451 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 00:32:36,610 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:32:36,862 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 00:32:36,926 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 00:32:37,020 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:35:00,802 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-10 - Shutdown application default Akka system: application
+2016-04-21 00:35:00,921 [WARN] from application in application-akka.actor.default-dispatcher-10 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:35:01,039 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-10 - Starting application default Akka system: application
+2016-04-21 00:35:01,077 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-10 - Application started (Dev)
+2016-04-21 00:35:01,120 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:36:46,082 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 00:36:46,165 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:36:46,306 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 00:36:46,340 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 00:36:46,365 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:45:48,643 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-20 - Shutdown application default Akka system: application
+2016-04-21 00:45:48,803 [WARN] from application in application-akka.actor.default-dispatcher-20 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:45:48,935 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-20 - Starting application default Akka system: application
+2016-04-21 00:45:48,975 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-20 - Application started (Dev)
+2016-04-21 00:45:49,003 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:46:43,540 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Shutdown application default Akka system: application
+2016-04-21 00:46:43,628 [WARN] from application in application-akka.actor.default-dispatcher-2 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:46:43,924 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Starting application default Akka system: application
+2016-04-21 00:46:44,004 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-04-21 00:46:44,032 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:47:09,934 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 00:47:10,082 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:47:10,186 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 00:47:10,226 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 00:47:10,250 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:47:24,253 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 00:47:24,333 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:47:25,244 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 00:47:25,280 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 00:47:25,308 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:47:35,614 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Shutdown application default Akka system: application
+2016-04-21 00:47:35,682 [WARN] from application in application-akka.actor.default-dispatcher-2 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:47:36,077 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Starting application default Akka system: application
+2016-04-21 00:47:36,173 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-04-21 00:47:36,193 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:55:20,592 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Shutdown application default Akka system: application
+2016-04-21 00:55:21,072 [WARN] from application in application-akka.actor.default-dispatcher-4 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:55:21,688 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Starting application default Akka system: application
+2016-04-21 00:55:22,124 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-21 00:55:22,676 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 00:59:27,634 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 00:59:27,710 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 00:59:27,814 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 00:59:27,910 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 00:59:27,938 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:00:13,037 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Shutdown application default Akka system: application
+2016-04-21 01:00:13,125 [WARN] from application in application-akka.actor.default-dispatcher-2 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:00:13,237 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Starting application default Akka system: application
+2016-04-21 01:00:13,569 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-04-21 01:00:13,697 [WARN] from application in application-akka.actor.default-dispatcher-7 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:00:41,843 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 01:00:42,075 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:00:42,247 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 01:00:42,283 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 01:00:42,463 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:02:24,451 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 01:02:24,547 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:02:24,715 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 01:02:24,807 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 01:02:24,855 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:03:28,665 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:03:28,733 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:03:28,937 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:03:29,001 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:03:29,033 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:03:46,736 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:03:46,796 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:03:46,936 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:03:46,992 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:03:47,060 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:07:50,942 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Shutdown application default Akka system: application
+2016-04-21 01:07:51,010 [WARN] from application in application-akka.actor.default-dispatcher-4 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:07:51,102 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Starting application default Akka system: application
+2016-04-21 01:07:51,170 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-21 01:07:51,270 [WARN] from application in application-akka.actor.default-dispatcher-7 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:08:23,296 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:08:23,372 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:08:23,436 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:08:23,468 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:08:23,496 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:08:38,607 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:08:38,687 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:08:38,771 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:08:38,803 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:08:38,823 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:10:04,962 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 01:10:05,026 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:10:05,134 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 01:10:05,174 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 01:10:05,222 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:10:43,457 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:10:43,525 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:10:43,653 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:10:43,677 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:10:43,709 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:19:25,189 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 01:19:25,273 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:19:25,373 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 01:19:25,413 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 01:19:25,429 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:20:03,145 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:20:03,209 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:20:03,337 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:20:03,377 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:20:03,393 [WARN] from application in application-akka.actor.default-dispatcher-7 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:21:00,609 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Shutdown application default Akka system: application
+2016-04-21 01:21:00,661 [WARN] from application in application-akka.actor.default-dispatcher-4 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:21:00,721 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Starting application default Akka system: application
+2016-04-21 01:21:00,753 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-21 01:21:00,781 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:21:20,254 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:21:20,314 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:21:20,448 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:21:20,536 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:21:20,636 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:23:12,418 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-10 - Shutdown application default Akka system: application
+2016-04-21 01:23:12,486 [WARN] from application in application-akka.actor.default-dispatcher-10 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:23:12,574 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-10 - Starting application default Akka system: application
+2016-04-21 01:23:12,594 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-10 - Application started (Dev)
+2016-04-21 01:23:12,614 [WARN] from application in application-akka.actor.default-dispatcher-8 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:25:42,535 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 01:25:42,607 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:25:42,683 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 01:25:42,711 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 01:25:42,739 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:26:26,751 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Shutdown application default Akka system: application
+2016-04-21 01:26:26,811 [WARN] from application in application-akka.actor.default-dispatcher-2 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:26:26,883 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Starting application default Akka system: application
+2016-04-21 01:26:26,923 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-04-21 01:26:26,947 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:27:55,493 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 01:27:55,549 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:27:55,617 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 01:27:55,637 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 01:27:55,653 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:28:19,550 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:28:19,614 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:28:19,782 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:28:19,802 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:28:19,822 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:28:56,521 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 01:28:56,729 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:28:56,861 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 01:28:56,975 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 01:28:56,999 [WARN] from application in application-akka.actor.default-dispatcher-2 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:44:40,321 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:44:40,832 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:44:41,118 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:44:41,362 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:44:41,659 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:45:40,425 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Shutdown application default Akka system: application
+2016-04-21 01:45:40,549 [WARN] from application in application-akka.actor.default-dispatcher-3 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:45:40,705 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Starting application default Akka system: application
+2016-04-21 01:45:40,795 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2016-04-21 01:45:40,835 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:45:55,553 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:45:55,605 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:45:55,681 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:45:55,773 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:45:55,797 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:46:06,548 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Shutdown application default Akka system: application
+2016-04-21 01:46:06,616 [WARN] from application in application-akka.actor.default-dispatcher-3 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:46:06,708 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Starting application default Akka system: application
+2016-04-21 01:46:06,728 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2016-04-21 01:46:06,764 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:46:36,198 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Shutdown application default Akka system: application
+2016-04-21 01:46:36,250 [WARN] from application in application-akka.actor.default-dispatcher-8 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:46:36,590 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-8 - Starting application default Akka system: application
+2016-04-21 01:46:36,626 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-8 - Application started (Dev)
+2016-04-21 01:46:36,650 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:47:28,746 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 01:47:28,814 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:47:29,074 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 01:47:29,370 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 01:47:29,386 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:47:37,928 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:47:38,096 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:47:38,415 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:47:38,463 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:47:38,495 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:48:47,762 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 01:48:47,862 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:48:48,219 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 01:48:48,251 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 01:48:48,279 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:48:59,044 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 01:48:59,108 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:48:59,160 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 01:48:59,224 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 01:48:59,240 [WARN] from application in application-akka.actor.default-dispatcher-9 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:51:00,444 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 01:51:00,512 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:51:00,624 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 01:51:00,688 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 01:51:00,708 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:51:29,179 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Shutdown application default Akka system: application
+2016-04-21 01:51:29,267 [WARN] from application in application-akka.actor.default-dispatcher-3 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:51:29,355 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-3 - Starting application default Akka system: application
+2016-04-21 01:51:29,415 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-3 - Application started (Dev)
+2016-04-21 01:51:29,475 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:52:25,943 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 01:52:26,015 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 01:52:26,123 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 01:52:26,247 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 01:52:26,423 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 01:57:46,581 [ERROR] from application in New I/O worker #3 - 
+
+! @6po3g520d - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[method getVacantions in class User cannot be accessed in controllers.Models.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-21 01:58:20,460 [ERROR] from application in New I/O worker #3 - 
+
+! @6po3g718k - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[method getVacantions in class User cannot be accessed in controllers.Models.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-21 02:01:12,674 [ERROR] from application in New I/O worker #3 - 
+
+! @6po3ggmdj - Internal server error, for (GET) [/] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[method getVacantions in class User cannot be accessed in controllers.Models.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-21 02:03:23,031 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 02:03:25,954 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:03:27,119 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 02:03:28,564 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 02:03:30,017 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:04:28,481 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Shutdown application default Akka system: application
+2016-04-21 02:04:28,661 [WARN] from application in application-akka.actor.default-dispatcher-6 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:04:28,915 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-6 - Starting application default Akka system: application
+2016-04-21 02:04:29,015 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-6 - Application started (Dev)
+2016-04-21 02:04:29,160 [WARN] from application in application-akka.actor.default-dispatcher-7 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:04:45,147 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 02:04:45,259 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:04:45,467 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 02:04:45,954 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 02:04:45,998 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:05:26,057 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Shutdown application default Akka system: application
+2016-04-21 02:05:26,105 [WARN] from application in application-akka.actor.default-dispatcher-9 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:05:26,225 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-9 - Starting application default Akka system: application
+2016-04-21 02:05:26,301 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-9 - Application started (Dev)
+2016-04-21 02:05:26,437 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:05:44,354 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Shutdown application default Akka system: application
+2016-04-21 02:05:44,642 [WARN] from application in application-akka.actor.default-dispatcher-2 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:05:44,722 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-2 - Starting application default Akka system: application
+2016-04-21 02:05:44,770 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-2 - Application started (Dev)
+2016-04-21 02:05:44,830 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:06:11,899 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Shutdown application default Akka system: application
+2016-04-21 02:06:11,947 [WARN] from application in application-akka.actor.default-dispatcher-4 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:06:12,015 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-4 - Starting application default Akka system: application
+2016-04-21 02:06:12,075 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-4 - Application started (Dev)
+2016-04-21 02:06:12,141 [WARN] from application in application-akka.actor.default-dispatcher-5 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:08:34,651 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Shutdown application default Akka system: application
+2016-04-21 02:08:34,783 [WARN] from application in application-akka.actor.default-dispatcher-5 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:08:35,079 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-5 - Starting application default Akka system: application
+2016-04-21 02:08:35,471 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-5 - Application started (Dev)
+2016-04-21 02:08:35,663 [WARN] from application in application-akka.actor.default-dispatcher-6 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
+2016-04-21 02:47:00,095 [ERROR] from application in New I/O worker #2 - 
+
+! @6po3mh4c8 - Internal server error, for (POST) [/login] ->
+ 
+play.sbt.PlayExceptions$CompilationException: Compilation error[value getVacantions is not a member of controllers.Models.User]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at play.sbt.PlayExceptions$CompilationException$.apply(PlayExceptions.scala:27) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:49) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$taskFailureHandler$1.apply(PlayReload.scala:44) ~[na:na]
+	at scala.Option.map(Option.scala:145) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.taskFailureHandler(PlayReload.scala:44) ~[na:na]
+	at play.sbt.run.PlayReload$.compileFailure(PlayReload.scala:40) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayReload$$anonfun$compile$1.apply(PlayReload.scala:17) ~[na:na]
+	at scala.util.Either$LeftProjection.map(Either.scala:377) ~[scala-library-2.11.6.jar:na]
+	at play.sbt.run.PlayReload$.compile(PlayReload.scala:17) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.sbt.run.PlayRun$$anonfun$playRunTask$1$$anonfun$apply$2$$anonfun$apply$3$$anonfun$2.apply(PlayRun.scala:60) ~[na:na]
+	at play.runsupport.Reloader.reload(Reloader.scala:305) ~[na:na]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:113) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at play.core.server.DevServerStart$$anonfun$mainDev$1$$anon$1$$anonfun$get$1.apply(DevServerStart.scala:111) ~[play-server_2.11-2.4.2.jar:2.4.2]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.liftedTree1$1(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.impl.Future$PromiseCompletingRunnable.run(Future.scala:24) ~[scala-library-2.11.6.jar:na]
+	at akka.dispatch.TaskInvocation.run(AbstractDispatcher.scala:40) ~[akka-actor_2.11-2.3.11.jar:na]
+	at akka.dispatch.ForkJoinExecutorConfigurator$AkkaForkJoinTask.exec(AbstractDispatcher.scala:397) ~[akka-actor_2.11-2.3.11.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinTask.doExec(ForkJoinTask.java:260) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool$WorkQueue.runTask(ForkJoinPool.java:1339) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinPool.runWorker(ForkJoinPool.java:1979) ~[scala-library-2.11.6.jar:na]
+	at scala.concurrent.forkjoin.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:107) ~[scala-library-2.11.6.jar:na]
+2016-04-21 02:48:37,882 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Shutdown application default Akka system: application
+2016-04-21 02:48:39,871 [WARN] from application in application-akka.actor.default-dispatcher-7 - Logger configuration in conf files is deprecated and has no effect. Use a logback configuration file instead.
+2016-04-21 02:48:41,394 [INFO] from play.api.libs.concurrent.ActorSystemProvider in application-akka.actor.default-dispatcher-7 - Starting application default Akka system: application
+2016-04-21 02:48:42,404 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
+2016-04-21 02:48:43,976 [WARN] from application in application-akka.actor.default-dispatcher-4 - application.conf @ file:/C:/Users/Yago/Documents/SI2/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead

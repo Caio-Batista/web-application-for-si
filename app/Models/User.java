@@ -15,8 +15,6 @@ public class User {
 
     private boolean isDriver;
 
-    private int numberOfVacancies;
-
     private ArrayList<Carona> myCaronasCreateds;
 
     public User() {}
@@ -31,12 +29,6 @@ public class User {
         setName(name);
         this.isDriver = isDriver;
         myCaronasCreateds = new ArrayList<Carona>();
-    }
-
-    public User(String name, String registration, String email, String password, boolean isDriver,
-                String district, String road, int numberOfVacancies) throws Exception{
-        this(name, registration, email, password, isDriver, district, road);
-        this.numberOfVacancies = numberOfVacancies;
     }
 
     public void setRoad(String road) throws Exception
@@ -142,7 +134,6 @@ public class User {
 
         this.district = district;
     }
-
 
     @Override
     public boolean equals(Object o)

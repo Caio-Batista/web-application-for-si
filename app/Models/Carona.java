@@ -1,14 +1,23 @@
 package controllers.Models;
 
+import Models.Solicitations;
+
+import java.util.ArrayList;
+
 public class Carona{
 
-    private String startingAddress;
+    private String startingAddress, arrivalAddress;
 
-    private String arrivalAddress;
+    private int numberOfVacancies;
 
-    public Carona(String startingAddress, String arrivalAddress){
+    private ArrayList<Solicitations> solicitations;
+
+    public Carona(String startingAddress, String arrivalAddress, int numberOfVacancies){
         this.arrivalAddress = arrivalAddress;
         this.startingAddress = startingAddress;
+        this.numberOfVacancies = numberOfVacancies;
+        solicitations = new ArrayList<Solicitations>();
+
     }
 
     public String getStartingAddress() {
@@ -34,5 +43,24 @@ public class Carona{
         }
 
         this.arrivalAddress = arrivalAddress;
+    }
+
+    public int getNumberOfVacancies() {
+        return numberOfVacancies;
+    }
+
+    public void setNumberOfVacancies(int numberOfVacancies) throws Exception {
+        if(numberOfVacancies < 0){
+            throw new Exception("Arrival address invalid");
+        }
+        this.numberOfVacancies = numberOfVacancies;
+    }
+
+    public ArrayList<Solicitations> getSolicitations() {
+        return solicitations;
+    }
+
+    public void addSolicitation(Solicitations solicitation){
+        solicitations.add(solicitation);
     }
 }

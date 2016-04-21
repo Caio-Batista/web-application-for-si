@@ -18,7 +18,11 @@ GET     /register                        controllers.UserController.showRegister
 
 GET      /assets/*file                  controllers.Assets.at(path="/public", file)
 
-POST    /login                            controllers.UserController.authenticate()
+POST    /login                          controllers.UserController.authenticate()
+
+POST    /                               controllers.UserController.logout()
+
+POST    /perfilDriver                   controllers.UserController.selectSolicitation()
 
 POST    /register                       controllers.UserController.register()
 

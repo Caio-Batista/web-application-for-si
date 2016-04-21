@@ -17,12 +17,12 @@ import LogFile.*;
 
 public class UserController extends Controller{
 
-    private static Form<User> loginForm = form(User.class).bindFromRequest();
+    private static Form<User> formUser = form(User.class).bindFromRequest();
     private static DBManager db = null;
     private static User actualUser;
 
     public static Result showLogin(String mensagem, boolean erro) {
-        return ok(views.html.login.render(loginForm, mensagem, erro));
+        return ok(views.html.login.render(formUser, mensagem, erro));
     }
 
     public static Result showLogin() {
@@ -34,7 +34,7 @@ public class UserController extends Controller{
 
         if (user.getIsDriver())
         {
-            return ok(views.html.perfilDriver.render(user));
+            return ok(views.html.perfilDriver.render(user, formUser));
         }
         return ok(views.html.perfilPassenger.render());
 
@@ -72,10 +72,10 @@ public class UserController extends Controller{
     }
 
     public static Result selectSolicitation(){
-        Form<Carona> form = form(Carona.class).bindFromRequest();
-        int indice = form.field("linha");
+        Form<User> form = form(User.class).bindFromRequest();
+        String indice = form.field("linha").value();
 
-        //return ok(views.html.perfilPassenger.render());
+        return showLogin(indice, true);
     }
 
     public static User getUser() {
@@ -89,7 +89,7 @@ public class UserController extends Controller{
     }
 
     public static Result showRegister(String mensagem) {
-        return ok(views.html.register.render(loginForm, mensagem));
+        return ok(views.html.register.render(formUser, mensagem));
     }
 
     public static Result showRegister() {
@@ -120,7 +120,7 @@ public class UserController extends Controller{
             }
         }
 
-        Form<User> form = loginForm.bindFromRequest();
+        Form<User> form = formUser.bindFromRequest();
 
         String name = form.field("name").value();
         String registration = form.field("registration").value();
