@@ -182,7 +182,7 @@ public class UserController extends Controller{
             LogFile.writeInLog("An user try to register, but the road is invalid.");
             return showRegister("Invalid Road");
 
-        } else if(driver != null) {
+        } else if(driver != null && passenger == null) {
             if(numberPassenges == null || numberPassenges.trim().equals("")) {
                 LogFile.writeInLog("An user try to register, but it is a driver and don't put the number os passenger.");
                 return showRegister("If you are a driver, put the number of passenger");

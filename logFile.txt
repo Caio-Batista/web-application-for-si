@@ -95,3 +95,7 @@ Carlos user logged.  -  2016/04/21 12:52:54
 Carlos user logged.  -  2016/04/21 12:54:38
 Carlos user logged.  -  2016/04/21 12:56:27
 Carlos user logged.  -  2016/04/21 12:57:44
+An user try to register, but it is a driver and don't put the number os passenger.  -  2016/04/21 14:35:12
+Carlos user logged.  -  2016/04/21 14:36:05
+Carlos Interaminense user registred.  -  2016/04/21 14:40:11
+An user try to register, but it is a driver and don't put the number os passenger.  -  2016/04/21 14:40:42
