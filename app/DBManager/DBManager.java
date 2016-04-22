@@ -29,6 +29,26 @@ public class DBManager {
         db.add(u2);
     }
 
+   private int returnIndexUser(String email) //aqui
+    {
+        for(int i =0; i <db.size(); ++i)
+        {
+            if(db.get(i).getEmail().equals(email))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
+
+    public void updateUser(User user) //aqui
+    {
+        int index = returnIndexUser(user.getEmail());
+        db.get(index).setReturnTime(user.getReturnTime());
+        db.get(index).setDepartureTime(user.getDepartureTime());
+    }
+
     public User searchUserByRegistration(String registration)
     {
         for(int i =0; i <db.size(); ++i)
