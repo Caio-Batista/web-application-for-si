@@ -29,14 +29,23 @@ public class UserController extends Controller{
         return showLogin("", false);
     }
 
+    public static Result showTeste(){
+        return TODO;//views.html.perfilPassenger.render());
+    }
+
     public static Result showPerfil(){
         User user = getUser();
+        if (db == null){
+            try{
+                db = new DBManager();
+            }catch(Exception e){}
+        }
 
         if (user.getIsDriver())
         {
             return ok(views.html.perfilDriver.render(user, formUser));
         }
-        return ok(views.html.perfilPassenger.render());
+        return ok(views.html.perfilPassenger.render(user, formUser, db));
 
 
     }
@@ -113,7 +122,7 @@ public class UserController extends Controller{
         return (!registration.trim().equals("")) && (registration.length() == 9) && (intRegistration > 100000000 && intRegistration < 115199999);
     }
 
-    
+
 
     public static Result register(){
 

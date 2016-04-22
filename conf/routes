@@ -13,6 +13,7 @@ GET     /login                             controllers.UserController.showLogin(
 
 GET     /register                        controllers.UserController.showRegister()
 
+GET     /perfilTeste                    controllers.UserController.showTeste()
 
 # Map static resources from the /public folder to the /assets URL path
 

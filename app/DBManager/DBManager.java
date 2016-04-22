@@ -19,7 +19,7 @@ public class DBManager {
         User u2 = null;
 
         try {
-            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Ali", "rua1");
+            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Aqui", "rua2");
             u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2");
 
         } catch (Exception e) {
@@ -70,6 +70,22 @@ public class DBManager {
         db.add(user);
 
         return true;
+    }
+
+    public ArrayList<User> driversPassingByUser(User user){
+        ArrayList<User> ar = new ArrayList<User>();
+        for (User element : db) {
+
+            if (element.getMyCaronasCreateds().getStartingAddress().equals(user.getRoad()))
+                ar.add(element);
+        }
+
+        return ar;
+
+    }
+
+    public String returnDB(){
+        return db.toString();
     }
 
 

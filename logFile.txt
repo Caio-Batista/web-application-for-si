@@ -99,3 +99,54 @@ An user try to register, but it is a driver and don't put the number os passenge
 Carlos user logged.  -  2016/04/21 14:36:05
 Carlos Interaminense user registred.  -  2016/04/21 14:40:11
 An user try to register, but it is a driver and don't put the number os passenger.  -  2016/04/21 14:40:42
+Caio user registred.  -  2016/04/21 18:01:20
+Caio user logged.  -  2016/04/21 18:01:24
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:11:23
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:11:28
+Caio user registred.  -  2016/04/21 18:12:01
+Caio user logged.  -  2016/04/21 18:12:04
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:13:34
+caio user registred.  -  2016/04/21 18:14:11
+caio user logged.  -  2016/04/21 18:14:14
+caio user registred.  -  2016/04/21 18:18:19
+caio user logged.  -  2016/04/21 18:18:23
+caio user registred.  -  2016/04/21 18:23:31
+caio user logged.  -  2016/04/21 18:23:36
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:30:19
+caio user registred.  -  2016/04/21 18:31:43
+caio user logged.  -  2016/04/21 18:31:47
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:36:27
+caio user registred.  -  2016/04/21 18:36:48
+caio user logged.  -  2016/04/21 18:36:52
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:38:42
+caio user registred.  -  2016/04/21 18:39:07
+caio user logged.  -  2016/04/21 18:39:09
+caio user registred.  -  2016/04/21 18:46:26
+caio user logged.  -  2016/04/21 18:46:30
+caio user registred.  -  2016/04/21 18:48:29
+caio user logged.  -  2016/04/21 18:48:33
+An user try to register, but the resgistration is invalid.  -  2016/04/21 18:50:40
+caio user registred.  -  2016/04/21 18:50:56
+caio user logged.  -  2016/04/21 18:50:59
+An user try to loggin, but the email or password is invalid.  -  2016/04/21 18:54:43
+caio user registred.  -  2016/04/21 18:54:59
+caio user logged.  -  2016/04/21 18:55:01
+caio user registred.  -  2016/04/21 18:58:00
+caio user logged.  -  2016/04/21 18:58:04
+caio user registred.  -  2016/04/21 19:25:38
+caio user logged.  -  2016/04/21 19:25:42
+caio user registred.  -  2016/04/21 19:29:35
+caio user logged.  -  2016/04/21 19:29:39
+The user logout.  -  2016/04/21 19:31:49
+caio user logged.  -  2016/04/21 19:31:54
+Carlos user logged.  -  2016/04/21 20:40:58
+Izabella user logged.  -  2016/04/21 20:41:57
+Izabella user logged.  -  2016/04/21 21:11:50
+Izabella user logged.  -  2016/04/21 21:29:22
+Izabella user logged.  -  2016/04/21 21:38:43
+Izabella user logged.  -  2016/04/21 21:40:25
+Izabella user logged.  -  2016/04/21 21:44:21
+Izabella user logged.  -  2016/04/21 21:46:10
+Izabella user logged.  -  2016/04/21 22:09:07
+Izabella user logged.  -  2016/04/21 22:19:05
+Izabella user logged.  -  2016/04/21 22:19:36
