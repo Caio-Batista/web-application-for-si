@@ -13,9 +13,9 @@ GET     /login                             controllers.UserController.showLogin(
 
 GET     /register                        controllers.UserController.showRegister()
 
-GET     /newCarona                      controllers.UserController.showNewCarona()
+GET     /newCarona                      controllers.CaronaController.showNewCarona()
 
-POST     /newCarona                      controllers.UserController.createCarona()
+POST     /newCarona                      controllers.CaronaController.createCarona()
 
 
 
@@ -29,7 +29,14 @@ GET    /logout                         controllers.UserController.logout()
 
 GET     /perfilpassenger                controllers.UserController.changeUser()
 
-POST    /perfilDriver                   controllers.UserController.selectSolicitation()
+#GET    /perfilDriver/:id               controllers.UserController.selectSolicitation(id: Integer)
+POST    /solicitations/accept/:id       controllers.CaronaController.acceptSolicitation(id: Integer)
+
+DELETE    /solicitations/reject/:id       controllers.CaronaController.rejectSolicitation(id: Integer)
+
+DELETE    /carona/reject/:id                controllers.CaronaController.rejectCarona(id: Integer)
+
+POST    /carona/askForDriver/:id        controllers.CaronaController.askCaronaForDriver(id: Integer)
 
 POST    /register                       controllers.UserController.register()
 
