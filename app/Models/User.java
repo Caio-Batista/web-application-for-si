@@ -11,7 +11,7 @@ public class User {
 
     private String registration;
 
-    private String email,password, district, road, name, destinationAddress, departureTime, returnTime;
+    private String email,password, district, road, name,departureTime, returnTime;
 
     private boolean isDriver;
 
@@ -26,7 +26,7 @@ public class User {
         this.registration = registration;
         setEmail(email);
         setPassword(password);
-        setDestinationAddress(district);
+        setDistrict(district);
         setRoad(road);
         setName(name);
         this.isDriver = isDriver;
@@ -94,21 +94,6 @@ public class User {
         return isDriver;
     }
 
-    public void setDestinationAddress(String destinationAddress) throws Exception
-    {
-        if(destinationAddress == null || destinationAddress.trim().equals(""))
-        {
-            throw new Exception("Destination Address invalid");
-        }
-
-        this.destinationAddress = destinationAddress;
-    }
-
-    public String getDestinationAddress()
-    {
-        return destinationAddress;
-    }
-
     public void setName(String name) throws Exception{
         if(name == null || name.trim().equals(""))
         {
@@ -157,7 +142,7 @@ public class User {
         this.password = password;
     }
 
-    private void setRegistration(String registration) throws Exception
+    public void setRegistration(String registration) throws Exception
     {
         if(registration == null || registration.trim().equals(""))
         {
@@ -167,8 +152,7 @@ public class User {
         this.registration = registration;
     }
 
-
-    private void setDistrict(String district) throws Exception
+    public void setDistrict(String district) throws Exception
     {
 
         if(district == null || district.trim().equals(""))
@@ -177,6 +161,10 @@ public class User {
         }
 
         this.district = district;
+    }
+
+    public void addCarona(Carona carona){
+        myCaronasCreateds.add(carona);
     }
 
     @Override
@@ -204,6 +192,4 @@ public class User {
 
         return email.equals(u.getEmail());
     }
-
-
 }

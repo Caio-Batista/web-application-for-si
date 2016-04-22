@@ -253,6 +253,11 @@ public class UserController extends Controller{
 
         Carona carona = new Carona(startingDistrict, startingRoad, arrivalDistrict, arrivalRoad, startingTme, Integer.parseInt(numberVacancies));
 
+        User user = getUser();
+
+        user.addCarona(carona);
+
+        db.updateUser(user);
         return showPerfil();
     }
 
@@ -303,7 +308,7 @@ public class UserController extends Controller{
                 return showUpdateData("Invalid New Return Address");
             }
             try{
-                user.setDestinationAddress(newReturnAddress);
+                user.setDistrict(newReturnAddress);
 
             } catch (Exception e){
 

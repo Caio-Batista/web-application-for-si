@@ -44,9 +44,10 @@ public class DBManager {
 
     public void updateUser(User user) //aqui
     {
-        int index = returnIndexUser(user.getEmail());
-        db.get(index).setReturnTime(user.getReturnTime());
-        db.get(index).setDepartureTime(user.getDepartureTime());
+        User u = searchUserByEmail(user.getEmail());
+
+        db.remove(u);
+        db.add(user);
     }
 
     public User searchUserByRegistration(String registration)
