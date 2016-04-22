@@ -5,13 +5,28 @@ package Models;
  */
 public class Solicitations {
 
-    private String name, startingAddress, hour, numberPhone;
+    private String name, startingAddress, hour, numberPhone, email;
 
-    public Solicitations(String name, String startingAddress, String hour, String numberPhone){
+    private boolean isAcceptSolicitation;
+
+    public Solicitations(String email, String name, String startingAddress, String hour, String numberPhone){
+        this.email = email;
         this.name = name;
         this.startingAddress = startingAddress;
         this.hour = hour;
         this.numberPhone = numberPhone;
+    }
+
+    public boolean isAcceptSolicitation() {
+        return isAcceptSolicitation;
+    }
+
+    public void setAcceptSolicitation(boolean acceptSolicitation) {
+        isAcceptSolicitation = acceptSolicitation;
+    }
+
+    public String getEmail() {
+        return email;
     }
 
     public String getName() {

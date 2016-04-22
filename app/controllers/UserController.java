@@ -5,6 +5,7 @@ import static play.data.Form.form;
 
 import java.util.List;
 
+import Models.Solicitations;
 import controllers.Models.User;
 import controllers.Models.Carona;
 import play.mvc.Controller;
@@ -18,8 +19,9 @@ import LogFile.*;
 public class UserController extends Controller{
 
     private static Form<User> formUser = form(User.class).bindFromRequest();
-    private static DBManager db = null;
+    private static DBManager db = DBManager.getInstance();
     private static User actualUser;
+    private static boolean actualPerfilIsDriver = false;
 
     public static Result showLogin(String mensagem, boolean erro) {
         return ok(views.html.login.render(formUser, mensagem, erro));
@@ -35,29 +37,16 @@ public class UserController extends Controller{
 
     public static Result showPerfil(){
         User user = getUser();
-        if (db == null){
-            try{
-                db = new DBManager();
-            }catch(Exception e){}
-        }
-
-        if (user.getIsDriver())
+        if (actualPerfilIsDriver)
         {
             return ok(views.html.perfilDriver.render(user, formUser));
         }
-        return ok(views.html.perfilPassenger.render(user, formUser, db));
+        return ok(views.html.perfilPassenger.render(user, formUser));
 
 
     }
 
     public static Result authenticate() {
-        if(db == null){
-            try{
-                db = new DBManager();
-            }
-            catch (Exception e){}
-        }
-
         Form<User> form = form(User.class).bindFromRequest();
 
         String email = form.field("email").value();
@@ -72,27 +61,15 @@ public class UserController extends Controller{
         } else {
             User user = db.searchUserByEmail(email);
             LogFile.writeInLog(user.getName() + " user logged.");
-            actualUser = user;
             session().clear();
             session("email", user.getEmail());
+            user.setAvaliableCaronas(db.driversPassingByUserStart(user));
+            actualUser = user;
             return showPerfil();
         }
     }
 
-    public static Result selectSolicitation(){
-        Form<User> form = form(User.class).bindFromRequest();
-        String indices = form.field("solicitationsIndex").value();
-
-        if(indices == null)
-        {
-            return showRegister();
-        }
-
-        return showLogin(""+indices, true);
-    }
-
     public static User getUser() {
-
         return actualUser;
     }
 
@@ -121,14 +98,6 @@ public class UserController extends Controller{
     }
 
     public static Result register(){
-
-        if(db == null) {
-            try {
-                db = new DBManager();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
-        }
 
         Form<User> form = formUser.bindFromRequest();
 
@@ -187,6 +156,9 @@ public class UserController extends Controller{
             LogFile.writeInLog("An user try to register, but the road is invalid.");
             return showRegister("Invalid Road");
 
+        }else if(phoneNumber == null || phoneNumber.trim().equals("")){
+            LogFile.writeInLog("An user try to register, but the number phone is invalid.");
+            return showRegister("Invalid phone number");
         } else if(driver != null && passenger == null) {
             if(numberPassenges == null || numberPassenges.trim().equals("")) {
                 LogFile.writeInLog("An user try to register, but it is a driver and don't put the number os passenger.");
@@ -202,10 +174,10 @@ public class UserController extends Controller{
         User user = null;
         try {
             if(isDriver) {
-                user = new User(name, registration, email, password, isDriver, district, road, Integer.parseInt(numberPassenges));
+                user = new User(name, registration, email, password, isDriver, district, road,phoneNumber, Integer.parseInt(numberPassenges));
             }
             else{
-                user = new User(name, registration, email, password, isDriver, district, road);
+                user = new User(name, registration, email, password, isDriver, district, road, phoneNumber);
             }
             LogFile.writeInLog(user.getName() + " user registred.");
 
@@ -227,49 +199,6 @@ public class UserController extends Controller{
         return showLogin("Sucess logout", false);
     }
 
-    public static Result showNewCarona(String errorMensage, boolean error){
-        return ok(views.html.newCarona.render(formUser, errorMensage, error));
-    }
-
-    public static Result showNewCarona(){
-        return showNewCarona("", false);
-    }
-
-    public static Result createCarona(){
-        Form<User> form = formUser.bindFromRequest();
-
-        String startingDistrict = form.field("startingDistrict").value();
-        String startingRoad = form.field("startingRoad").value();
-        String arrivalDistrict = form.field("arrivalDistrict").value();
-        String arrivalRoad = form.field("arrivalRoad").value();
-        String numberVacancies = form.field("numberVacancies").value();
-        String startingTme = form.field("startingTme").value();
-
-        if(startingDistrict == null || startingDistrict.trim().equals("")){
-            return showNewCarona("Starting District invalid", true);
-        }else if(startingRoad == null || startingRoad.trim().equals("")){
-            return showNewCarona("Starting Road invalid", true);
-        }else if(arrivalDistrict == null || arrivalDistrict.trim().equals("")){
-            return showNewCarona("Arrival District invalid", true);
-        }else if(arrivalRoad == null || arrivalRoad.trim().equals("")){
-            return showNewCarona("Arrival Road invalid", true);
-        }else if(numberVacancies == null || numberVacancies.trim().equals("")){
-            //verificar aqui se é possível criar com esse numero de vagas...
-            return showNewCarona("Number of Vacancies invalid.", true);
-        }else if(startingTme == null || startingTme.trim().equals("")){
-            return showNewCarona("Starting Time invalid", true);
-        }
-
-        Carona carona = new Carona(startingDistrict, startingRoad, arrivalDistrict, arrivalRoad, startingTme, Integer.parseInt(numberVacancies));
-
-        User user = getUser();
-
-        user.addCarona(carona);
-
-        db.updateUser(user);
-        return showPerfil();
-    }
-
     public static Result showUpdateData(String mensagem){ /// aqui
         return ok(views.html.updateData.render(formUser, mensagem));
 
@@ -285,7 +214,6 @@ public class UserController extends Controller{
         }
         return true;
     }
-
 
     public static Result updateData() {
 
@@ -336,10 +264,10 @@ public class UserController extends Controller{
     }
 
     public static Result changeUser(){
-        if(getUser().isDriver()){
-            getUser().setDriver(false);
+        if(actualPerfilIsDriver){
+            actualPerfilIsDriver = false;
         }else{
-            getUser().setDriver(true);
+            actualPerfilIsDriver = true;
         }
         return showPerfil();
 

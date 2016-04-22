@@ -1,7 +1,6 @@
 package controllers.Models;
 
 import Models.Solicitations;
-import controllers.Models.Carona;
 
 import java.util.ArrayList;
 
@@ -16,33 +15,69 @@ public class User {
 
     private boolean isDriver;
 
-    private int numberOfVacancies;
+    private int numberOfVacancies, numberOfVacanciesFree;
 
     private ArrayList<Carona> myCaronasCreateds;
-    private ArrayList<Solicitations> solicitations;
+
+    private ArrayList<Carona> avaliableCaronas;
+
+    private ArrayList<Solicitations> solicitationsForCarona;
+
+    private String phoneNumber;
 
     public User() {}
 
+    public int getNumberOfVacanciesFree() {
+        return numberOfVacanciesFree;
+    }
+
+    public void setNumberOfVacanciesFree(int numberOfVacanciesFree) {
+        this.numberOfVacanciesFree = numberOfVacanciesFree;
+    }
+
     public User(String name, String registration, String email,
-                String password, boolean isDriver, String district, String road) throws Exception {
+                String password, boolean isDriver, String district, String road, String phoneNumber) throws Exception {
         this.registration = registration;
         setEmail(email);
         setPassword(password);
         setDistrict(district);
         setRoad(road);
         setName(name);
+        this.phoneNumber = phoneNumber;
         this.isDriver = isDriver;
         myCaronasCreateds = new ArrayList<Carona>();
-        solicitations = new ArrayList<Solicitations>();
-        solicitations.add(new Solicitations("teste1", "teste2", "teste3", "teste4"));
-        myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
-        myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
+        solicitationsForCarona = new ArrayList<Solicitations>();
+//        solicitationsForCarona.add(new Solicitations("izabella.queiroz@ccc.ufcg.edu.br", "Izabella", "Centenário", "10:00", "9888-8888"));
+        avaliableCaronas = new ArrayList<Carona>();
+ //       myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
+  //      myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
     }
 
     public User(String name, String registration, String email, String password, boolean isDriver,
-                String district, String road, int numberOfVacancies) throws Exception{
-        this(name, registration, email, password, isDriver, district, road);
+                String district, String road, String phoneNumber, int numberOfVacancies) throws Exception{
+        this(name, registration, email, password, isDriver, district, road, phoneNumber);
         this.numberOfVacancies = numberOfVacancies;
+        numberOfVacanciesFree = numberOfVacancies;
+    }
+
+    public String getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setAcceptSolicitationbyIndex(int id, boolean isAcceptSolicitation){
+        solicitationsForCarona.get(id).setAcceptSolicitation(isAcceptSolicitation);
+    }
+
+    public void setPhoneNumber(String phoneNumber) {
+        this.phoneNumber = phoneNumber;
+    }
+
+    public ArrayList<Carona> getAvaliableCaronas() {
+        return avaliableCaronas;
+    }
+
+    public void setAvaliableCaronas(ArrayList<Carona> avaliableCaronas) {
+        this.avaliableCaronas = avaliableCaronas;
     }
 
     public String getRoad() {
@@ -93,12 +128,16 @@ public class User {
 
     public ArrayList<Carona> getMyCaronasCreateds(){ return myCaronasCreateds;}
 
-    public ArrayList<Solicitations> getSolicitations() {
-        return solicitations;
+    public ArrayList<Solicitations> getSolicitationsForCarona() {
+        return solicitationsForCarona;
+    }
+
+    public void removeSolicitation(int solicitationId) {
+        solicitationsForCarona.remove(solicitationId);
     }
 
     public void addSolicitation(Solicitations solicitation){
-        solicitations.add(solicitation);
+        solicitationsForCarona.add(solicitation);
     }
 
     public String getName(){ return name;}

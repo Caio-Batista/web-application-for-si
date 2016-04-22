@@ -9,28 +9,36 @@ public class DBManager {
 
     private static ArrayList<User> db;
 
-    public DBManager() throws Exception {
+    private static DBManager database = new DBManager();
+
+    private DBManager(){
         db = new ArrayList<User>();
-        populateArray();
+        try{
+            populateArray();
+        }catch (Exception e){}
+    }
+
+    public static DBManager getInstance(){
+        return database;
     }
 
     private void populateArray()
     {
-        User u1 = null;
-        User u2 = null;
-        Carona c1 = null;
+      //  User u1 = null;
+      //  User u2 = null;
+    //    Carona c1 = null;
 
-        try {
-            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Aqui", "rua2");
-            u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2");
-            c1 = new Carona("Aqui", "rua2", "Aqui", "rua2","8:00", 1);
+  //      try {
+//            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Aqui", "rua2","9988-8888",4);
+ //           u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2", "8999-8998");
+  //          c1 = new Carona("carlos@","Aqui", "rua2", "Aqui", "rua2","8:00", 1);
 
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        u1.addCarona(c1);
-        db.add(u1);
-        db.add(u2);
+    //    } catch (Exception e) {
+    //        e.printStackTrace();
+      //  }
+//        u1.addCarona(c1);
+ //       db.add(u1);
+  //      db.add(u2);
 
     }
 
@@ -98,35 +106,34 @@ public class DBManager {
         return true;
     }
 
-    public ArrayList<User> driversPassingByUserStart(User user){
-        ArrayList<User> ar = new ArrayList<User>();
+    public ArrayList<Carona> driversPassingByUserStart(User user){
+        ArrayList<Carona> ar = new ArrayList<Carona>();
         for (User element : db) {
 
             if (element.isDriver() && element.getMyCaronasCreateds() != null){
 
-            for (Carona car : element.getMyCaronasCreateds()){
-                if (car.getStartingRoad().equals(user.getRoad())){
-
-                    ar.add(element);
+                for (Carona car : element.getMyCaronasCreateds()){
+                    if (car.getStartingDistrict().equals(user.getDistrict())){
+                        ar.add(car);
+                    }
+                }
             }
-            }
-        }
         }
 
         return ar;
     }
 
-    public ArrayList<User> driversPassingByUserArrival(User user){
-        ArrayList<User> ar = new ArrayList<User>();
+    public ArrayList<Carona> driversPassingByUserArrival(User user){
+        ArrayList<Carona> ar = new ArrayList<Carona>();
         for (User element : db) {
 
             if (element.isDriver() && element.getMyCaronasCreateds() != null){
 
-            for (Carona car: element.getMyCaronasCreateds())
-                 if (car.getArrivalRoad().equals(user.getRoad())){
-                 ar.add(element);
+                for (Carona car: element.getMyCaronasCreateds())
+                    if (car.getArrivalDistrict().equals(user.getDistrict())){
+                        ar.add(car);
+                }
             }
-        }
         }
 
         return ar;

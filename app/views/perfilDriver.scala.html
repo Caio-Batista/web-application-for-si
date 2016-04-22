@@ -9,19 +9,24 @@
         <meta charset="UTF-8">
         <title>Carona</title>
         <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+        <script src="@routes.Assets.versioned("javascripts/jquery-1.12.3.min.js")" type="text/javascript"></script>
         <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
         <script type="text/css">
-    #page-header{
-    text-align: center;
-    background: grey !important;
-    }
+            #page-header {
+                text-align: center;
+                background: grey !important;
+            }
+            body {
+                background: blue;
+                background-color: #1b6d85 !important;
+            }
+            .solicitation {
+                width: 100%;
+                height: 100%;
+                cursor: pointer !important;
+            }
 
-    body{
-    background: blue;
-    background-color: #1b6d85 !important;
-    }
-
-    </script>
+        </script>
     </head>
 
 
@@ -41,12 +46,12 @@
                 <div class="thumbnail" style="margin: 10px">
                     <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
                     <div class="caption">
-                        <h3>@(usuario.getName()), motorista <br>(0 vagas em seu veículo)</br></h3>
+                        <h3>@(usuario.getName()), Driver <br>(@usuario.getNumberOfVacancies() vacancies in your car.       @usuario.getNumberOfVacanciesFree() free for new Caronas)</br></h3>
                     </div>
                     <div>
                         <select size="1" name="D1" onchange="vai(this);">
-                            <option value="/perfilDriver">Motorista</option>
-                            <option value="/perfilpassenger">Passageiro</option>
+                            <option value="/perfilDriver">Driver</option>
+                            <option value="/perfilpassenger">Passenger</option>
                         </select>
                     </div>
                     <div class="caption" style="margin-top: 0px">
@@ -61,26 +66,29 @@
 
                 </div>
             </div>
-            <div class="col-sm-6" style="margin-top: 10px">
+            <div class="col-sm-6" style="margin-top: 10px;">
                 <div class="row">
                     <h1 style="color: #000000">Solicitations:</h1>
                 </div>
                 <ul class="list-group">
-                    @for(solicitationsIndex <- 0 to (usuario.getSolicitations().size() -1)){
-                        @helper.form(routes.UserController.selectSolicitation()) {
-                            <li class="list-group-item", name="linha">
-                                <button style="width: 100%; height: 100%" type="submit" href="#" value= "@solicitationsIndex" name="solicitationsIndex">
+                    @for(solicitationsIndex <- 0 to (usuario.getSolicitationsForCarona().size() -1)) {
+                            <li class="list-group-item", name="linha" >
+                                <div class="solicitation" name="solicitationsIndex">
                                     <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
                                     <div style="float: left">
                                         <ul class="list-group" style="display: inline; list-style-type:none;">
-                                            <li><div style="margin-left:10px; float: left">Name: @usuario.getSolicitations().get(solicitationsIndex).getName()</div></li>
-                                            <li><div style="margin-left:10px; float: left">Location: @usuario.getSolicitations().get(solicitationsIndex).getStartingAddress()</div></li>
-                                            <li><div style="margin-left:10px; float: left">Horário: @usuario.getSolicitations().get(solicitationsIndex).getHour()</div></li>
+                                            <li><div style="margin-left:10px; float: left">Name: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getName()</div></li>
+                                            <li><div style="margin-left:10px; float: left">Location: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getStartingAddress()</div></li>
+                                            <li><div style="margin-left:10px; float: left">Horário: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getHour()</div></li>
                                         </ul>
                                     </div>
-                                </button>
-                            </li>
-                        }
+                                    <div style="float: right;">
+                                        <button class="btn btn-success accept-solicitation" data-solicitation-id= "@solicitationsIndex"><i class="glyphicon glyphicon-ok"></i></button>
+                                        <button class="btn btn-danger reject-solicitation" data-solicitation-id= "@solicitationsIndex"><i class="glyphicon glyphicon-remove"></i></button>
+                                    </div>
+                                    <div style="clear: both;"></div>
+                                </div>
+                           </li>
                     }
                 </ul>
             </div>
@@ -90,11 +98,39 @@
 
         </footer>
         <script style="font-size: 14" language="JavaScript">
-                if(@usuario.getSolicitations().size == 1){
-                    window.alert("Você tem " + @usuario.getSolicitations().size + " solicitação de carona")
-                }else {
-                    window.alert("Você tem " + @usuario.getSolicitations().size + " solicitações de carona")
+                if(@usuario.getSolicitationsForCarona().size == 1){
+                    window.alert("Você tem " + @usuario.getSolicitationsForCarona().size + " solicitação de carona")
+                }else if (@usuario.getSolicitationsForCarona().size != 0){
+                    window.alert("Você tem " + @usuario.getSolicitationsForCarona().size + " solicitações de carona")
                 }
+                $(function() {
+                    $(".accept-solicitation").click(function() {
+                        var id = $(this).data("solicitation-id");
+                        var self = $(this);
+                        $.ajax({
+                            url: "/solicitations/accept/" + id,
+                            type: "POST"
+                        }).done(function(result) {
+                            self.parent().parent().parent().addClass("alert alert-success");
+                            self.parent().parent().parent().css("background-color", "#dff0d8");
+                            self.parent().parent().find(".telephone").fadeIn();
+                            self.parent().remove();
+                        });
+                    });
+                    $(".reject-solicitation").click(function() {
+                        var id = $(this).data("solicitation-id");
+                        var self = $(this);
+                        $.ajax({
+                            url: "/solicitations/reject/" + id,
+                            type: "DELETE"
+                        }).done(function(result) {
+                            self.parent().parent().parent().addClass("alert alert-danger");
+                            self.parent().parent().parent().css("background-color", "#dca7a7");
+                            self.parent().remove();
+                        });
+                    });
+
+                })
         </script>
     </body>
 </html>
