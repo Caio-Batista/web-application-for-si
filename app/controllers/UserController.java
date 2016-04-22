@@ -256,5 +256,70 @@ public class UserController extends Controller{
         return showPerfil();
     }
 
+    public static Result showUpdateData(String mensagem){ /// aqui
+        return ok(views.html.updateData.render(formUser, mensagem));
+
+    }
+
+    public static Result showUpdateData() { // aqui
+        return showUpdateData("");
+    }
+
+    private static boolean isUpdateDataValid(String update){ // aqui
+        if(update == null || update.trim().equals("")){
+            return false;
+        }
+        return true;
+    }
+
+
+    public static Result updateData() {
+
+        Form<User> form = formUser.bindFromRequest();
+
+        String departureTime = form.field("departure-time").value();
+        String returnTime = form.field("return-time").value();
+        String isNewAddress = form.field("new-address").value();
+        String isOldAddress = form.field("old-address").value();
+        String newReturnAddress = form.field("new-return-address").value();
+
+        User user = getUser();
+
+        if (departureTime == null || returnTime == null) {
+            return showUpdateData("");
+
+        } else if(!isUpdateDataValid(departureTime)) {
+            LogFile.writeInLog("An user try to choose the departure time, but the time is invalid.");
+            return showUpdateData("Invalid Departure time");
+
+        } else if (!isUpdateDataValid(returnTime)) {
+            LogFile.writeInLog("An user try to choose the return time, but the time is invalid.");
+            return showUpdateData("Return time is invalid"); // olhar
+
+        } else if (isNewAddress != null) {
+
+            if(newReturnAddress.trim().equals("")) {
+                LogFile.writeInLog("An user try write the new return address, but the new return address is invalid.");
+                return showUpdateData("Invalid New Return Address");
+            }
+            try{
+                user.setDestinationAddress(newReturnAddress);
+
+            } catch (Exception e){
+
+            }
+        }
+        user.setDepartureTime(departureTime);
+        user.setReturnTime(returnTime);
+
+
+        db.updateUser(user); //aqui
+
+
+        return showPerfil();
+
+
+    }
+
 
 }
