@@ -26,6 +26,13 @@
 
 
     <body style="color: #1b6d85">
+        <script language="JavaScript">
+                function vai(combo){
+                    var x = combo.selectedIndex;
+                    var endereco = combo.options[x].value;
+                    window.location.href = "@routes.UserController.changeUser()"
+                }
+        </script>
         <div  class="page-header" align="center" style="background-clip: border-box">
             <h1>Carona</h1>
         </div>
@@ -35,6 +42,12 @@
                     <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
                     <div class="caption">
                         <h3>@(usuario.getName()), motorista <br>(0 vagas em seu veículo)</br></h3>
+                    </div>
+                    <div>
+                        <select size="1" name="D1" onchange="vai(this);">
+                            <option value="/perfilDriver">Motorista</option>
+                            <option value="/perfilpassenger">Passageiro</option>
+                        </select>
                     </div>
                     <div class="caption" style="margin-top: 0px">
                         <a href="/newCarona">New Carona</a>
@@ -53,19 +66,20 @@
                     <h1 style="color: #000000">Solicitations:</h1>
                 </div>
                 <ul class="list-group">
-                    int vagas = @usuario.getMyCaronasCreateds();
-                    @for(solicitationsIndex <- 0 to 3){
+                    @for(solicitationsIndex <- 0 to (usuario.getSolicitations().size() -1)){
                         @helper.form(routes.UserController.selectSolicitation()) {
-                        <li class="list-group-item", id="solicitationsIndex", name="linha">
-                            <button type="submit" href="#" value="@solicitationsIndex" name="solicitationsIndex">
-                                <ul class="list-group" style="display: inline;">
+                            <li class="list-group-item", name="linha">
+                                <button style="width: 100%; height: 100%" type="submit" href="#" value= "@solicitationsIndex" name="solicitationsIndex">
                                     <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
-                                    <div style="margin-left:10px;">Name: Carlos Interaminense</div>
-                                    <div style="margin-left:10px;">Destino: Centenário</div>
-                                    <div style="margin-left:10px;">Horário: 8h:30m</div>
-                                </ul>
-                            </button>
-                        </li>
+                                    <div style="float: left">
+                                        <ul class="list-group" style="display: inline; list-style-type:none;">
+                                            <li><div style="margin-left:10px; float: left">Name: @usuario.getSolicitations().get(solicitationsIndex).getName()</div></li>
+                                            <li><div style="margin-left:10px; float: left">Location: @usuario.getSolicitations().get(solicitationsIndex).getStartingAddress()</div></li>
+                                            <li><div style="margin-left:10px; float: left">Horário: @usuario.getSolicitations().get(solicitationsIndex).getHour()</div></li>
+                                        </ul>
+                                    </div>
+                                </button>
+                            </li>
                         }
                     }
                 </ul>
@@ -76,7 +90,11 @@
 
         </footer>
         <script style="font-size: 14" language="JavaScript">
-            window.alert("Voce tem x solicitações de carona")
+                if(@usuario.getSolicitations().size == 1){
+                    window.alert("Você tem " + @usuario.getSolicitations().size + " solicitação de carona")
+                }else {
+                    window.alert("Você tem " + @usuario.getSolicitations().size + " solicitações de carona")
+                }
         </script>
     </body>
 </html>

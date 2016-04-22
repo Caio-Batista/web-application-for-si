@@ -164,3 +164,9 @@ Izabella user logged.  -  2016/04/22 00:20:33
 Izabella user logged.  -  2016/04/22 00:22:42
 Izabella user logged.  -  2016/04/22 00:23:16
 Izabella user logged.  -  2016/04/22 00:26:33
+Carlos user logged.  -  2016/04/22 01:14:42
+Carlos user logged.  -  2016/04/22 01:46:03
+The user logout.  -  2016/04/22 01:46:52
+Carlos user logged.  -  2016/04/22 01:46:54
+Carlos user logged.  -  2016/04/22 01:57:27
+Carlos user logged.  -  2016/04/22 01:57:34

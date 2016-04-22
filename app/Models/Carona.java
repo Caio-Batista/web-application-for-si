@@ -10,16 +10,12 @@ public class Carona{
 
     private int numberOfVacancies;
 
-    private ArrayList<Solicitations> solicitations;
-
-
     public Carona(String startingDistrict, String startingRoad, String arrivalDistrict, String arrivalRoad, String startingTime, int numberOfVacancies){
         this.startingDistrict = startingDistrict;
         this.startingRoad = startingRoad;
         this.arrivalDistrict = arrivalDistrict;
         this.arrivalRoad = arrivalRoad;
         this.numberOfVacancies = numberOfVacancies;
-        solicitations = new ArrayList<Solicitations>();
 
     }
 
@@ -69,13 +65,5 @@ public class Carona{
 
     public void setStartingTime(String startingTime) {
         this.startingTime = startingTime;
-    }
-
-    public ArrayList<Solicitations> getSolicitations() {
-        return solicitations;
-    }
-
-    public void addSolicitation(Solicitations solicitation){
-        solicitations.add(solicitation);
     }
 }

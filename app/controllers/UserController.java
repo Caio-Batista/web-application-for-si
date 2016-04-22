@@ -335,5 +335,15 @@ public class UserController extends Controller{
 
     }
 
+    public static Result changeUser(){
+        if(getUser().isDriver()){
+            getUser().setDriver(false);
+        }else{
+            getUser().setDriver(true);
+        }
+        return showPerfil();
+
+    }
+
 
 }

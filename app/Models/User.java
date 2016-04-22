@@ -1,5 +1,6 @@
 package controllers.Models;
 
+import Models.Solicitations;
 import controllers.Models.Carona;
 
 import java.util.ArrayList;
@@ -18,6 +19,7 @@ public class User {
     private int numberOfVacancies;
 
     private ArrayList<Carona> myCaronasCreateds;
+    private ArrayList<Solicitations> solicitations;
 
     public User() {}
 
@@ -31,6 +33,10 @@ public class User {
         setName(name);
         this.isDriver = isDriver;
         myCaronasCreateds = new ArrayList<Carona>();
+        solicitations = new ArrayList<Solicitations>();
+        solicitations.add(new Solicitations("teste1", "teste2", "teste3", "teste4"));
+        myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
+        myCaronasCreateds.add(new Carona("teste", "teste 2", "teste 3", "teste 4", "teste 5", 4));
     }
 
     public User(String name, String registration, String email, String password, boolean isDriver,
@@ -86,6 +92,14 @@ public class User {
     }
 
     public ArrayList<Carona> getMyCaronasCreateds(){ return myCaronasCreateds;}
+
+    public ArrayList<Solicitations> getSolicitations() {
+        return solicitations;
+    }
+
+    public void addSolicitation(Solicitations solicitation){
+        solicitations.add(solicitation);
+    }
 
     public String getName(){ return name;}
 

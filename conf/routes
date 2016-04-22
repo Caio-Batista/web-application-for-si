@@ -27,6 +27,8 @@ POST    /login                          controllers.UserController.authenticate(
 
 GET    /logout                         controllers.UserController.logout()
 
+GET     /perfilpassenger                controllers.UserController.changeUser()
+
 POST    /perfilDriver                   controllers.UserController.selectSolicitation()
 
 POST    /register                       controllers.UserController.register()
