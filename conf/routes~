@@ -13,18 +13,22 @@ GET     /login                             controllers.UserController.showLogin(
 
 GET     /register                        controllers.UserController.showRegister()
 
+GET     /newCarona                      controllers.UserController.showNewCarona()
+POST     /newCarona                      controllers.UserController.createCarona()
+
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 
 GET      /assets/*file                  controllers.Assets.at(path="/public", file)
 
-POST    /login                            controllers.UserController.authenticate()
+POST    /login                          controllers.UserController.authenticate()
+
+GET    /logout                         controllers.UserController.logout()
+
+POST    /perfilDriver                   controllers.UserController.selectSolicitation()
 
 POST    /register                       controllers.UserController.register()
 
 GET      /assets/*file                  controllers.Assets.versioned(path="/public", file: Asset)
-
-<<<<<<< HEAD
-    
-=======
->>>>>>> 846be630752e95e30284d2f38ccd7e94ac0ad1ef

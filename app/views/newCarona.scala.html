@@ -1,0 +1,75 @@
+@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean)
+@main("Carona") {
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="UTF-8" />
+      <title>Carona</title>
+      <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
+      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/login-style.css")">
+
+    </head>
+    <body>
+
+      <div id="header">
+        <h1>Carona</h1>
+      </div>
+
+      <div id="fields-sign-up" class="forms">
+
+        @if(errorMenssage != null && !errorMenssage.trim().equals("")) {
+          @if(isError) {
+            <div class="alert alert-danger">
+              <p>@(errorMenssage)</p>
+            </div>
+          } else {
+            <div class="alert alert-success">
+              <p>@(errorMenssage)</p>
+            </div>
+          }
+        }
+
+        <div id="Register"class="text-center" >
+          <div class="logo">New Carona</div>
+        </div>
+
+        @helper.form(routes.UserController.createCarona()) {
+
+        <div id="input-starting-district" class="input">
+            <input type="text" name="startingDistrict" class="form-control" placeholder="Starting District"/>
+        </div>
+
+        <div id="input-starting-road" class="input">
+          <input type="text" name="startingRoad" class="form-control" placeholder="Starting Road"/>
+        </div>
+
+        <div id="input-arrival-district" class="input">
+          <input type="text" name="arrivalDistrict" class="form-control" placeholder="Arrival District"/>
+        </div>
+
+        <div id="input-arrival-road" class="input">
+          <input type="text" name="arrivalRoad" class="form-control" placeholder="Arrival Road"/>
+        </div>
+
+          <div id="input-number-vacancies" class="input">
+            <input type="text" name="numberVacancies" class="form-control" placeholder="Number of Vacancies"/>
+          </div>
+
+
+          <div id="input-time" class="input">
+          <div id="starting-time"> Starting Time </div>
+          <input type="time" name="startingTme" class="form-control"/>
+        </div>
+
+        <button id="btn-register" type="submit" class="login-button"> Create
+            <i class="fa fa-chevron-right"></i></button>
+        }
+      </div>
+
+      <footer class="well well-lg" style="text-align: center">
+        Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+      </footer>
+    </body>
+  </html>
+}

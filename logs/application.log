@@ -738,3 +738,5 @@ Caused by: java.lang.NullPointerException: null
 2016-04-21 22:19:30,523 [INFO] from play.api.Play in application-akka.actor.default-dispatcher-7 - Application started (Dev)
 2016-04-21 22:19:30,531 [WARN] from application in application-akka.actor.default-dispatcher-3 - application.conf @ file:/home/caio/web-application-for-si/target/scala-2.11/classes/application.conf: 8: application.secret is deprecated, use play.crypto.secret instead
 2016-04-21 23:11:17,443 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-4-thread-4 - Shutdown application default Akka system: application
+2016-04-21 21:43:10,318 [INFO] from play.api.libs.concurrent.ActorSystemProvider in pool-4-thread-2 - Starting application default Akka system: application
+2016-04-21 21:43:10,418 [INFO] from play.core.server.NettyServer in pool-4-thread-2 - Listening for HTTP on /0:0:0:0:0:0:0:0:9000
