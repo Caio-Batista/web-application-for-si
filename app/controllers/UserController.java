@@ -66,7 +66,6 @@ public class UserController extends Controller{
             actualUser = user;
             session().clear();
             session("email", user.getEmail());
-            //aqui nao será perfil.. sera a US2 e US7
             return showPerfil();
         }
     }
@@ -88,8 +87,8 @@ public class UserController extends Controller{
         return actualUser;
     }
 
-    public static boolean isRegisteredEmail(String email)
-    {
+    public static boolean isRegisteredEmail(String email) {
+
         return db.searchUserByEmail(email) != null;
     }
 
@@ -101,8 +100,7 @@ public class UserController extends Controller{
         return showRegister("");
     }
 
-    private static boolean isRegistrationValid(String registration)
-    {
+    private static boolean isRegistrationValid(String registration) {
         if(registration.trim().equals(""))
         {
             return false;
@@ -112,8 +110,6 @@ public class UserController extends Controller{
 
         return (!registration.trim().equals("")) && (registration.length() == 9) && (intRegistration > 100000000 && intRegistration < 115199999);
     }
-
-    
 
     public static Result register(){
 
@@ -221,5 +217,44 @@ public class UserController extends Controller{
         LogFile.writeInLog("The user logout.");
         return showLogin("Sucess logout", false);
     }
+
+    public static Result showNewCarona(String errorMensage, boolean error){
+        return ok(views.html.newCarona.render(formUser, errorMensage, error));
+    }
+
+    public static Result showNewCarona(){
+        return showNewCarona("", false);
+    }
+
+    public static Result createCarona(){
+        Form<User> form = formUser.bindFromRequest();
+
+        String startingDistrict = form.field("startingDistrict").value();
+        String startingRoad = form.field("startingRoad").value();
+        String arrivalDistrict = form.field("arrivalDistrict").value();
+        String arrivalRoad = form.field("arrivalRoad").value();
+        String numberVacancies = form.field("numberVacancies").value();
+        String startingTme = form.field("startingTme").value();
+
+        if(startingDistrict == null || startingDistrict.trim().equals("")){
+            return showNewCarona("Starting District invalid", true);
+        }else if(startingRoad == null || startingRoad.trim().equals("")){
+            return showNewCarona("Starting Road invalid", true);
+        }else if(arrivalDistrict == null || arrivalDistrict.trim().equals("")){
+            return showNewCarona("Arrival District invalid", true);
+        }else if(arrivalRoad == null || arrivalRoad.trim().equals("")){
+            return showNewCarona("Arrival Road invalid", true);
+        }else if(numberVacancies == null || numberVacancies.trim().equals("")){
+            //verificar aqui se é possível criar com esse numero de vagas...
+            return showNewCarona("Number of Vacancies invalid.", true);
+        }else if(startingTme == null || startingTme.trim().equals("")){
+            return showNewCarona("Starting Time invalid", true);
+        }
+
+        Carona carona = new Carona(startingDistrict, startingRoad, arrivalDistrict, arrivalRoad, startingTme, Integer.parseInt(numberVacancies));
+
+        return showPerfil();
+    }
+
 
 }

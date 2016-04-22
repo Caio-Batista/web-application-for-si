@@ -63,12 +63,12 @@ Seq[Any](format.raw/*1.83*/("""
         <div class="row" style="background-color: #1b6d85">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" style="margin: 10px">
-                    <img src=""""),_display_(/*35.32*/routes/*35.38*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*35.80*/("""" alt="...">
+                    <img src=""""),_display_(/*35.32*/routes/*35.38*/.Assets.versioned("images/images.jpg")),format.raw/*35.76*/("""" alt="...">
                     <div class="caption">
                         <h3>"""),_display_(/*37.30*/(usuario.getName())),format.raw/*37.49*/(""", motorista <br>(0 vagas em seu veículo)</br></h3>
                     </div>
-                    <div class="caption">
-                        <h4 style="color: #2b669a"><u>New ride</u></h4>
+                    <div class="caption" style="margin-top: 0px">
+                        <a href="/newCarona">New Carona</a>
                     </div>
                     <div class="caption">
                         <h4 style="color: #2b669a"><u>Update data</u></h4>
@@ -90,7 +90,7 @@ Seq[Any](format.raw/*1.83*/("""
                         """),format.raw/*59.25*/("""<li class="list-group-item", id="solicitationsIndex", name="linha">
                             <button type="submit" href="#" value=""""),_display_(/*60.68*/solicitationsIndex),format.raw/*60.86*/("""" name="solicitationsIndex">
                                 <ul class="list-group" style="display: inline;">
-                                    <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*62.128*/routes/*62.134*/.Assets.versioned("images/motoqueiro.jpg")),format.raw/*62.176*/("""" alt="..."></div>
+                                    <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src=""""),_display_(/*62.128*/routes/*62.134*/.Assets.versioned("images/images.jpg")),format.raw/*62.172*/("""" alt="..."></div>
                                     <div style="margin-left:10px;">Name: Carlos Interaminense</div>
                                     <div style="margin-left:10px;">Destino: Centenário</div>
                                     <div style="margin-left:10px;">Horário: 8h:30m</div>
@@ -132,10 +132,10 @@ Seq[Any](format.raw/*1.83*/("""
 object perfilDriver extends perfilDriver_Scope0.perfilDriver
               /*
                   -- GENERATED --
-                  DATE: Thu Apr 21 12:57:38 BRT 2016
+                  DATE: Thu Apr 21 20:41:36 BRT 2016
                   SOURCE: /home/carlos/git/web-application-for-si/app/views/perfilDriver.scala.html
-                  HASH: c714b72bf519b4cc7dde927feed85166b83cca93
-                  MATRIX: 816->1|992->82|1020->85|1042->99|1081->101|1109->103|1326->293|1341->299|1415->351|1467->376|1482->382|1544->423|1656->507|1685->508|1717->513|1801->570|1829->571|1862->577|1893->581|1922->582|1954->587|2045->651|2073->652|2106->658|2516->1041|2531->1047|2594->1089|2705->1173|2745->1192|3581->2001|3597->2008|3641->2031|3691->2054|3740->2087|3779->2088|3832->2114|3847->2120|3905->2169|3945->2171|3998->2196|4160->2331|4199->2349|4464->2586|4480->2592|4544->2634|5007->3066|5060->3088|5105->3105|5512->3482
+                  HASH: 9a213ce02062317cd5b7c1747142062821c8edd2
+                  MATRIX: 816->1|992->82|1020->85|1042->99|1081->101|1109->103|1326->293|1341->299|1415->351|1467->376|1482->382|1544->423|1656->507|1685->508|1717->513|1801->570|1829->571|1862->577|1893->581|1922->582|1954->587|2045->651|2073->652|2106->658|2516->1041|2531->1047|2590->1085|2701->1169|2741->1188|3589->2009|3605->2016|3649->2039|3699->2062|3748->2095|3787->2096|3840->2122|3855->2128|3913->2177|3953->2179|4006->2204|4168->2339|4207->2357|4472->2594|4488->2600|4548->2638|5011->3070|5064->3092|5109->3109|5516->3486
                   LINES: 27->1|32->1|34->3|34->3|34->3|36->5|42->11|42->11|42->11|43->12|43->12|43->12|45->14|45->14|46->15|48->17|48->17|50->19|50->19|50->19|51->20|53->22|53->22|55->24|66->35|66->35|66->35|68->37|68->37|87->56|87->56|87->56|88->57|88->57|88->57|89->58|89->58|89->58|89->58|90->59|91->60|91->60|93->62|93->62|93->62|100->69|101->70|102->71|114->83
                   -- GENERATED --
               */

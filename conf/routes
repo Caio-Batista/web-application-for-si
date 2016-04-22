@@ -13,6 +13,11 @@ GET     /login                             controllers.UserController.showLogin(
 
 GET     /register                        controllers.UserController.showRegister()
 
+GET     /newCarona                      controllers.UserController.showNewCarona()
+POST     /newCarona                      controllers.UserController.createCarona()
+
+
+
 
 # Map static resources from the /public folder to the /assets URL path
 

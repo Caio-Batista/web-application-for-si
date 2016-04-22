@@ -99,3 +99,11 @@ An user try to register, but it is a driver and don't put the number os passenge
 Carlos user logged.  -  2016/04/21 14:36:05
 Carlos Interaminense user registred.  -  2016/04/21 14:40:11
 An user try to register, but it is a driver and don't put the number os passenger.  -  2016/04/21 14:40:42
+Carlos user logged.  -  2016/04/21 17:07:58
+The user logout.  -  2016/04/21 17:08:07
+Carlos user logged.  -  2016/04/21 18:39:46
+Carlos user logged.  -  2016/04/21 19:05:22
+Carlos user logged.  -  2016/04/21 19:06:22
+Carlos user logged.  -  2016/04/21 20:30:58
+Carlos user logged.  -  2016/04/21 20:38:51
+Carlos user logged.  -  2016/04/21 20:41:42

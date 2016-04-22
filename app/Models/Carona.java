@@ -6,54 +6,69 @@ import java.util.ArrayList;
 
 public class Carona{
 
-    private String startingAddress, arrivalAddress;
+    private String startingDistrict, startingRoad, arrivalDistrict, arrivalRoad, startingTime;
 
     private int numberOfVacancies;
 
     private ArrayList<Solicitations> solicitations;
 
-    public Carona(String startingAddress, String arrivalAddress, int numberOfVacancies){
-        this.arrivalAddress = arrivalAddress;
-        this.startingAddress = startingAddress;
+
+    public Carona(String startingDistrict, String startingRoad, String arrivalDistrict, String arrivalRoad, String startingTime, int numberOfVacancies){
+        this.startingDistrict = startingDistrict;
+        this.startingRoad = startingRoad;
+        this.arrivalDistrict = arrivalDistrict;
+        this.arrivalRoad = arrivalRoad;
         this.numberOfVacancies = numberOfVacancies;
         solicitations = new ArrayList<Solicitations>();
 
     }
 
-    public String getStartingAddress() {
-        return startingAddress;
+    public String getStartingDistrict() {
+        return startingDistrict;
     }
 
-    public void setStartingAddress(String startingAddress) throws Exception {
-        if(startingAddress == null || startingAddress.trim().equals(""))
-        {
-            throw new Exception("Starting adress invalid.");
-        }
-
-        this.startingAddress = startingAddress;
+    public void setStartingDistrict(String startingDistrict) {
+        this.startingDistrict = startingDistrict;
     }
 
-    public String getArrivalAddress() {
-        return arrivalAddress;
+    public String getStartingRoad() {
+        return startingRoad;
     }
 
-    public void setArrivalAddress(String arrivalAddress) throws Exception {
-        if(arrivalAddress == null || arrivalAddress.trim().equals("")){
-         throw new Exception("Arrival address invalid");
-        }
+    public void setStartingRoad(String startingRoad) {
+        this.startingRoad = startingRoad;
+    }
 
-        this.arrivalAddress = arrivalAddress;
+    public String getArrivalDistrict() {
+        return arrivalDistrict;
+    }
+
+    public void setArrivalDistrict(String arrivalDistrict) {
+        this.arrivalDistrict = arrivalDistrict;
+    }
+
+    public String getArrivalRoad() {
+        return arrivalRoad;
+    }
+
+    public void setArrivalRoad(String arrivalRoad) {
+        this.arrivalRoad = arrivalRoad;
     }
 
     public int getNumberOfVacancies() {
         return numberOfVacancies;
     }
 
-    public void setNumberOfVacancies(int numberOfVacancies) throws Exception {
-        if(numberOfVacancies < 0){
-            throw new Exception("Arrival address invalid");
-        }
+    public void setNumberOfVacancies(int numberOfVacancies) {
         this.numberOfVacancies = numberOfVacancies;
+    }
+
+    public String getStartingTime() {
+        return startingTime;
+    }
+
+    public void setStartingTime(String startingTime) {
+        this.startingTime = startingTime;
     }
 
     public ArrayList<Solicitations> getSolicitations() {
