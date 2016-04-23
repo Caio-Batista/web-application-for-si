@@ -1,8 +1,8 @@
 package Models;
 
-/**
- * Created by Yago on 21/04/2016.
- */
+
+import LogFile.LogFile;
+
 public class Solicitations {
 
     private String name, startingAddress, hour, numberPhone, email;
@@ -35,6 +35,7 @@ public class Solicitations {
 
     public void setName(String name) throws Exception {
         if(name == null || name.trim().equals("")){
+            LogFile.writeInLog("An user try choose Name, but is name invalid.");
             throw new Exception("Name invalid.");
         }else {
             this.name = name;
@@ -47,7 +48,8 @@ public class Solicitations {
 
     public void setStartingAddress(String startingAddress) throws Exception {
         if(startingAddress == null || startingAddress.trim().equals("")){
-            throw new Exception("Starting adress invalid.");
+            LogFile.writeInLog("An user try choose starting addres, but starting address is invalid.");
+            throw new Exception("Starting address invalid.");
         }else{
             this.startingAddress = startingAddress;
         }
@@ -59,6 +61,7 @@ public class Solicitations {
 
     public void setHour(String hour) throws Exception {
         if(hour == null || hour.trim().equals("")){
+            LogFile.writeInLog("An user try choose hour, but is hour invalid.");
             throw new Exception("Hour invalid.");
         }else {
             this.hour = hour;
@@ -71,6 +74,7 @@ public class Solicitations {
 
     public void setNumberPhone(String numberPhone) throws Exception {
         if(numberPhone == null || numberPhone.trim().equals("")){
+            LogFile.writeInLog("An user try choose phone number, but is phone number invalid.");
             throw new Exception("Phone number invalid.");
         }else {
             this.numberPhone = numberPhone;
