@@ -52,21 +52,21 @@ public class CaronaController extends Controller {
 
         if(startingDistrict == null || startingDistrict.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting district is invalid.");
-            return showNewCarona("Starting District invalid", true);
+            return showNewCarona("Leaving from (Neighborhood) is invalid", true);
         }else if(startingRoad == null || startingRoad.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting road is invalid.");
-            return showNewCarona("Starting Road invalid", true);
+            return showNewCarona("Leaving from (Street) is invalid", true);
         }else if(arrivalDistrict == null || arrivalDistrict.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but arrival district is invalid.");
-            return showNewCarona("Arrival District invalid", true);
+            return showNewCarona("Going to (Neighborhood) is invalid", true);
         }else if(arrivalRoad == null || arrivalRoad.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting road is invalid.");
-            return showNewCarona("Arrival Road invalid", true);
+            return showNewCarona("Going to (Street) is invalid", true);
         }else if(numberVacancies == null || numberVacancies.trim().equals("") || !numVacanciesIsValid(numberVacancies)){
-            return showNewCarona("Number of Vacancies invalid.", true);
+            return showNewCarona("Number of Available Seats is invalid.", true);
         }else if(startingTme == null || startingTme.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting time is invalid.");
-            return showNewCarona("Starting Time invalid", true);
+            return showNewCarona("Departure Time is invalid", true);
         }
 
         if(getUser().getNumberOfVacanciesFree() < Integer.parseInt(numberVacancies)){

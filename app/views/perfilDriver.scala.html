@@ -46,7 +46,7 @@
                 <div class="thumbnail" style="margin: 10px">
                     <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
                     <div class="caption">
-                        <h3>@(usuario.getName()), Driver <br>(@usuario.getNumberOfVacancies() vacancies in your car.       @usuario.getNumberOfVacanciesFree() free for new Caronas)</br></h3>
+                        <h3>Driver: @(usuario.getName())<br>(@usuario.getNumberOfVacancies() available seat(s) in your car.       @usuario.getNumberOfVacanciesFree() available seat(s) in order to create a new Carona)</br></h3>
                     </div>
                     <div>
                         <select size="1" name="D1" onchange="vai(this);">

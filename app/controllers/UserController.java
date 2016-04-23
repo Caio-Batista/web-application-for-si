@@ -150,11 +150,11 @@ public class UserController extends Controller{
 
         }else if (district.trim().equals("")){
             LogFile.writeInLog("An user try to register, but the district is invalid.");
-            return showRegister("Invalid District");
+            return showRegister("Invalid Neighborhood");
 
         }else if(road.trim().equals("")) {
             LogFile.writeInLog("An user try to register, but the road is invalid.");
-            return showRegister("Invalid Road");
+            return showRegister("Invalid Street Address");
 
         }else if(phoneNumber == null || phoneNumber.trim().equals("")){
             LogFile.writeInLog("An user try to register, but the number phone is invalid.");

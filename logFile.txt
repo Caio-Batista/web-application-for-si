@@ -432,3 +432,39 @@ Carlos user logged.  -  2016/04/22 20:29:32
 Carlos user logged.  -  2016/04/22 20:30:58
 Carlos user logged.  -  2016/04/22 20:33:54
 An user try to loggin, but the email or password is invalid.  -  2016/04/22 20:34:56
+City new jersey user registred.  -  2016/04/22 21:34:01
+City new jersey user logged.  -  2016/04/22 21:34:18
+An user try to loggin, but the email or password is invalid.  -  2016/04/22 21:40:57
+city new jersey user registred.  -  2016/04/22 21:41:37
+city new jersey user logged.  -  2016/04/22 21:41:45
+An user try to loggin, but the email or password is invalid.  -  2016/04/22 21:57:29
+dçfçdfkçk user registred.  -  2016/04/22 21:58:16
+dçfçdfkçk user logged.  -  2016/04/22 21:58:22
+An user try create an new Carona, but starting district is invalid.  -  2016/04/22 22:02:22
+An user try to loggin, but the email or password is invalid.  -  2016/04/22 22:08:11
+An user try to loggin, but the email or password is invalid.  -  2016/04/22 22:08:21
+jslkdjlsdjl user registred.  -  2016/04/22 22:09:13
+jslkdjlsdjl user logged.  -  2016/04/22 22:09:20
+An user try create an new Carona, but starting district is invalid.  -  2016/04/22 22:09:38
+An user try create an new Carona, but starting road is invalid.  -  2016/04/22 22:09:42
+An user try create an new Carona, but arrival district is invalid.  -  2016/04/22 22:09:47
+city new jersey user registred.  -  2016/04/22 22:18:03
+city new jersey user logged.  -  2016/04/22 22:18:13
+An user try to loggin, but the email or password is invalid.  -  2016/04/22 22:25:53
+city user registred.  -  2016/04/22 22:26:29
+city user logged.  -  2016/04/22 22:26:36
+An user try to register, but the name is invalid.  -  2016/04/22 22:45:31
+new jersey user registred.  -  2016/04/22 22:46:20
+new jersey user logged.  -  2016/04/22 22:46:26
+Jersey  user registred.  -  2016/04/22 22:48:38
+Jersey  user logged.  -  2016/04/22 22:48:44
+sdkjskldjl user registred.  -  2016/04/22 22:50:18
+sdkjskldjl user logged.  -  2016/04/22 22:50:23
+Jersey user registred.  -  2016/04/22 22:51:55
+Jersey user logged.  -  2016/04/22 22:52:00
+An user try to register, but the road is invalid.  -  2016/04/22 22:56:00
+Jersey user registred.  -  2016/04/22 22:57:23
+Jersey user logged.  -  2016/04/22 22:57:28
+The user logout.  -  2016/04/22 23:02:51
+An user try to register, but the email already registered.  -  2016/04/22 23:03:18
+An user try to register, but the district is invalid.  -  2016/04/22 23:03:50
