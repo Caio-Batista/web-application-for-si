@@ -1,0 +1,22 @@
+Decision of the Ride Project
+
+Team: Caio Batista, Carlos Interaminense, Izabella Antonino, Jefferson Martins e Yago Costa.
+
+At April 8th after the meeting with our client, we noticed we were wrong according to some requirements. We did not consider, for instance, that the user could be both driver and passenger.
+
+- Together our team decided that the user would log in the system as a passenger and by a combobox, he could behave as a driver.
+
+- We are using the Singleton pattern, since we wanted to be sure that the DbManager class had only one instance of itself and provides a single point to its access.
+
+- We divided our tasks according to the views transitions. Each member of the team became responsible for one view or more.
+
+- We created a class to generate the “Log” in order to facilitate our work. The decision was based on the previous knowledge of a member of the team who already knew how to do in other programming language.
+
+- The registration number of the user system should be between 10000000 and 152999999. We considered the college semester of 2010.1 to 2015.2. We followed the idea presented below:
+
+	- Example of a registration number: 113111426
+
+		- The first number one is relative to the local campus 			of Campina Grande.
+		- The 2°, 3° and 4° digit is telative to the college 			semester, where (131) is 2013.1, (132) is 2013.2 and so 		on.
+		-The 5° and 6° digit is relative to a specific course 			in the college. For instance, the number for computer 			science is 10 or 11.
+		- The 7°, 8° and 9° digit is the id of the student.
