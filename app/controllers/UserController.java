@@ -22,9 +22,18 @@ public class UserController extends Controller{
     private static DBManager db = DBManager.getInstance();
     private static User actualUser;
     private static boolean actualPerfilIsDriver = false;
+    private static LocalizedStrings strings;
+    static {
+        String language = session("language");
+        if (language == null) {
+            strings = LocalizedStrings.getInstance("EN"); //default
+        } else {
+            strings = LocalizedStrings.getInstance(language);
+        }
+    }
 
     public static Result showLogin(String mensagem, boolean erro) {
-        return ok(views.html.login.render(formUser, mensagem, erro));
+        return ok(views.html.login.render(formUser, mensagem, erro, strings));
     }
 
     public static Result showLogin() {
@@ -39,9 +48,9 @@ public class UserController extends Controller{
         User user = getUser();
         if (actualPerfilIsDriver)
         {
-            return ok(views.html.perfilDriver.render(user, formUser));
+            return ok(views.html.perfilDriver.render(user, formUser, strings));
         }
-        return ok(views.html.perfilPassenger.render(user, formUser));
+        return ok(views.html.perfilPassenger.render(user, formUser,strings));
 
 
     }
@@ -79,7 +88,7 @@ public class UserController extends Controller{
     }
 
     public static Result showRegister(String mensagem) {
-        return ok(views.html.register.render(formUser, mensagem));
+        return ok(views.html.register.render(formUser, mensagem, strings));
     }
 
     public static Result showRegister() {
@@ -273,5 +282,14 @@ public class UserController extends Controller{
 
     }
 
+    public static Result setLanguage(String language) {
+        try {
+            strings.setLanguage(language);
+            session("language", language);
+        } catch (IllegalArgumentException e) {
+            return badRequest();
+        }
+        return ok();
+    }
 
 }

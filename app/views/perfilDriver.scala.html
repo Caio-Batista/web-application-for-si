@@ -1,4 +1,4 @@
-@(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User])
+@(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User], strings:LocalizedStrings)
 
 @main("Carona") {
 
@@ -46,29 +46,29 @@
                 <div class="thumbnail" style="margin: 10px">
                     <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
                     <div class="caption">
-                        <h3>Driver: @(usuario.getName())<br>(@usuario.getNumberOfVacancies() available seat(s) in your car.       @usuario.getNumberOfVacanciesFree() available seat(s) in order to create a new Carona)</br></h3>
+                        <h3>@strings.get("driver_driver"): @(usuario.getName())<br>(@usuario.getNumberOfVacancies() @strings.get("driver_seats_available")       @usuario.getNumberOfVacanciesFree() @strings.get("driver_seats_free"))</br></h3>
                     </div>
                     <div>
                         <select size="1" name="D1" onchange="vai(this);">
-                            <option value="/perfilDriver">Driver</option>
-                            <option value="/perfilpassenger">Passenger</option>
+                            <option value="/perfilDriver">@strings.get("driver_driver")</option>
+                            <option value="/perfilpassenger">@strings.get("driver_passenger")</option>
                         </select>
                     </div>
                     <div class="caption" style="margin-top: 0px">
-                        <a href="/newCarona">New Carona</a>
+                        <a href="/newCarona">@strings.get("driver_carona")</a>
                     </div>
                     <div class="caption" style="margin-top: 0px">
-                        <a href="/updateData">Update Data</a>
+                        <a href="/updateData">@strings.get("driver_update")</a>
                     </div>
                     <div class="caption" style="margin-top: 0px">
-                        <a href="/logout">Logout</a>
+                        <a href="/logout">@strings.get("driver_logout")</a>
                     </div>
 
                 </div>
             </div>
             <div class="col-sm-6" style="margin-top: 10px;">
                 <div class="row">
-                    <h1 style="color: #000000">Solicitations:</h1>
+                    <h1 style="color: #000000">@strings.get("driver_solicitations"):</h1>
                 </div>
                 <ul class="list-group">
                     @for(solicitationsIndex <- 0 to (usuario.getSolicitationsForCarona().size() -1)) {
@@ -77,9 +77,9 @@
                                     <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
                                     <div style="float: left">
                                         <ul class="list-group" style="display: inline; list-style-type:none;">
-                                            <li><div style="margin-left:10px; float: left">Name: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getName()</div></li>
-                                            <li><div style="margin-left:10px; float: left">Location: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getStartingAddress()</div></li>
-                                            <li><div style="margin-left:10px; float: left">Horário: @usuario.getSolicitationsForCarona().get(solicitationsIndex).getHour()</div></li>
+                                            <li><div style="margin-left:10px; float: left">@strings.get("driver_name"): @usuario.getSolicitationsForCarona().get(solicitationsIndex).getName()</div></li>
+                                            <li><div style="margin-left:10px; float: left">@strings.get("driver_location"): @usuario.getSolicitationsForCarona().get(solicitationsIndex).getStartingAddress()</div></li>
+                                            <li><div style="margin-left:10px; float: left">@strings.get("driver_hour"): @usuario.getSolicitationsForCarona().get(solicitationsIndex).getHour()</div></li>
                                         </ul>
                                     </div>
                                     <div style="float: right;">
@@ -94,7 +94,12 @@
             </div>
         </div>
         <footer class="well well-lg" style="text-align: center">
-            Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+        @strings.get("footer")
+            @if(strings.getLanguage().equals("EN")) {
+                <a href="#" onclick="setLanguage('PT')">Veja em português</a>
+            } else {
+                <a href="#" onclick="setLanguage('EN')">See in english</a>
+            }
 
         </footer>
         <script style="font-size: 14" language="JavaScript">
@@ -129,8 +134,21 @@
                             self.parent().remove();
                         });
                     });
-
                 })
+
+                function setLanguage(language) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/setLanguage/' + language,
+                        success: function(response) {
+                            window.location.href = '/perfilDriver';
+                        },
+                        error: function(response) {
+                            alert("ERRO")
+                        }
+                    });
+                }
+
         </script>
     </body>
 </html>

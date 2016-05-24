@@ -1,4 +1,4 @@
-@(form: play.data.Form[controllers.Models.User], errorMesage: String)
+@(form: play.data.Form[controllers.Models.User], errorMesage: String, strings: LocalizedStrings)
 
 @main("Carona") {
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
       <div id="fields-sign-up" class="forms">
 
         <div id="Register"class="text-center" >
-          <div class="logo">Register</div>
+          <div class="logo">@strings.get("register_register")</div>
         </div>
 
         @if(errorMesage != null && !errorMesage.trim().equals("")) {
@@ -31,59 +31,65 @@
 
         @helper.form(routes.UserController.register()) {
           <div id="input-name" class="input">
-            <input type="text" name="name" class="form-control" placeholder="Name"/>
+            <input type="text" name="name" class="form-control" placeholder="@strings.get("register_name")"/>
           </div>
 
           <div id="input-registration" class="input">
-            <input type="text" name="registration" class="form-control" placeholder="Registration Number"/>
+            <input type="text" name="registration" class="form-control" placeholder="@strings.get("register_registation_number")"/>
           </div>
 
           <div id="input-phone-number" class="input">
-            <input type="text" name="phone-number" class="form-control" placeholder="Phone Number"/>
+            <input type="text" name="phone-number" class="form-control" placeholder="@strings.get("register_phone")"/>
           </div>
 
           <div id="input-email" class="input">
-            <input type="email" name="email" class="form-control" placeholder="Email"/>
+            <input type="email" name="email" class="form-control" placeholder="@strings.get("register_email")"/>
           </div>
 
           <div id="input-password" class="input">
-            <input type="password" name="password" class="form-control" placeholder="Password">
+            <input type="password" name="password" class="form-control" placeholder="@strings.get("register_password")">
           </div>
 
           <div id="input-new-password" class="input">
-            <input type="password" name="new-password" class="form-control" placeholder="Confirm password">
+            <input type="password" name="new-password" class="form-control" placeholder="@strings.get("register_confirm_password")">
           </div>
 
           <div id="input-adress" class="input">
-            <input type="text" name="district" class="form-control" placeholder="Neighborhood"/>
+            <input type="text" name="district" class="form-control" placeholder="@strings.get("register_neighborhood")"/>
           </div>
 
           <div id="input-road" class="input">
-            <input type="text" name="road" class="form-control" placeholder="Street Address"/>
+            <input type="text" name="road" class="form-control" placeholder="@strings.get("register_street")"/>
           </div>
 
           <div id="choose-type-user">
-    	    Are you a driver?
-            <input type="radio" name="isDriver" onclick="show_n_vagas()"  id="is-driver" value="track"/>Yes
-            <input type="radio"  name="isPassenger" onclick="hide_n_vagas()" id="is-passenger" checked />No
+            @strings.get("register_driver")
+            <input type="radio" name="isDriver" onclick="show_n_vagas()"  id="is-driver" value="track"/>@strings.get("register_yes")
+            <input type="radio"  name="isPassenger" onclick="hide_n_vagas()" id="is-passenger" checked />@strings.get("register_no")
           </div>
 
           <div id="input-number-passenger" class="input" style="visibility: hidden;display: none">
-            <input type="text" name ="numberPassenges" class="form-control" placeholder="Number of Available Seats"/>
+            <input type="text" name ="numberPassenges" class="form-control" placeholder="@strings.get("register_seats")"/>
           </div>
 
-          <button id="btn-register" type="submit" class="login-button"> Register
+          <button id="btn-register" type="submit" class="login-button"> @strings.get("register_register")
             <i class="fa fa-chevron-right"></i></button>
         }
 
         <div id="login-now" class="etc-login-form" style="margin-bottom: 30px;">
-          Do you have an account? <a href="#" onclick="login_click()">Login now</a>
+          @strings.get("register_account") <a href="#" onclick="login_click()">@strings.get("register_login")</a>
         </div>
 
       </div>
 
       <footer class="well well-lg" style="text-align: center">
-        Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+      @strings.get("footer")
+        @if(strings.getLanguage().equals("EN")) {
+          <a onclick="setLanguage('PT')">Veja em português</a>
+        } else {
+          <a onclick="setLanguage('EN')">See in english</a>
+        }
+
       </footer>
 
 
@@ -118,6 +124,19 @@
               function login_click(){
                 window.location.href = "@routes.UserController.showLogin()"
               };
+
+              function setLanguage(language) {
+                $.ajax({
+                  type: 'POST',
+                  url: '/setLanguage/' + language,
+                  success: function(response) {
+                    window.location.href = '/register';
+                  },
+                  error: function(response) {
+                    alert("ERRO")
+                  }
+                });
+              }
 
 
       </script>

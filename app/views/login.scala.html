@@ -1,4 +1,4 @@
-@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean)
+@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean, strings: LocalizedStrings)
 
 @main("Carona"){
 <!DOCTYPE html>
@@ -37,32 +37,50 @@
 
       @helper.form(routes.UserController.authenticate()) {
         <div id="input-email" class="input">
-          <input type="email" class="form-control" name="email" required autofocus placeholder="Email" value="@form("email").value"/>
+          <input type="email" class="form-control" name="email" required autofocus placeholder="@strings.get("login_email")" value="@form("email").value"/>
         </div>
 
         <div id="input-password" class="input">
-          <input type="password" class="form-control" name="password" required placeholder="Password">
+          <input type="password" class="form-control" name="password" required placeholder="@strings.get("login_password")">
         </div>
 
-        <button id="btn-login" type="submit" class="login-button"> Login
+        <button id="btn-login" type="submit" class="login-button"> @strings.get("login_login")
           <i class="fa fa-chevron-right"></i>
         </button>
       }
 
 
       <div id="sign-up" class="etc-login-form" >
-        Do you don't have an account? <a href="#" onclick="sign_up_click()">Sign up now</a>
+        @strings.get("login_account") <a href="#" onclick="sign_up_click()">@strings.get("login_signup")</a>
       </div>
     </div>
 
     <footer class="well well-lg">
-      Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+      @strings.get("footer")
+      @if(strings.getLanguage().equals("EN")) {
+        <a href="#" onclick="setLanguage('PT')">Veja em português</a>
+      } else {
+        <a href="#" onclick="setLanguage('EN')">See in english</a>
+      }
+
     </footer>
 
     <script>
             function sign_up_click(){
               window.location.href = "@routes.UserController.register()"
             };
+      function setLanguage(language) {
+        $.ajax({
+          type: 'POST',
+          url: '/setLanguage/' + language,
+          success: function(response) {
+            window.location.href = '/';
+          },
+          error: function(response) {
+            alert("ERRO")
+          }
+        });
+      }
     </script>
 
   </body>

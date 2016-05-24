@@ -1,4 +1,4 @@
-@(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User])
+@(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User], strings: LocalizedStrings)
 @main("Carona") {
 <!DOCTYPE html>
     <html lang="en">
@@ -39,30 +39,30 @@
                             <div class="thumbnail" style="margin: 10px">
                                 <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
                                 <div class="caption">
-                                    <h3> Passenger:  @usuario.getName()</h3>
+                                    <h3> @strings.get("passenger_passenger"):  @usuario.getName()</h3>
                                 </div>
                                 <div>
                                     <select size="1" name="D1" onchange="vai(this);">
-                                        <option value="/perfilDriver">Passenger</option>
-                                        <option value="/perfilpassenger">Driver</option>
+                                        <option value="/perfilDriver">@strings.get("passenger_passenger")</option>
+                                        <option value="/perfilpassenger">@strings.get("passenger_driver")</option>
                                     </select>
                                 </div>
 
                                 <div class="caption" style="margin-top: 0px">
-                                    <a href="/updateData">Update Data</a>
+                                    <a href="/updateData">@strings.get("passenger_update")</a>
                                 </div>
                                 <div class="caption" style="margin-top: 0px">
-                                    <a href="/logout">Logout</a>
+                                    <a href="/logout">@strings.get("passenger_logout")</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6" style="margin-top: 10px">
                             <ul class="nav nav-tabs" style="background-color: #5bc0de">
-                                <li class="active"><a data-toggle="tab" href="#DESTINO" id="destino-tab" style="background-color: #5bc0de">Going to</a></li>
-                                <li><a data-toggle="tab" href="#RETORNO" id="retorno-tab">Returning to</a></li>
+                                <li class="active"><a data-toggle="tab" href="#DESTINO" id="destino-tab" style="background-color: #5bc0de">@strings.get("passenger_goingTo")</a></li>
+                                <li><a data-toggle="tab" href="#RETORNO" id="retorno-tab">@strings.get("passenger_returnTo")</a></li>
                             </ul>
                             <div class="row">
-                                <h1 style="color: #000000">Available Caronas:</h1>
+                                <h1 style="color: #000000">@strings.get("passenger_available"):</h1>
                             </div>
                             <div id="DESTINO" class="row tab-pane" style="background-color: #1b6d85">
                                 <ul class="list-group">
@@ -72,9 +72,9 @@
                                             <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
                                             <div style="float: left">
                                                 <ul class="list-group" style="display: inline; list-style-type:none;">
-                                                    <li><div style="margin-left:10px; float: left">Name: @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingDistrict()</div></li>
-                                                    <li><div style="margin-left:10px; float: left">Location: @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingRoad()</div></li>
-                                                    <li><div style="margin-left:10px; float: left">Horário: @usuario.getAvaliableCaronas.get(solicitationsIndex).getArrivalDistrict()</div></li>
+                                                    <li><div style="margin-left:10px; float: left">@strings.get("passenger_name"): @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingDistrict()</div></li>
+                                                    <li><div style="margin-left:10px; float: left">@strings.get("passenger_location"): @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingRoad()</div></li>
+                                                    <li><div style="margin-left:10px; float: left">@strings.get("passenger_hour"): @usuario.getAvaliableCaronas.get(solicitationsIndex).getArrivalDistrict()</div></li>
                                                 </ul>
                                             </div>
                                             <div style="float: right;">
@@ -115,7 +115,13 @@
                 </div>
             </div>
             <footer class="well well-lg" style="text-align: center; vertical-align: bottom">
-                Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+                @strings.get("footer");
+                @if(strings.getLanguage().equals("EN")) {
+                    <a onclick="setLanguage('PT')">Veja em português</a>
+                } else {
+                    <a onclick="setLanguage('EN')">See in english</a>
+                }
+
             </footer>
             <script>
                 $(function() {
@@ -152,6 +158,19 @@
                         });
                     });
                 })
+                function setLanguage(language) {
+                    $.ajax({
+                        type: 'POST',
+                        url: '/setLanguage/' + language,
+                        success: function(response) {
+                            window.location.href = '/perfilDriver';
+                        },
+                        error: function(response) {
+                            alert("ERRO")
+                        }
+                    });
+                }
+
             </script>
         </body>
     </html>
