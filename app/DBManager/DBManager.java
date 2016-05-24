@@ -24,21 +24,19 @@ public class DBManager {
 
     private void populateArray()
     {
-      //  User u1 = null;
-      //  User u2 = null;
-    //    Carona c1 = null;
+        User u1 = null;
+        User u2 = null;
+        Carona c1 = null;
 
-  //      try {
-//            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Aqui", "rua2","9988-8888",4);
- //           u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2", "8999-8998");
-  //          c1 = new Carona("carlos@","Aqui", "rua2", "Aqui", "rua2","8:00", 1);
+        try {
+            u1 = new User("Carlos", "113110864","carlos.interaminense@ccc.ufcg.edu.br", "123456", true, "Aqui", "rua2","9988-8888",4);
+            u2 = new User("Izabella", "113111426","izabella.queiroz@ccc.ufcg.edu.br", "123456", false, "Aqui", "rua2", "8999-8998");
 
-    //    } catch (Exception e) {
-    //        e.printStackTrace();
-      //  }
-//        u1.addCarona(c1);
- //       db.add(u1);
-  //      db.add(u2);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        db.add(u1);
+        db.add(u2);
 
     }
 
