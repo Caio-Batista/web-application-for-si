@@ -7,15 +7,15 @@ GET     /index                           controllers.Application.index()
 
 GET     /perfilDriver                  controllers.UserController.showPerfil()
 
-GET     /                                    controllers.UserController.showLogin()
+GET     /                              controllers.UserController.showLogin()
 
-GET     /login                             controllers.UserController.showLogin()
+GET     /login                         controllers.UserController.showLogin()
 
-GET     /register                        controllers.UserController.showRegister()
+GET     /register                      controllers.UserController.showRegister()
 
-GET     /newCarona                      controllers.CaronaController.showNewCarona()
+GET     /newCarona                     controllers.CaronaController.showNewCarona()
 
-POST     /newCarona                      controllers.CaronaController.createCarona()
+POST     /newCarona                    controllers.CaronaController.createCarona()
 
 
 
@@ -29,7 +29,9 @@ GET    /logout                         controllers.UserController.logout()
 
 GET     /perfilpassenger                controllers.UserController.changeUser()
 
-#GET    /perfilDriver/:id               controllers.UserController.selectSolicitation(id: Integer)
+POST    /setLanguage/:language          controllers.UserController.setLanguage(language: String)
+
+
 POST    /solicitations/accept/:id       controllers.CaronaController.acceptSolicitation(id: Integer)
 
 DELETE    /solicitations/reject/:id       controllers.CaronaController.rejectSolicitation(id: Integer)

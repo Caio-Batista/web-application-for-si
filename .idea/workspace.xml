@@ -2,8 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a7a60f28-5f10-4658-9173-460e081f02e3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/design-decisions.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Models/Solicitations.java" afterPath="$PROJECT_DIR$/app/Models/Solicitations.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/LocalizedStrings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/inputs" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/inputs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/output" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DBManager/DBManager.java" afterPath="$PROJECT_DIR$/app/DBManager/DBManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/Application.java" afterPath="$PROJECT_DIR$/app/controllers/Application.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/UserController.java" afterPath="$PROJECT_DIR$/app/controllers/UserController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/login.scala.html" afterPath="$PROJECT_DIR$/app/views/login.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/perfilDriver.scala.html" afterPath="$PROJECT_DIR$/app/views/perfilDriver.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/perfilPassenger.scala.html" afterPath="$PROJECT_DIR$/app/views/perfilPassenger.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/register.scala.html" afterPath="$PROJECT_DIR$/app/views/register.scala.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/routes" afterPath="$PROJECT_DIR$/conf/routes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logFile.txt" afterPath="$PROJECT_DIR$/logFile.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/application.log" afterPath="$PROJECT_DIR$/logs/application.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-application-for-si-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-application-for-si-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/default/web-application-for-si-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/default/web-application-for-si-build/scala_2.10/sbt_0.13/0.1-SNAPSHOT/resolved.xml.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-compile-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-compile-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-compile.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-compile.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-docs.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-docs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-optional.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-optional.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-plugin.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-plugin.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-pom.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-provided.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-provided.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-runtime-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-runtime-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-runtime.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-runtime.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-scala-tool.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-scala-tool.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-sources.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-sources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-test-internal.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-test-internal.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-test.xml" afterPath="$PROJECT_DIR$/project/target/resolution-cache/reports/default-web-application-for-si-build-test.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/ivyConfiguration/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" afterPath="$PROJECT_DIR$/project/target/streams/$global/update/$global/streams/out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/compile/managedClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/dependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/exportedProducts/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/externalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/fullClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/internalDependencyClasspath/$global/streams/export" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" afterPath="$PROJECT_DIR$/project/target/streams/runtime/managedClasspath/$global/streams/export" />
     </list>
     <ignored path="web-application-for-si.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,143 +65,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="perfilDriver.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-              <folding>
-                <marker date="1461378373987" expanded="true" signature="100:7160" placeholder="(...)" />
-                <marker date="1461378373987" expanded="false" signature="154:176" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="177:1024" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="605:1012" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="1045:1059" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1099:1361" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1136:1344" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="1419:1446" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1447:1490" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="1524:1549" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1594:2851" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="1642:1654" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1655:2832" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="1785:2039" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2065:2354" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2139:2327" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="2404:2419" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2420:2507" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="2557:2572" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2573:2662" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="2712:2727" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2728:2808" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="2894:2911" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="2946:3036" placeholder="..." />
-                <marker date="1461378373987" expanded="false" signature="2979:2993" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="3179:3464" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#4124#4125#0" expanded="false" />
-                <element signature="e#4525#4526#0" expanded="false" />
-                <element signature="e#4628#4629#0" expanded="false" />
-                <element signature="e#5015#5016#0" expanded="false" />
-                <element signature="e#5528#5529#0" expanded="false" />
-                <element signature="e#5701#5702#0" expanded="false" />
-                <element signature="e#6250#6251#0" expanded="false" />
-                <marker date="1461378373987" expanded="true" signature="88:129" placeholder="/**...*/" />
-                <marker date="1461378373987" expanded="false" signature="616:627" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="656:662" placeholder=" }" />
-                <marker date="1461378373987" expanded="true" signature="732:799" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="983:1752" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1546:1746" placeholder="//..." />
-                <marker date="1461378373987" expanded="true" signature="1958:2158" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="2194:2205" placeholder=" { " />
-                <marker date="1461378373987" expanded="true" signature="2314:2405" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="2457:2468" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="2499:2505" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="2557:2568" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="2592:2598" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="2671:2682" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="2723:2729" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="2758:2769" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="2825:2836" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="2857:2863" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="2919:2930" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3006:3017" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3035:3041" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="3091:3102" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3131:3137" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="3168:3179" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3195:3201" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="3244:3255" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3273:3279" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="3318:3329" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3421:3432" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3475:3481" placeholder=" }" />
-                <marker date="1461378373987" expanded="true" signature="3541:3695" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="3748:3776" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="3841:3852" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="3944:3955" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="4001:4007" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="4068:4078" placeholder=" { " />
-                <marker date="1461378373987" expanded="true" signature="4154:4169" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="4203:4218" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="4234:4240" placeholder=" }" />
-                <marker date="1461378373987" expanded="true" signature="4295:4448" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="4485:4500" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="4520:4526" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="4556:4571" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="4584:4590" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="4623:4638" placeholder=" { " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfilPassenger.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/perfilPassenger.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="97" column="81" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
-              <folding>
-                <marker date="1461378373987" expanded="true" signature="3835:5784" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <marker date="1461378373987" expanded="true" signature="907:1159" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="930:1037" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1043:1151" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1218:1726" placeholder="(...)" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.48469388">
-              <caret line="58" column="95" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="95" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="50" column="76" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#showLogin#0;class#UserController#0" expanded="false" />
-                <element signature="method#showPerfil#0;class#UserController#0" expanded="false" />
+                <element signature="method#authenticate#0;class#UserController#0" expanded="false" />
+                <element signature="method#isRegisteredEmail#0;class#UserController#0" expanded="false" />
                 <element signature="method#isRegistrationValid#0;class#UserController#0" expanded="false" />
                 <element signature="method#register#0;class#UserController#0" expanded="false" />
                 <element signature="method#logout#0;class#UserController#0" expanded="false" />
@@ -175,71 +86,58 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Carona.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Carona.java">
+      <file leaf-file-name="routes" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/routes">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+              <caret line="7" column="21" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.458333">
+              <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="register.scala.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/register.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.8148148">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfilDriver.scala.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1254417">
+              <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
               <folding>
-                <element signature="imports" expanded="false" />
-                <element signature="e#1139#1140#0" expanded="false" />
-                <element signature="e#1219#1220#0" expanded="false" />
-                <element signature="e#1335#1336#0" expanded="false" />
-                <element signature="e#1407#1408#0" expanded="false" />
-                <element signature="e#1507#1508#0" expanded="false" />
-                <element signature="e#1588#1589#0" expanded="false" />
-                <element signature="e#1709#1710#0" expanded="false" />
-                <element signature="e#1783#1784#0" expanded="false" />
-                <element signature="e#1837#1838#0" expanded="false" />
-                <element signature="e#1887#1888#0" expanded="false" />
-                <marker date="1461378373987" expanded="false" signature="434:701" placeholder="{...}" />
-                <marker date="1461378373987" expanded="false" signature="731:741" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="801:812" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="904:915" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="999:1010" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1090:1101" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1180:1191" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1280:1291" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1372:1383" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1547:1558" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1583:1589" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="1650:1661" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1704:1710" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="1747:1758" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1778:1784" placeholder=" }" />
-                <marker date="1461378373987" expanded="false" signature="1838:1849" placeholder=" { " />
-                <marker date="1461378373987" expanded="false" signature="1882:1888" placeholder=" }" />
+                <marker date="1463530125893" expanded="true" signature="658:754" placeholder="{...}" />
+                <marker date="1463530125893" expanded="true" signature="772:875" placeholder="{...}" />
+                <marker date="1463530125893" expanded="true" signature="902:1020" placeholder="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CaronaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/CaronaController.java">
+      <file leaf-file-name="LocalizedStrings.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/LocalizedStrings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.689655">
-              <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Solicitations.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/Solicitations.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-32.068966">
-              <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateData.scala.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/updateData.scala.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="9.375">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -247,25 +145,22 @@
       <file leaf-file-name="DBManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/DBManager/DBManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7931035">
-              <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
-              <folding>
-                <marker date="1461378373987" expanded="true" signature="27:114" placeholder="..." />
-                <marker date="1461378373987" expanded="true" signature="263:379" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="422:432" placeholder=" { " />
-                <marker date="1461378373987" expanded="true" signature="448:454" placeholder=" }" />
-                <marker date="1461378373987" expanded="true" signature="493:1107" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="501:1100" placeholder="//..." />
-                <marker date="1461378373987" expanded="true" signature="1165:1358" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1409:1514" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1582:1792" placeholder="{...}" />
-                <marker date="1461378373987" expanded="true" signature="1846:3408" placeholder="{...}" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="32" column="132" selection-start-line="32" selection-start-column="132" selection-end-line="32" selection-end-column="132" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -279,16 +174,25 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/app/DBManager/DAO.java" />
-        <option value="$PROJECT_DIR$/conf/routes" />
-        <option value="$PROJECT_DIR$/app/controllers/UserController.java" />
         <option value="$PROJECT_DIR$/app/views/newCarona.scala.html" />
         <option value="$PROJECT_DIR$/app/Models/User.java" />
         <option value="$PROJECT_DIR$/app/Models/Carona.java" />
         <option value="$PROJECT_DIR$/app/controllers/CaronaController.java" />
-        <option value="$PROJECT_DIR$/app/views/perfilDriver.scala.html" />
-        <option value="$PROJECT_DIR$/app/views/perfilPassenger.scala.html" />
-        <option value="$PROJECT_DIR$/app/DBManager/DBManager.java" />
         <option value="$PROJECT_DIR$/app/Models/Solicitations.java" />
+        <option value="$PROJECT_DIR$/app/Models/TranslateTables/GenericTable.java" />
+        <option value="$PROJECT_DIR$/app/Models/TranslateTables/SignUpTable.java" />
+        <option value="$PROJECT_DIR$/app/Models/TranslateTables/LoginTable.java" />
+        <option value="$PROJECT_DIR$/app/Models/LocalizedStrings.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Context.java" />
+        <option value="$PROJECT_DIR$/app/controllers/Application.java" />
+        <option value="$PROJECT_DIR$/conf/routes" />
+        <option value="$PROJECT_DIR$/app/views/register.scala.html" />
+        <option value="$PROJECT_DIR$/app/DBManager/DBManager.java" />
+        <option value="$PROJECT_DIR$/app/views/perfilPassenger.scala.html" />
+        <option value="$PROJECT_DIR$/app/controllers/LocalizedStrings.java" />
+        <option value="$PROJECT_DIR$/app/controllers/UserController.java" />
+        <option value="$PROJECT_DIR$/app/views/login.scala.html" />
+        <option value="$PROJECT_DIR$/app/views/perfilDriver.scala.html" />
       </list>
     </option>
   </component>
@@ -298,10 +202,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="47" />
-    <option name="y" value="-4" />
-    <option name="width" value="1319" />
-    <option name="height" value="772" />
+    <option name="x" value="51" />
+    <option name="y" value="24" />
+    <option name="width" value="1315" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -328,8 +232,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -486,7 +389,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -914,6 +818,9 @@
     </option>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="a7a60f28-5f10-4658-9173-460e081f02e3" name="Default" comment="" />
@@ -922,67 +829,78 @@
       <updated>1461334193011</updated>
       <workItem from="1461334194609" duration="29925000" />
       <workItem from="1461378847214" duration="355000" />
+      <workItem from="1463451096330" duration="2915000" />
+      <workItem from="1463500398990" duration="3488000" />
+      <workItem from="1463523947788" duration="6608000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30280000" />
+    <option name="totallyTimeSpent" value="43291000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="47" y="-4" width="1319" height="772" extended-state="6" />
+    <frame x="51" y="24" width="1315" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27965435" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18124507" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31774193" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24980299" sideWeight="0.5" order="5" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27965435" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -992,19 +910,19 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>201</line>
+          <line>210</line>
           <properties class="controllers.UserController" method="showUpdateData" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>206</line>
+          <line>215</line>
           <properties class="controllers.UserController" method="showUpdateData" />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/controllers/UserController.java</url>
-          <line>217</line>
+          <line>226</line>
           <properties class="controllers.UserController" method="updateData" />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
@@ -1023,106 +941,68 @@
     <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="100:7160" placeholder="(...)" />
-            <marker date="1461378373987" expanded="false" signature="154:176" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="177:1024" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="605:1012" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1045:1059" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1099:1361" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1136:1344" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="1419:1446" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1447:1490" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1524:1549" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1594:2851" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1642:1654" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1655:2832" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1785:2039" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2065:2354" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2139:2327" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2404:2419" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2420:2507" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2557:2572" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2573:2662" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2712:2727" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2728:2808" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2894:2911" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2946:3036" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2979:2993" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="3179:3464" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="658:754" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="772:875" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="902:1020" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.java">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/register.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/LogFile/LogFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DBManager/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#4124#4125#0" expanded="false" />
-            <element signature="e#4525#4526#0" expanded="false" />
-            <element signature="e#4628#4629#0" expanded="false" />
-            <element signature="e#5015#5016#0" expanded="false" />
-            <element signature="e#5528#5529#0" expanded="false" />
-            <element signature="e#5701#5702#0" expanded="false" />
-            <element signature="e#6250#6251#0" expanded="false" />
-            <marker date="1461378373987" expanded="true" signature="88:129" placeholder="/**...*/" />
-            <marker date="1461378373987" expanded="false" signature="616:627" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="656:662" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="732:799" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="983:1752" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1546:1746" placeholder="//..." />
-            <marker date="1461378373987" expanded="true" signature="1958:2158" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="2194:2205" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="2314:2405" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="2457:2468" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2499:2505" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2557:2568" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2592:2598" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2671:2682" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2723:2729" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2758:2769" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2825:2836" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2857:2863" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2919:2930" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3006:3017" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3035:3041" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3091:3102" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3131:3137" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3168:3179" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3195:3201" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3244:3255" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3273:3279" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3318:3329" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3421:3432" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3475:3481" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="3541:3695" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="3748:3776" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="3841:3852" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3944:3955" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4001:4007" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4068:4078" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="4154:4169" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="4203:4218" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4234:4240" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="4295:4448" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="4485:4500" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4520:4526" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4556:4571" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4584:4590" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4623:4638" placeholder=" { " />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#3233#3234#0" expanded="false" />
+            <element signature="e#3269#3270#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/perfilPassenger.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+          <caret line="58" column="95" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="95" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="3835:5784" placeholder="{...}" />
+            <element signature="imports" expanded="true" />
+            <element signature="method#authenticate#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegisteredEmail#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegistrationValid#0;class#UserController#0" expanded="false" />
+            <element signature="method#register#0;class#UserController#0" expanded="false" />
+            <element signature="method#logout#0;class#UserController#0" expanded="false" />
+            <element signature="method#showUpdateData#0;class#UserController#0" expanded="false" />
+            <element signature="method#isUpdateDataValid#0;class#UserController#0" expanded="false" />
+            <element signature="method#updateData#0;class#UserController#0" expanded="false" />
+            <element signature="method#changeUser#0;class#UserController#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1131,12 +1011,206 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/register.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizedStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="907:1159" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="930:1037" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1043:1151" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1218:1726" placeholder="(...)" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CaronaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Solicitations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/updateData.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DBManager/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#3233#3234#0" expanded="false" />
+            <element signature="e#3269#3270#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding>
+            <marker date="1463530125893" expanded="true" signature="658:754" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="772:875" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="902:1020" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/perfilPassenger.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="97" column="81" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
+          <folding>
+            <element signature="e#7049#7086#0#HTML" expanded="true" />
+            <marker date="1463527764233" expanded="true" signature="860:911" placeholder="{...}" />
+            <marker date="1463527764233" expanded="true" signature="924:1011" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#authenticate#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegisteredEmail#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegistrationValid#0;class#UserController#0" expanded="false" />
+            <element signature="method#register#0;class#UserController#0" expanded="false" />
+            <element signature="method#logout#0;class#UserController#0" expanded="false" />
+            <element signature="method#showUpdateData#0;class#UserController#0" expanded="false" />
+            <element signature="method#isUpdateDataValid#0;class#UserController#0" expanded="false" />
+            <element signature="method#updateData#0;class#UserController#0" expanded="false" />
+            <element signature="method#changeUser#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Carona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CaronaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Solicitations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/updateData.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/DBManager/DBManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#3233#3234#0" expanded="false" />
+            <element signature="e#3269#3270#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+          <folding>
+            <marker date="1463530125893" expanded="true" signature="658:754" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="772:875" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="902:1020" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="82" selection-start-line="67" selection-start-column="82" selection-end-line="67" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/perfilPassenger.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="39" column="81" selection-start-line="39" selection-start-column="81" selection-end-line="39" selection-end-column="81" />
+          <folding>
+            <element signature="e#7049#7086#0#HTML" expanded="true" />
+            <marker date="1463527764233" expanded="true" signature="860:911" placeholder="{...}" />
+            <marker date="1463527764233" expanded="true" signature="924:1011" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1146,8 +1220,8 @@
           <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#showLogin#0;class#UserController#0" expanded="false" />
-            <element signature="method#showPerfil#0;class#UserController#0" expanded="false" />
+            <element signature="method#authenticate#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegisteredEmail#0;class#UserController#0" expanded="false" />
             <element signature="method#isRegistrationValid#0;class#UserController#0" expanded="false" />
             <element signature="method#register#0;class#UserController#0" expanded="false" />
             <element signature="method#logout#0;class#UserController#0" expanded="false" />
@@ -1163,36 +1237,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1139#1140#0" expanded="false" />
-            <element signature="e#1219#1220#0" expanded="false" />
-            <element signature="e#1335#1336#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1709#1710#0" expanded="false" />
-            <element signature="e#1783#1784#0" expanded="false" />
-            <element signature="e#1837#1838#0" expanded="false" />
-            <element signature="e#1887#1888#0" expanded="false" />
-            <marker date="1461378373987" expanded="false" signature="434:701" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="731:741" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="801:812" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="904:915" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="999:1010" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1090:1101" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1180:1191" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1280:1291" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1372:1383" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1547:1558" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1583:1589" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1650:1661" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1704:1710" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1747:1758" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1778:1784" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1838:1849" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1882:1888" placeholder=" }" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1225,16 +1270,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="27:114" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="263:379" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="422:432" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="448:454" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="493:1107" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="501:1100" placeholder="//..." />
-            <marker date="1461378373987" expanded="true" signature="1165:1358" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1409:1514" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1582:1792" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1846:3408" placeholder="{...}" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#422#423#0" expanded="false" />
+            <element signature="e#453#454#0" expanded="false" />
+            <element signature="e#3233#3234#0" expanded="false" />
+            <element signature="e#3269#3270#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1246,18 +1286,56 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/routes">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/newCarona.scala.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.16607773">
           <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Carona.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/updateData.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Models/Solicitations.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/CaronaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/LogFile/LogFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1266,217 +1344,66 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Carona.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="92" column="0" selection-start-line="92" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#1139#1140#0" expanded="false" />
-            <element signature="e#1219#1220#0" expanded="false" />
-            <element signature="e#1335#1336#0" expanded="false" />
-            <element signature="e#1407#1408#0" expanded="false" />
-            <element signature="e#1507#1508#0" expanded="false" />
-            <element signature="e#1588#1589#0" expanded="false" />
-            <element signature="e#1709#1710#0" expanded="false" />
-            <element signature="e#1783#1784#0" expanded="false" />
-            <element signature="e#1837#1838#0" expanded="false" />
-            <element signature="e#1887#1888#0" expanded="false" />
-            <marker date="1461378373987" expanded="false" signature="434:701" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="731:741" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="801:812" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="904:915" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="999:1010" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1090:1101" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1180:1191" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1280:1291" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1372:1383" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1547:1558" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1583:1589" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1650:1661" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1704:1710" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1747:1758" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1778:1784" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="1838:1849" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="1882:1888" placeholder=" }" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <marker date="1461378373987" expanded="true" signature="907:1159" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="930:1037" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1043:1151" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1218:1726" placeholder="(...)" />
-          </folding>
+        <state vertical-scroll-proportion="0.27966103">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
+    <entry file="file://$PROJECT_DIR$/conf/routes">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
-          <folding>
-            <marker date="1461378373987" expanded="true" signature="100:7160" placeholder="(...)" />
-            <marker date="1461378373987" expanded="false" signature="154:176" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="177:1024" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="605:1012" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1045:1059" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1099:1361" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1136:1344" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="1419:1446" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1447:1490" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1524:1549" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1594:2851" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="1642:1654" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1655:2832" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="1785:2039" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2065:2354" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2139:2327" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2404:2419" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2420:2507" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2557:2572" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2573:2662" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2712:2727" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2728:2808" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2894:2911" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="2946:3036" placeholder="..." />
-            <marker date="1461378373987" expanded="false" signature="2979:2993" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="3179:3464" placeholder="{...}" />
-          </folding>
+          <caret line="7" column="21" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/perfilPassenger.scala.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="97" column="81" selection-start-line="97" selection-start-column="81" selection-end-line="97" selection-end-column="81" />
+        <state vertical-scroll-proportion="-12.958333">
+          <caret line="165" column="65" selection-start-line="165" selection-start-column="65" selection-end-line="165" selection-end-column="65" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="3835:5784" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="143" column="0" selection-start-line="143" selection-start-column="0" selection-end-line="143" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#4124#4125#0" expanded="false" />
-            <element signature="e#4525#4526#0" expanded="false" />
-            <element signature="e#4628#4629#0" expanded="false" />
-            <element signature="e#5015#5016#0" expanded="false" />
-            <element signature="e#5528#5529#0" expanded="false" />
-            <element signature="e#5701#5702#0" expanded="false" />
-            <element signature="e#6250#6251#0" expanded="false" />
-            <marker date="1461378373987" expanded="true" signature="88:129" placeholder="/**...*/" />
-            <marker date="1461378373987" expanded="false" signature="616:627" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="656:662" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="732:799" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="983:1752" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1546:1746" placeholder="//..." />
-            <marker date="1461378373987" expanded="true" signature="1958:2158" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="2194:2205" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="2314:2405" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="2457:2468" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2499:2505" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2557:2568" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2592:2598" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2671:2682" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2723:2729" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2758:2769" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2825:2836" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="2857:2863" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="2919:2930" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3006:3017" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3035:3041" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3091:3102" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3131:3137" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3168:3179" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3195:3201" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3244:3255" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3273:3279" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="3318:3329" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3421:3432" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3475:3481" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="3541:3695" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="3748:3776" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="3841:3852" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="3944:3955" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4001:4007" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4068:4078" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="4154:4169" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="4203:4218" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4234:4240" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="4295:4448" placeholder="{...}" />
-            <marker date="1461378373987" expanded="false" signature="4485:4500" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4520:4526" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4556:4571" placeholder=" { " />
-            <marker date="1461378373987" expanded="false" signature="4584:4590" placeholder=" }" />
-            <marker date="1461378373987" expanded="false" signature="4623:4638" placeholder=" { " />
+            <element signature="e#7049#7086#0#HTML" expanded="true" />
+            <marker date="1463527764233" expanded="true" signature="860:911" placeholder="{...}" />
+            <marker date="1463527764233" expanded="true" signature="924:1011" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/DBManager/DBManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7931035">
-          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="132" selection-start-line="32" selection-start-column="132" selection-end-line="32" selection-end-column="132" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/LocalizedStrings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
-            <marker date="1461378373987" expanded="true" signature="27:114" placeholder="..." />
-            <marker date="1461378373987" expanded="true" signature="263:379" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="422:432" placeholder=" { " />
-            <marker date="1461378373987" expanded="true" signature="448:454" placeholder=" }" />
-            <marker date="1461378373987" expanded="true" signature="493:1107" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="501:1100" placeholder="//..." />
-            <marker date="1461378373987" expanded="true" signature="1165:1358" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1409:1514" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1582:1792" placeholder="{...}" />
-            <marker date="1461378373987" expanded="true" signature="1846:3408" placeholder="{...}" />
+            <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/updateData.scala.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="9.375">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Models/Solicitations.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.068966">
-          <caret line="76" column="63" selection-start-line="76" selection-start-column="63" selection-end-line="76" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/CaronaController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-32.689655">
-          <caret line="118" column="0" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.48469388">
-          <caret line="58" column="95" selection-start-line="58" selection-start-column="12" selection-end-line="58" selection-end-column="95" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="76" selection-start-line="50" selection-start-column="76" selection-end-line="50" selection-end-column="76" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#showLogin#0;class#UserController#0" expanded="false" />
-            <element signature="method#showPerfil#0;class#UserController#0" expanded="false" />
+            <element signature="method#authenticate#0;class#UserController#0" expanded="false" />
+            <element signature="method#isRegisteredEmail#0;class#UserController#0" expanded="false" />
             <element signature="method#isRegistrationValid#0;class#UserController#0" expanded="false" />
             <element signature="method#register#0;class#UserController#0" expanded="false" />
             <element signature="method#logout#0;class#UserController#0" expanded="false" />
@@ -1484,6 +1411,34 @@
             <element signature="method#isUpdateDataValid#0;class#UserController#0" expanded="false" />
             <element signature="method#updateData#0;class#UserController#0" expanded="false" />
             <element signature="method#changeUser#0;class#UserController#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/register.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.8148148">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="139" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/login.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.458333">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/perfilDriver.scala.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1254417">
+          <caret line="86" column="14" selection-start-line="86" selection-start-column="14" selection-end-line="86" selection-end-column="14" />
+          <folding>
+            <marker date="1463530125893" expanded="true" signature="658:754" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="772:875" placeholder="{...}" />
+            <marker date="1463530125893" expanded="true" signature="902:1020" placeholder="{...}" />
           </folding>
         </state>
       </provider>

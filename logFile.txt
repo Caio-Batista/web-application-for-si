@@ -1,0 +1,25 @@
+An user try to loggin, but the email or password is invalid.  -  2016/05/16 23:10:21
+An user try to register, but the name is invalid.  -  2016/05/16 23:47:32
+An user try to register, but the name is invalid.  -  2016/05/17 19:51:24
+Carlos user registred.  -  2016/05/17 19:53:46
+Carlos user logged.  -  2016/05/17 19:53:53
+An user try to loggin, but the email or password is invalid.  -  2016/05/17 19:57:55
+An user try to loggin, but the email or password is invalid.  -  2016/05/17 19:58:04
+carlos user registred.  -  2016/05/17 20:22:31
+carlos user logged.  -  2016/05/17 20:22:36
+An user try to loggin, but the email or password is invalid.  -  2016/05/17 20:23:27
+An user try to loggin, but the email or password is invalid.  -  2016/05/17 20:23:33
+Carlos user logged.  -  2016/05/17 20:24:28
+Carlos user logged.  -  2016/05/17 20:25:05
+Carlos user logged.  -  2016/05/17 20:25:14
+Carlos user logged.  -  2016/05/17 20:25:21
+Carlos user logged.  -  2016/05/17 20:25:58
+Carlos user logged.  -  2016/05/17 20:27:43
+Carlos user logged.  -  2016/05/17 20:28:11
+Carlos user logged.  -  2016/05/17 20:29:33
+Carlos user logged.  -  2016/05/17 20:30:03
+Carlos user logged.  -  2016/05/17 21:00:48
+Carlos user logged.  -  2016/05/17 21:02:21
+An user try create an new Carona, but starting district is invalid.  -  2016/05/17 21:06:06
+Carlos user logged.  -  2016/05/24 19:11:56
+The user logout.  -  2016/05/24 19:12:02

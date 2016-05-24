@@ -2,6 +2,20 @@ Decision of the Ride Project
 
 Team: Caio Batista, Carlos Interaminense, Izabella Antonino, Jefferson Martins e Yago Costa.
 
+=======================FINAL MILESTONE==========================
+
+We divided the US as follows:
+
+Carlos and Izabella: Internationalization
+Caius and Jefferson: DB Persistence
+Yago: Token.
+
+In the part of Internationalization, we decided to create two hash tables with all application strings, one in Portuguese and one in English.
+
+
+
+=======================SECOND MILESTONE=========================
+
 At April 8th after the meeting with our client, we noticed we were wrong according to some requirements. We did not consider, for instance, that the user could be both driver and passenger.
 
 - Together our team decided that the user would log in the system as a passenger and by a combobox, he could behave as a driver.
