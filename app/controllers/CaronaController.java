@@ -18,12 +18,24 @@ import controllers.UserController;
 
 public class CaronaController extends Controller {
 
+
+
     private static Form<User> formUser = form(User.class).bindFromRequest();
 
     private static DBManager db = DBManager.getInstance();
 
+    private static LocalizedStrings strings;
+    static {
+        String language = session("language");
+        if (language == null) {
+            strings = LocalizedStrings.getInstance("EN"); //default
+        } else {
+            strings = LocalizedStrings.getInstance(language);
+        }
+    }
+
     public static Result showNewCarona(String errorMensage, boolean error){
-        return ok(views.html.newCarona.render(formUser, errorMensage, error));
+        return ok(views.html.newCarona.render(formUser, errorMensage, error, strings));
     }
 
     public static Result showNewCarona(){
@@ -115,5 +127,7 @@ public class CaronaController extends Controller {
     public static User getUser() {
         return UserController.getUser();
     }
+
+
 
 }

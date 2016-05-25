@@ -79,6 +79,28 @@ public class LocalizedStrings {
             strings.put("driver_hour", "Hour");
 
 
+            //-------------UpdateData---------//
+            strings.put("update_update_data", "Update Data");
+            strings.put("update_departure_time", "Departure Time");
+            strings.put("update_return_time", "Return Time");
+            strings.put("update_question_user", "You want to update the return address?");
+            strings.put("update_tag_yes", "Yes");
+            strings.put("update_tag_no", "No");
+            strings.put("update_botton_update", "Update");
+
+
+            //-----------NewCarona--------------//
+            strings.put("newCarona_New_Carona", "New Carona");
+            strings.put("newCarona_leaving_neighbordhood", "leaving from (neighborhood)");
+            strings.put("newCarona_leaving_street", "leaving from (street)");
+            strings.put("newCarona_going_neighbordhood", "Going to (neighbordhood)");
+            strings.put("newCarona_going_street", "Going to (street)");
+            strings.put("newCarona_number_seats", "Number of Avaliable seats");
+            strings.put("newCarona_departure_time", "Departure Time");
+            strings.put("newCarona_botton_create", "Create");
+
+
+
             //-------footer-------//
             strings.put("footer", "Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated");
 
@@ -131,6 +153,26 @@ public class LocalizedStrings {
             strings.put("driver_name", "Nome");
             strings.put("driver_location", "Localização");
             strings.put("driver_hour", "Horário");
+
+            //-------------AtualizarDados---------//
+            strings.put("update_update_data", "Atualizar Dados");
+            strings.put("update_departure_time", "Horário de Partida");
+            strings.put("update_return_time", "Horário de Retorno");
+            strings.put("update_question_user", "Você deseja atualizar o endereço de retorno?");
+            strings.put("update_tag_yes", "Sim");
+            strings.put("update_tag_no", "Não");
+            strings.put("update_botton_update", "Atualizar");
+
+
+            //-----------NovaCarona--------------//
+            strings.put("newCarona_New_Carona", "Nova Carona");
+            strings.put("newCarona_leaving_neighbordhood", "Partindo de (bairro)");
+            strings.put("newCarona_leaving_street", "Partindo de (rua)");
+            strings.put("newCarona_going_neighbordhood", "Indo a (bairro)");
+            strings.put("newCarona_going_street", "Indo a (rua)");
+            strings.put("newCarona_number_seats", "Número de assentos disponíveis");
+            strings.put("newCarona_departure_time", "Horário de partida");
+            strings.put("newCarona_botton_create", "Criar");
 
             strings.put("footer", "Autores: Caio, Carlos, Izabella, Jefferson and Yago *Todos os direitos reservados");
 

@@ -209,7 +209,7 @@ public class UserController extends Controller{
     }
 
     public static Result showUpdateData(String mensagem){ /// aqui
-        return ok(views.html.updateData.render(formUser, mensagem));
+        return ok(views.html.updateData.render(formUser, mensagem, strings));
 
     }
 

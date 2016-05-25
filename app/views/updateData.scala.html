@@ -1,4 +1,4 @@
-@(form: play.data.Form[controllers.Models.User], errorMesage: String)
+@(form: play.data.Form[controllers.Models.User], errorMesage: String, strings: LocalizedStrings)
 
 
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
     <div id="fields-update-datas" class="forms">
 
       <div id="updateDataLogo"class="text-center" >
-        <div class="logo">Update Data</div>
+        <div class="logo">@strings.get("update_update_data")</div>
       </div>
 
 
@@ -33,28 +33,39 @@
 
       @helper.form(routes.UserController.updateData()) {
       <div id="input-departure-time" class="input">
-          <div id="departure-time-name">Departure Time</div>
+          <div id="departure-time-name">@strings.get("update_departure_time")</div>
           <input type="time" name="departure-time" class="form-control"/>
         </div>
 
       <div id="input-return-time" class="input">
-        <div id="return-time-name">Return Time</div>
+        <div id="return-time-name">@strings.get("update_return_time")</div>
         <input type="time" name="return-time" class="form-control"/>
       </div>
 
       <div id="verify-new-return-address">
-        You want to update the return address?
-        <input type="radio" name="new-address" onclick="show_update_return_address()"  id="is-new-return-address" value="track"/>Yes
-        <input type="radio"  name="old-address" onclick="hide_update_return_address()" id="is-old-return-address" checked />No
+        @strings.get("update_question_user")
+        <input type="radio" name="new-address" onclick="show_update_return_address()"  id="is-new-return-address" value="track"/>@strings.get("update_tag_yes")
+        <input type="radio"  name="old-address" onclick="hide_update_return_address()" id="is-old-return-address" checked />@strings.get("update_tag_no")
       </div>
 
       <div id="input-new-return-address" class="input" style="visibility: hidden;display: none">
         <input type="text" name ="new-return-address" class="form-control" placeholder="New Return District"/>
       </div>
 
-      <button id="btn-update" type="submit" class="login-button"> Update
+      <button id="btn-update" type="submit" class="login-button">@strings.get("update_botton_update")
         <i class="fa fa-chevron-right"></i></button>
     </div>
+
+
+    <footer class="well well-lg">
+      @strings.get("footer")
+      @if(strings.getLanguage().equals("EN")) {
+        <a href="#" onclick="setLanguage('PT')">Veja em português</a>
+      } else {
+        <a href="#" onclick="setLanguage('EN')">See in english</a>
+      }
+
+    </footer>
 
     <script>
               function show_update_return_address(){
@@ -84,11 +95,26 @@
                 }
               };
 
-   0  </script>
 
-    <footer class="well well-lg" style="text-align: center">
-        Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
-    </footer>
+
+              function setLanguage(language) {
+                $.ajax({
+                  type: 'POST',
+                  url: '/setLanguage/' + language,
+
+                  success: function(response) {
+                    window.location.href = '/updateData';
+                  },
+                  error: function(response) {
+                    alert("ERRO")
+                  }
+                });
+              }
+
+     </script>
+
+
+
 
   </body>
 </html>

@@ -1,4 +1,4 @@
-@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean)
+@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean, strings: LocalizedStrings)
 @main("Carona") {
 <!DOCTYPE html>
   <html lang="en">
@@ -31,45 +31,68 @@
         }
 
         <div id="Register"class="text-center" >
-          <div class="logo">New Carona</div>
+          <div class="logo">@strings.get("newCarona_New_Carona")</div>
         </div>
 
         @helper.form(routes.CaronaController.createCarona()) {
 
         <div id="input-starting-district" class="input">
-            <input type="text" name="startingDistrict" class="form-control" placeholder="Leaving from (Neighborhood):"/>
+            <input type="text" name="startingDistrict" class="form-control" placeholder="@strings.get("newCarona_leaving_neighbordhood")"/>
         </div>
 
         <div id="input-starting-road" class="input">
-          <input type="text" name="startingRoad" class="form-control" placeholder="Leaving from (Street)"/>
+          <input type="text" name="startingRoad" class="form-control" placeholder="@strings.get("newCarona_leaving_street")"/>
         </div>
 
         <div id="input-arrival-district" class="input">
-          <input type="text" name="arrivalDistrict" class="form-control" placeholder="Going to (Neighborhood):"/>
+          <input type="text" name="arrivalDistrict" class="form-control" placeholder="@strings.get("newCarona_going_neighbordhood")"/>
         </div>
 
         <div id="input-arrival-road" class="input">
-          <input type="text" name="arrivalRoad" class="form-control" placeholder="Going to (Street):"/>
+          <input type="text" name="arrivalRoad" class="form-control" placeholder="@strings.get("newCarona_going_street")"/>
         </div>
 
           <div id="input-number-vacancies" class="input">
-            <input type="text" name="numberVacancies" class="form-control" placeholder="Number of Available Seats"/>
+            <input type="text" name="numberVacancies" class="form-control" placeholder="@strings.get("newCarona_number_seats")"/>
           </div>
 
 
           <div id="input-time" class="input">
-          <div id="starting-time"> Departure Time </div>
+          <div id="starting-time">@strings.get("newCarona_departure_time")</div>
           <input type="time" name="startingTme" class="form-control"/>
         </div>
 
-        <button id="btn-register" type="submit" class="login-button"> Create
+        <button id="btn-register" type="submit" class="login-button">@strings.get("newCarona_botton_create")
             <i class="fa fa-chevron-right"></i></button>
         }
       </div>
 
-      <footer class="well well-lg" style="text-align: center">
-        Authored by: Caio, Carlos, Izabella, Jefferson and Yago *All rights reservated
+      <footer class="well well-lg">
+        @strings.get("footer")
+        @if(strings.getLanguage().equals("EN")) {
+          <a href="#" onclick="setLanguage('PT')">Veja em português</a>
+        } else {
+          <a href="#" onclick="setLanguage('EN')">See in english</a>
+        }
+
       </footer>
+
+
+
+      <script>
+              function setLanguage(language) {
+                $.ajax({
+                  type: 'POST',
+                  url: '/setLanguage/' + language,
+                  success: function(response) {
+                    window.location.href = '/newCarona';
+                  },
+                  error: function(response) {
+                    alert("ERRO")
+                  }
+                });
+              }
+      </script>
     </body>
   </html>
 }
