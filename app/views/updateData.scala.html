@@ -1,6 +1,6 @@
 @(form: play.data.Form[controllers.Models.User], errorMesage: String, strings: LocalizedStrings)
 
-
+@main("Carona") {
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -55,7 +55,7 @@
       <button id="btn-update" type="submit" class="login-button">@strings.get("update_botton_update")
         <i class="fa fa-chevron-right"></i></button>
     </div>
-
+      }
 
     <footer class="well well-lg">
       @strings.get("footer")
@@ -68,6 +68,19 @@
     </footer>
 
     <script>
+                    function setLanguage(language) {
+                      $.ajax({
+                        type: 'POST',
+                        url: '/setLanguage/' + language,
+                        success: function(response) {
+                          window.location.href = '/updateData';
+                        },
+                        error: function(response) {
+                          alert("ERRO")
+                        }
+                      });
+                    }
+
               function show_update_return_address(){
                 var is_new_address = document.getElementById('is-new-return-address');
                 var is_old_address = document.getElementById('is-old-return-address');
@@ -95,27 +108,7 @@
                 }
               };
 
-
-
-              function setLanguage(language) {
-                $.ajax({
-                  type: 'POST',
-                  url: '/setLanguage/' + language,
-
-                  success: function(response) {
-                    window.location.href = '/updateData';
-                  },
-                  error: function(response) {
-                    alert("ERRO")
-                  }
-                });
-              }
-
      </script>
-
-
-
-
   </body>
 </html>
 

@@ -36,6 +36,13 @@ public class LocalizedStrings {
             strings.put("login_account", "Don't you have an account?");
             strings.put("login_signup", "Signup now!");
 
+            strings.put("login_email_password_invalid","E-mail or password invalid");
+            strings.put("login_error", "An error ocurred. Please, try again.");
+            strings.put("login_user_registred","User successfully registered");
+            strings.put("login_logout","Sucess Logout");
+
+
+
             //-------register.html-------//
             strings.put("register_register","Register");
             strings.put("register_name","Name");
@@ -52,6 +59,21 @@ public class LocalizedStrings {
             strings.put("register_seats", "Number of Available Seats");
             strings.put("register_account", "Do you have an account?");
             strings.put("register_login", "Login Now!");
+
+            strings.put("register_error","An error ocurred. Please, try again.");
+            strings.put("register_invalid_name","Invalid Name");
+            strings.put("register_invalid_registration","Invalid Registration");
+            strings.put("register_already_registration","Registration already registered");
+            strings.put("register_invalid_email","Invalid Email");
+            strings.put("register_already_email","E-mail already registered");
+            strings.put("register_invalid_password","Invalid Password");
+            strings.put("register_passwords_dont_match","The passwords don't match");
+            strings.put("register_invalid_neighborhood","Invalid Neighborhood");
+            strings.put("register_invalid_street","Invalid Street Address");
+            strings.put("register_invalid_phone","Invalid phone number");
+            strings.put("register_invalid_number_passenger","If you are a driver, put the number of passenger");
+            strings.put("register_number_passenber_ltz","Please, put the number of passenger greater than zero");
+
 
             //-------perfilPassenger-------//
             strings.put("passenger_passenger", "Passenger");
@@ -111,6 +133,12 @@ public class LocalizedStrings {
             strings.put("login_account", "Não tem uma conta?");
             strings.put("login_signup", "Cadastre-se agora!");
 
+            strings.put("login_email_password_invalid","Email ou senha inválido!");
+            strings.put("login_error", "Aconteceu um erro. Por favor, tente novamente!");
+            strings.put("login_user_registred","Usuário cadastrado com sucesso!");
+            strings.put("login_logout","Deslogado com sucesso");
+
+
             //-------register.html-------//
             strings.put("register_register","Cadastrar");
             strings.put("register_name","Nome");
@@ -127,6 +155,21 @@ public class LocalizedStrings {
             strings.put("register_seats", "Número de vagas disponíveis");
             strings.put("register_account", "Você já tem uma conta?");
             strings.put("register_login", "Logue agora!");
+
+            strings.put("register_error","Aconteceu um erro. Por favor, tente novamente");
+            strings.put("register_invalid_name","Nome inválido");
+            strings.put("register_invalid_registration","Matrícula inválida");
+            strings.put("register_already_registration","Matrícula já cadastrada");
+            strings.put("register_invalid_email","Email inválido");
+            strings.put("register_already_email","Email já cadastrado");
+            strings.put("register_invalid_password","Senha inválida");
+            strings.put("register_passwords_dont_match","As senhas devem ser iguais");
+            strings.put("register_invalid_neighborhood","Bairro inválido");
+            strings.put("register_invalid_street","Rua inválida");
+            strings.put("register_invalid_phone","Número de telefone inválido");
+            strings.put("register_invalid_number_passenger","Se você é um motorista, coloque o número de passageiros");
+            strings.put("register_number_passenber_ltz","Por favor, digite um número de passageiros maior que zero");
+
 
             //-------perfilPassenger-------//
             strings.put("passenger_passenger", "Passageiro");

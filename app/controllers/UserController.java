@@ -63,10 +63,10 @@ public class UserController extends Controller{
 
         if (email == null || senha == null) {
             LogFile.writeInLog("An user try to loggin, but an error ocurred.");
-            return showLogin("An error ocurred. Please, try again.", true);
+            return showLogin(strings.get("login_error"), true);
         } else if (!Validate.validateLogin(email, senha, db)) {
             LogFile.writeInLog("An user try to loggin, but the email or password is invalid.");
-            return showLogin("E-mail or password invalid", true);
+            return showLogin(strings.get("login_email_password_invalid"), true);
         } else {
             User user = db.searchUserByEmail(email);
             LogFile.writeInLog(user.getName() + " user logged.");
@@ -127,55 +127,55 @@ public class UserController extends Controller{
 
         if (name == null || email == null || password == null ||registration == null || district == null
                 || road == null) {
-            return showRegister("An error ocurred. Please, try again.");
+            return showRegister(strings.get("register_error"));
 
         } else if(name.trim().equals("")){
             LogFile.writeInLog("An user try to register, but the name is invalid.");
-            return showRegister("Invalid name");
+            return showRegister(strings.get("register_invalid_name"));
 
         } else if(!isRegistrationValid(registration)) {
             LogFile.writeInLog("An user try to register, but the resgistration is invalid.");
-            return showRegister("Invalid Registration");
+            return showRegister(strings.get("register_invalid_registration"));
 
         } else if (db.searchUserByRegistration(registration) != null) {
             LogFile.writeInLog("An user try to register, but the registration aready registered.");
-            return showRegister("Registration aready registered");
+            return showRegister(strings.get("register_already_registration"));
 
         } else if(email.trim().equals("")) {
             LogFile.writeInLog("An user try to register, but the email is invalid.");
-            return showRegister("Invalid Email");
+            return showRegister(strings.get("register_invalid_email"));
 
         } else if (isRegisteredEmail(email)) {
             LogFile.writeInLog("An user try to register, but the email already registered.");
-            return showRegister("E-mail already registered");
+            return showRegister(strings.get("register_already_email"));
 
         } else if (password.trim().equals("")) {
             LogFile.writeInLog("An user try to register, but the password is invalid.");
-            return showRegister("Invalid Password");
+            return showRegister(strings.get("register_invalid_password"));
 
         } else if(!password.equals(newPassword)) {
             LogFile.writeInLog("An user try to register, but the passwords don't match.");
-            return showRegister("The passwords don't match");
+            return showRegister(strings.get("register_passwords_dont_match"));
 
         }else if (district.trim().equals("")){
             LogFile.writeInLog("An user try to register, but the district is invalid.");
-            return showRegister("Invalid Neighborhood");
+            return showRegister(strings.get("register_invalid_neighborhood"));
 
         }else if(road.trim().equals("")) {
             LogFile.writeInLog("An user try to register, but the road is invalid.");
-            return showRegister("Invalid Street Address");
+            return showRegister(strings.get("register_invalid_street"));
 
         }else if(phoneNumber == null || phoneNumber.trim().equals("")){
             LogFile.writeInLog("An user try to register, but the number phone is invalid.");
-            return showRegister("Invalid phone number");
+            return showRegister(strings.get("register_invalid_phone"));
         } else if(driver != null && passenger == null) {
             if(numberPassenges == null || numberPassenges.trim().equals("")) {
                 LogFile.writeInLog("An user try to register, but it is a driver and don't put the number os passenger.");
-                return showRegister("If you are a driver, put the number of passenger");
+                return showRegister(strings.get("register_invalid_number_passenger"));
             }
             else if(Integer.parseInt(numberPassenges) <= 0){
                 LogFile.writeInLog("An user try to register, but it is a driver and the number of passenger is zero or negative.");
-                return showRegister("Please, put the number of passenger greater than zero");
+                return showRegister(strings.get("register_number_passenber_ltz"));
             }
             isDriver = true;
         }
@@ -198,14 +198,14 @@ public class UserController extends Controller{
         }
 
 
-        return showLogin("User successfully registered", false);
+        return showLogin(strings.get("login_user_registred"), false);
 
     }
 
     public static Result logout() {
         session().clear();
         LogFile.writeInLog("The user logout.");
-        return showLogin("Sucess logout", false);
+        return showLogin(strings.get("login_logout"), false);
     }
 
     public static Result showUpdateData(String mensagem){ /// aqui
