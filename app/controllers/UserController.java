@@ -241,17 +241,17 @@ public class UserController extends Controller{
 
         } else if(!isUpdateDataValid(departureTime)) {
             LogFile.writeInLog("An user try to choose the departure time, but the time is invalid.");
-            return showUpdateData("Invalid Departure time");
+            return showUpdateData(strings.get("update_invalided_departure_time"));
 
         } else if (!isUpdateDataValid(returnTime)) {
             LogFile.writeInLog("An user try to choose the return time, but the time is invalid.");
-            return showUpdateData("Return time is invalid"); // olhar
+            return showUpdateData(strings.get("update_invalided_return_time")); // olhar
 
         } else if (isNewAddress != null) {
 
             if(newReturnAddress.trim().equals("")) {
                 LogFile.writeInLog("An user try write the new return address, but the new return address is invalid.");
-                return showUpdateData("Invalid New Return Address");
+                return showUpdateData(strings.get("update_invalided_new_return_address"));
             }
             try{
                 user.setDistrict(newReturnAddress);

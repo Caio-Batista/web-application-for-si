@@ -64,26 +64,26 @@ public class CaronaController extends Controller {
 
         if(startingDistrict == null || startingDistrict.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting district is invalid.");
-            return showNewCarona("Leaving from (Neighborhood) is invalid", true);
+            return showNewCarona(strings.get("newCarona_invalided_leaving_neaghbordhood"), true);
         }else if(startingRoad == null || startingRoad.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting road is invalid.");
-            return showNewCarona("Leaving from (Street) is invalid", true);
+            return showNewCarona(strings.get("newCarona_invalided_leaving_street"), true);
         }else if(arrivalDistrict == null || arrivalDistrict.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but arrival district is invalid.");
-            return showNewCarona("Going to (Neighborhood) is invalid", true);
+            return showNewCarona(strings.get("newCarona_invalided_going_neaghbordhood"), true);
         }else if(arrivalRoad == null || arrivalRoad.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting road is invalid.");
-            return showNewCarona("Going to (Street) is invalid", true);
+            return showNewCarona(strings.get("newCarona_invalided_going_street"), true);
         }else if(numberVacancies == null || numberVacancies.trim().equals("") || !numVacanciesIsValid(numberVacancies)){
-            return showNewCarona("Number of Available Seats is invalid.", true);
+            return showNewCarona(strings.get("newCarona_invalided_number_seats"), true);
         }else if(startingTme == null || startingTme.trim().equals("")){
             LogFile.writeInLog("An user try create an new Carona, but starting time is invalid.");
-            return showNewCarona("Departure Time is invalid", true);
+            return showNewCarona(strings.get("newCarona_invalided_departure_time"), true);
         }
 
         if(getUser().getNumberOfVacanciesFree() < Integer.parseInt(numberVacancies)){
             LogFile.writeInLog("An user try create an new Carona, but, the user doesn't has the number of vacancies free.");
-            return showNewCarona("Number of vacancies not free!", true);
+            return showNewCarona(strings.get("newCarona_not_exist_vacancies"), true);
 
         }
 

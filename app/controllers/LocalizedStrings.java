@@ -110,6 +110,10 @@ public class LocalizedStrings {
             strings.put("update_tag_no", "No");
             strings.put("update_botton_update", "Update");
 
+            strings.put("update_invalided_departure_time", "Invalid Departure time");
+            strings.put("update_invalided_return_time", "Return time is invalid");
+            strings.put("update_invalided_new_return_address", "Invalid New Return Address");
+
 
             //-----------NewCarona--------------//
             strings.put("newCarona_New_Carona", "New Carona");
@@ -120,6 +124,16 @@ public class LocalizedStrings {
             strings.put("newCarona_number_seats", "Number of Avaliable seats");
             strings.put("newCarona_departure_time", "Departure Time");
             strings.put("newCarona_botton_create", "Create");
+
+            strings.put("newCarona_invalided_leaving_neaghbordhood", "Leaving from (Neighborhood) is invalid.");
+            strings.put("newCarona_invalided_leaving_street", "Leaving from (Street) is invalid.");
+            strings.put("newCarona_invalided_going_neaghbordhood", "Going to (Neighborhood) is invalid.");
+            strings.put("newCarona_invalided_going_street", "Leaving from (Street) is invalid.");
+            strings.put("newCarona_invalided_number_seats", "Number of Available Seats is invalid.");
+            strings.put("newCarona_invalided_departure_time", "Departure Time is invalid.");
+            strings.put("newCarona_not_exist_vacancies", "Number of vacancies not free!");
+
+
 
 
 
@@ -206,6 +220,10 @@ public class LocalizedStrings {
             strings.put("update_tag_no", "Não");
             strings.put("update_botton_update", "Atualizar");
 
+            strings.put("update_invalided_departure_time", "Horário de partida inválido");
+            strings.put("update_invalided_return_time", "Horário de retorno inválido");
+            strings.put("update_invalided_new_return_address", "Novo endereço de retorno inválido");
+
 
             //-----------NovaCarona--------------//
             strings.put("newCarona_New_Carona", "Nova Carona");
@@ -216,6 +234,14 @@ public class LocalizedStrings {
             strings.put("newCarona_number_seats", "Número de assentos disponíveis");
             strings.put("newCarona_departure_time", "Horário de partida");
             strings.put("newCarona_botton_create", "Criar");
+
+            strings.put("newCarona_invalided_leaving_neaghbordhood", "Local de saída (bairro) inválido.");
+            strings.put("newCarona_invalided_leaving_street", "Local de saída (rua) inválido.");
+            strings.put("newCarona_invalided_going_neaghbordhood", "Destino (bairro) inválido");
+            strings.put("newCarona_invalided_going_street", "Destino (rua) inválido");
+            strings.put("newCarona_invalided_number_seats", "Número inválido de assentos.");
+            strings.put("newCarona_invalided_departure_time", "Horário de partida inváliso.");
+            strings.put("newCarona_not_exist_vacancies", "Não existe vagas.");
 
             strings.put("footer", "Autores: Caio, Carlos, Izabella, Jefferson and Yago *Todos os direitos reservados");
 
