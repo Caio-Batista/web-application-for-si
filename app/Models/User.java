@@ -4,26 +4,82 @@ import Models.Solicitations;
 
 import java.util.ArrayList;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.ElementCollection;
+
+import play.data.validation.Constraints.Required;
+import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.Email;
+
+
+
 /**
  * Created by carlos on 27/03/16.
  */
+@Entity
 public class User {
 
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    @Required
+    @NotNull
     private String registration;
 
-    private String email,password, district, road, name,departureTime, returnTime;
+    @Required
+    @Email
+    @NotNull
+    private String email;
 
+    @Required
+    @NotNull
+    private String password;
+
+    @Required
+    @NotNull
+    private String district;
+
+    @Required
+    @NotNull
+    private String road;
+
+    @Required
+    @NotNull
+    private String name;
+
+    @Required
+    @NotNull
+    private String departureTime;
+
+    @Required
+    @NotNull
+    private String returnTime;
+
+    @Required
+    @NotNull
     private boolean isDriver;
 
+    @NotNull
     private int numberOfVacancies, numberOfVacanciesFree;
 
+    @ElementCollection
     private ArrayList<Carona> myCaronasCreateds;
 
+    @ElementCollection
     private ArrayList<Carona> avaliableCaronas;
 
+    @ElementCollection
     private ArrayList<Solicitations> solicitationsForCarona;
 
+    @Required
+    @NotNull
     private String phoneNumber;
+
 
     public User() {}
 
@@ -245,4 +301,10 @@ public class User {
 
         return email.equals(u.getEmail());
     }
+
+    public Long getId() {
+        return id;
+    }
 }
+
+
