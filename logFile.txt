@@ -23,3 +23,5 @@ Carlos user logged.  -  2016/05/17 21:02:21
 An user try create an new Carona, but starting district is invalid.  -  2016/05/17 21:06:06
 Carlos user logged.  -  2016/05/24 19:11:56
 The user logout.  -  2016/05/24 19:12:02
+Izabella user logged.  -  2016/05/26 00:23:31
+Izabella user logged.  -  2016/05/26 00:44:00
