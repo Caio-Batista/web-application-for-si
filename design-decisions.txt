@@ -7,7 +7,7 @@ Team: Caio Batista, Carlos Interaminense, Izabella Antonino, Jefferson Martins e
 We divided the US as follows:
 
 Carlos and Izabella: Internationalization
-Caius and Jefferson: DB Persistence
+Caio and Jefferson: DB Persistence
 Yago: Token.
 
 In the part of Internationalization, we decided to create two hash tables with all application strings, one in Portuguese and one in English.
