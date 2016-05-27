@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a7a60f28-5f10-4658-9173-460e081f02e3" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/web-app-si-v2.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/web-application-for-si.iml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.sbt" afterPath="$PROJECT_DIR$/build.sbt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logFile.txt" afterPath="$PROJECT_DIR$/logFile.txt" />
     </list>
     <ignored path="web-application-for-si.iws" />
     <ignored path=".idea/workspace.xml" />
