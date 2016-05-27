@@ -17,7 +17,8 @@ import controllers.Models.*;
 import play.db.jpa.Transactional;
 import LogFile.*;
 
-
+import Models.dao.GenericDAO;
+import Models.dao.GenericDAOImpl;
 
 
 public class UserController extends Controller{
@@ -63,13 +64,16 @@ public class UserController extends Controller{
     public static Result authenticate() {
         Form<User> form = form(User.class).bindFromRequest();
 
+        GenericDAO dao = Application.getDao();
+
         String email = form.field("email").value();
         String senha = form.field("password").value();
 
         if (email == null || senha == null) {
             LogFile.writeInLog("An user try to loggin, but an error ocurred.");
             return showLogin(strings.get("login_error"), true);
-        } else if (!Validate.validateLogin(email, senha, db)) {
+        } else if (!(Validate.validateLogin(email, senha, dao)) ||
+                      !(Validate.validateLogin(email, senha, db))) {
             LogFile.writeInLog("An user try to loggin, but the email or password is invalid.");
             return showLogin(strings.get("login_email_password_invalid"), true);
         } else {
