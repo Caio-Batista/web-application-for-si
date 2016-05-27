@@ -3,46 +3,20 @@ package Models;
 
 import LogFile.LogFile;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-import play.data.validation.Constraints.Required;
-import javax.validation.constraints.NotNull;
-import org.hibernate.validator.constraints.Email;
-
-
-@Entity
 public class Solicitations {
 
-    @Id
-    @GeneratedValue
     private Long id;
 
-    @Required
-    @NotNull
     private String name;
 
-    @Required
-    @NotNull
     private String startingAddress;
 
-    @Required
-    @NotNull
     private String hour;
 
-    @Required
-    @NotNull
     private String numberPhone;
 
-    @Required
-    @Email
-    @NotNull
     private String email;
 
-    @Required
     private boolean isAcceptSolicitation;
 
     public Solicitations(String email, String name, String startingAddress, String hour, String numberPhone){

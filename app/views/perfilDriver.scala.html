@@ -8,9 +8,9 @@
     <head style="background-color: gray">
         <meta charset="UTF-8">
         <title>Carona</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
-        <script src="@routes.Assets.versioned("javascripts/jquery-1.12.3.min.js")" type="text/javascript"></script>
-        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap.min.css")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.12.3.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/hello.js")" type="text/javascript"></script>
         <script type="text/css">
             #page-header {
                 text-align: center;
@@ -44,7 +44,7 @@
         <div class="row" style="background-color: #1b6d85">
             <div class="col-sm-6 col-md-4">
                 <div class="thumbnail" style="margin: 10px">
-                    <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
+                    <img src="@routes.Assets.at("images/images.jpg")" alt="...">
                     <div class="caption">
                         <h3>@strings.get("driver_driver"): @(usuario.getName())<br>(@usuario.getNumberOfVacancies() @strings.get("driver_seats_available")       @usuario.getNumberOfVacanciesFree() @strings.get("driver_seats_free"))</br></h3>
                     </div>
@@ -74,7 +74,7 @@
                     @for(solicitationsIndex <- 0 to (usuario.getSolicitationsForCarona().size() -1)) {
                             <li class="list-group-item", name="linha" >
                                 <div class="solicitation" name="solicitationsIndex">
-                                    <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
+                                    <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.at("images/images.jpg")" alt="..."></div>
                                     <div style="float: left">
                                         <ul class="list-group" style="display: inline; list-style-type:none;">
                                             <li><div style="margin-left:10px; float: left">@strings.get("driver_name"): @usuario.getSolicitationsForCarona().get(solicitationsIndex).getName()</div></li>

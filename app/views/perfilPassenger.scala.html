@@ -5,11 +5,11 @@
         <head style="...">
             <meta charset="UTF-8">
             <title>Carona</title>
-            <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/images.jpg")">
+            <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/images.jpg")">
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
-            <script src="@routes.Assets.versioned("javascripts/jquery-1.12.3.min.js")" type="text/javascript"></script>
-            <script src="@routes.Assets.versioned("bootstrap/js/bootstrap.min.js")" type="text/javascript"></script>
+            <link rel="stylesheet" media="screen" href="@routes.Assets.at("bootstrap/css/bootstrap.min.css")">
+            <script src="@routes.Assets.at("javascripts/jquery-1.12.3.min.js")" type="text/javascript"></script>
+            <script src="@routes.Assets.at("bootstrap/js/bootstrap.min.js")" type="text/javascript"></script>
             <script type="text/css">
 			.DESTINO:after{
 			    background-color: #1b6d85 !important;
@@ -37,7 +37,7 @@
                     <div class="row" style="background-color: #1b6d85">
                         <div class="col-sm-6 col-md-4">
                             <div class="thumbnail" style="margin: 10px">
-                                <img src="@routes.Assets.versioned("images/images.jpg")" alt="...">
+                                <img src="@routes.Assets.at("images/images.jpg")" alt="...">
                                 <div class="caption">
                                     <h3> @strings.get("passenger_passenger"):  @usuario.getName()</h3>
                                 </div>
@@ -69,7 +69,7 @@
                                 @for(solicitationsIndex <- 0 to (usuario.getAvaliableCaronas.size() -1)){
                                     <li class="list-group-item" name="linha">
                                         <div class="solicitation" name="solicitationsIndex">
-                                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
+                                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.at("images/images.jpg")" alt="..."></div>
                                             <div style="float: left">
                                                 <ul class="list-group" style="display: inline; list-style-type:none;">
                                                     <li><div style="margin-left:10px; float: left">@strings.get("passenger_name"): @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingDistrict()</div></li>
@@ -92,7 +92,7 @@
                                 @for(solicitationsIndex <- 0 to (usuario.getAvaliableCaronas.size() -1)){
                                     <li class="list-group-item" name="linha">
                                         <div class="solicitation" name="solicitationsIndex">
-                                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.versioned("images/images.jpg")" alt="..."></div>
+                                            <div><img  style="width: 50px; height: 50px;display: block; float:left; margin:10px" src="@routes.Assets.at("images/images.jpg")" alt="..."></div>
                                             <div style="float: left">
                                                 <ul class="list-group" style="display: inline; list-style-type:none;">
                                                     <li><div style="margin-left:10px; float: left">Name: @usuario.getAvaliableCaronas.get(solicitationsIndex).getStartingDistrict()</div></li>

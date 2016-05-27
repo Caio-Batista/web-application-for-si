@@ -4,17 +4,17 @@ import Models.Solicitations;
 
 import java.util.ArrayList;
 
-import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.ElementCollection;
-
-import play.data.validation.Constraints.Required;
 import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.Email;
 
+import play.data.validation.Constraints.MaxLength;
+import play.data.validation.Constraints.Required;
+
+import javax.persistence.ElementCollection;
 
 
 /**
@@ -32,7 +32,6 @@ public class User {
     private String registration;
 
     @Required
-    @Email
     @NotNull
     private String email;
 
@@ -52,12 +51,9 @@ public class User {
     @NotNull
     private String name;
 
-    @Required
-    @NotNull
+
     private String departureTime;
 
-    @Required
-    @NotNull
     private String returnTime;
 
     @Required
@@ -65,15 +61,16 @@ public class User {
     private boolean isDriver;
 
     @NotNull
-    private int numberOfVacancies, numberOfVacanciesFree;
+    private int numberOfVacancies;
 
-    @ElementCollection
+    private int numberOfVacanciesFree;
+
     private ArrayList<Carona> myCaronasCreateds;
 
-    @ElementCollection
+
     private ArrayList<Carona> avaliableCaronas;
 
-    @ElementCollection
+
     private ArrayList<Solicitations> solicitationsForCarona;
 
     @Required
@@ -81,7 +78,9 @@ public class User {
     private String phoneNumber;
 
 
-    public User() {}
+    public User() {
+
+    }
 
     public int getNumberOfVacanciesFree() {
         return numberOfVacanciesFree;
@@ -302,9 +301,6 @@ public class User {
         return email.equals(u.getEmail());
     }
 
-    public Long getId() {
-        return id;
-    }
 }
 
 

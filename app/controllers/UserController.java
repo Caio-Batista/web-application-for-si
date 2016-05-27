@@ -7,13 +7,17 @@ import java.util.List;
 
 import Models.Solicitations;
 import controllers.Models.User;
+import Models.SimpleClass;
 import controllers.Models.Carona;
 import play.mvc.Controller;
 import play.data.Form;
 import play.mvc.Result;
 import DBManager.*;
 import controllers.Models.*;
+import play.db.jpa.Transactional;
 import LogFile.*;
+
+
 
 
 public class UserController extends Controller{
@@ -55,6 +59,7 @@ public class UserController extends Controller{
 
     }
 
+    @Transactional
     public static Result authenticate() {
         Form<User> form = form(User.class).bindFromRequest();
 
@@ -68,7 +73,9 @@ public class UserController extends Controller{
             LogFile.writeInLog("An user try to loggin, but the email or password is invalid.");
             return showLogin(strings.get("login_email_password_invalid"), true);
         } else {
+
             User user = db.searchUserByEmail(email);
+
             LogFile.writeInLog(user.getName() + " user logged.");
             session().clear();
             session("email", user.getEmail());
@@ -106,6 +113,7 @@ public class UserController extends Controller{
         return (!registration.trim().equals("")) && (registration.length() == 9) && (intRegistration > 100000000 && intRegistration < 115199999);
     }
 
+    @Transactional
     public static Result register(){
 
         Form<User> form = formUser.bindFromRequest();
@@ -194,6 +202,7 @@ public class UserController extends Controller{
             e.printStackTrace();
         }
         if(user != null) {
+            Application.persisteObjeto(user);
             db.writeInDataBase(user);
         }
 

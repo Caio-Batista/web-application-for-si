@@ -46,4 +46,4 @@ POST    /updateData                      controllers.UserController.updateData()
 
 GET     /updateData                      controllers.UserController.showUpdateData()
 
-GET      /assets/*file                  controllers.Assets.versioned(path="/public", file: Asset)
+#GET      /assets/*file                  controllers.Assets.versioned(path="/public", file: Asset)
