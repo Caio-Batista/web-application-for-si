@@ -4,3 +4,50 @@ Carlos user logged.  -  2016/05/27 18:16:14
 Carlos user logged.  -  2016/05/27 18:21:01
 Carlos user logged.  -  2016/05/27 18:21:38
 caio user registred.  -  2016/05/27 18:38:01
+Izabella user logged.  -  2016/05/27 19:18:49
+The user logout.  -  2016/05/27 19:18:51
+caio user registred.  -  2016/05/27 19:25:02
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 19:26:27
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 19:26:35
+caio user registred.  -  2016/05/27 19:27:23
+caio user logged.  -  2016/05/27 19:27:27
+The user logout.  -  2016/05/27 19:27:37
+caio user logged.  -  2016/05/27 19:27:42
+caio user registred.  -  2016/05/27 19:55:57
+caio user logged.  -  2016/05/27 19:56:03
+The user logout.  -  2016/05/27 19:57:46
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 19:58:08
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 19:58:11
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 19:58:22
+caio user registred.  -  2016/05/27 19:59:00
+caio user logged.  -  2016/05/27 19:59:04
+The user logout.  -  2016/05/27 19:59:06
+caio user logged.  -  2016/05/27 19:59:10
+The user logout.  -  2016/05/27 19:59:12
+The user logout.  -  2016/05/27 19:59:17
+caio user logged.  -  2016/05/27 19:59:25
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 20:04:56
+caio user registred.  -  2016/05/27 20:05:15
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 20:05:19
+caio user logged.  -  2016/05/27 20:05:26
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 22:50:14
+caio user registred.  -  2016/05/27 22:50:30
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 23:15:24
+caio user registred.  -  2016/05/27 23:15:41
+caio user logged.  -  2016/05/27 23:15:46
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 23:17:04
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 23:17:12
+caio user registred.  -  2016/05/27 23:17:29
+caio user logged.  -  2016/05/27 23:17:33
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 23:20:41
+caio user registred.  -  2016/05/27 23:21:07
+caio user logged.  -  2016/05/27 23:21:12
+An user try to register, but the email already registered.  -  2016/05/27 23:21:41
+caio user logged.  -  2016/05/27 23:21:47
+The user logout.  -  2016/05/27 23:22:06
+An user try to loggin, but the email or password is invalid.  -  2016/05/27 23:22:10
+caio user registred.  -  2016/05/27 23:22:31
+caio user logged.  -  2016/05/27 23:22:36
+The user logout.  -  2016/05/27 23:23:12
+caio user registred.  -  2016/05/27 23:28:17
+caio user logged.  -  2016/05/27 23:28:23

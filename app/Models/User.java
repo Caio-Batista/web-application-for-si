@@ -2,6 +2,7 @@ package controllers.Models;
 
 import Models.Solicitations;
 
+
 import java.util.ArrayList;
 
 import javax.persistence.Entity;
@@ -64,6 +65,7 @@ public class User {
     private int numberOfVacancies;
 
     private int numberOfVacanciesFree;
+
 
     private ArrayList<Carona> myCaronasCreateds;
 

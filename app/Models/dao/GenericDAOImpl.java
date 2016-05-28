@@ -1,5 +1,8 @@
 package Models.dao;
 
+import controllers.Models.*;
+
+
 import java.util.List;
 
 import javax.persistence.Query;
@@ -62,4 +65,24 @@ public class GenericDAOImpl implements GenericDAO {
     public Query createQuery(String query) {
         return JPA.em().createQuery(query);
     }
+
+    public User getUserByEmail(String email) {
+        User user = null;
+
+        List<Object> userList = findAllByClassName("User");
+        for (Object u : userList) {
+            User temp = (User) u;
+            if(temp.getEmail().equals(email)){
+                user = temp;
+                break;
+            }
+
+        }
+
+        return user == null ? new User() : user;
+    }
+
+
+
+
 }
