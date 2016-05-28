@@ -51,3 +51,36 @@ caio user logged.  -  2016/05/27 23:22:36
 The user logout.  -  2016/05/27 23:23:12
 caio user registred.  -  2016/05/27 23:28:17
 caio user logged.  -  2016/05/27 23:28:23
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:39:13
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:39:44
+Yago user registred.  -  2016/05/28 01:41:11
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:41:16
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0ZSJ9.RV-gD0rBOrpKVi91k3yKZ_Wp5EIJZz3-6QXdOVwsbmt2vgfTuSoCg2oS_oQvB0uW2MQQOEJN7M8t05QtWR0fXw  -  2016/05/28 01:41:26
+Yago user logged.  -  2016/05/28 01:41:26
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:47:08
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:47:14
+An user try to register, but the resgistration is invalid.  -  2016/05/28 01:47:21
+Yago user registred.  -  2016/05/28 01:47:56
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.CGUcvjaE8L24cxpY6N-UhjP2Q_OeKSVbQ66QGHCD5xk-agJsyJnudh50RW413r9rrE-w5JFE9E9fREx8lLWxgg  -  2016/05/28 01:47:58
+Yago user logged.  -  2016/05/28 01:47:58
+An user try create an new Carona, but starting road is invalid.  -  2016/05/28 01:48:31
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:51:47
+Yago user registred.  -  2016/05/28 01:52:18
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.mLnmSengvsoiCIQBENlt5woymF3g3U40E5xJXKjuyrwRVD0YenHDpGs4WyQf17hqYwii403H2l1xzYj5WY3lxg  -  2016/05/28 01:52:20
+Yago user logged.  -  2016/05/28 01:52:20
+115110919  -  2016/05/28 01:52:43
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 01:54:40
+Yago user registred.  -  2016/05/28 01:55:09
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.tFeOdM5xlG5-re3nU1I8BMyQm5v0vLmkwRGFKANnLsvBtj3Gg4cj7Lg8GdUuOudD77slC-mbor7bSG2OA7Hr0A  -  2016/05/28 01:55:11
+Yago user logged.  -  2016/05/28 01:55:11
+The user logout.  -  2016/05/28 01:56:01
+Outra pessoa user registred.  -  2016/05/28 01:56:52
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTMxMTE4MTYifQ.WkxFMX7aihpS8baqm-4zHWg7kGnoiTWp9zv2wgPjisb4Hvlmmw17An3YQGCf7gDyUj9kEmiquoOM9JaJafWISg  -  2016/05/28 01:56:58
+Outra pessoa user logged.  -  2016/05/28 01:56:58
+The user logout.  -  2016/05/28 01:57:14
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.tFeOdM5xlG5-re3nU1I8BMyQm5v0vLmkwRGFKANnLsvBtj3Gg4cj7Lg8GdUuOudD77slC-mbor7bSG2OA7Hr0A  -  2016/05/28 01:57:16
+Yago user logged.  -  2016/05/28 01:57:16
+The user logout.  -  2016/05/28 01:57:28
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.tFeOdM5xlG5-re3nU1I8BMyQm5v0vLmkwRGFKANnLsvBtj3Gg4cj7Lg8GdUuOudD77slC-mbor7bSG2OA7Hr0A  -  2016/05/28 01:57:30
+Yago user logged.  -  2016/05/28 01:57:30
+The user logout.  -  2016/05/28 01:57:35

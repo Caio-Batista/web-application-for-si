@@ -1,4 +1,4 @@
-@(usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User], strings:LocalizedStrings)
+@(token: String, usuario: controllers.Models.User, form: play.data.Form[controllers.Models.User], strings:LocalizedStrings)
 
 @main("Carona") {
 
@@ -26,6 +26,12 @@
                 cursor: pointer !important;
             }
 
+        </script>
+        <script type="text/javascript">
+                function getLink(token) {
+                    return "/newCarona/" + token;
+                }
+                document.getElementById("newCarona").href= getLink(@token)
         </script>
     </head>
 
@@ -55,7 +61,7 @@
                         </select>
                     </div>
                     <div class="caption" style="margin-top: 0px">
-                        <a href="/newCarona">@strings.get("driver_carona")</a>
+                        <a href="/newCarona/@token">@strings.get("driver_carona")</a>
                     </div>
                     <div class="caption" style="margin-top: 0px">
                         <a href="/updateData">@strings.get("driver_update")</a>
