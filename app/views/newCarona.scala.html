@@ -1,10 +1,14 @@
-@(form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean, strings: LocalizedStrings)
+@(token: String, form: play.data.Form[controllers.Models.User],errorMenssage: String, isError: Boolean, strings: LocalizedStrings)
 @main("Carona") {
 <!DOCTYPE html>
   <html lang="en">
     <head>
       <meta name="viewport" content="width=device-width", initial-scale=1.0 charset="UTF-8" />
       <title>Carona</title>
+      <style type="text/css">#input-token{
+        visibility: hidden;
+      }</style>
+
       <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("bootstrap/css/bootstrap.min.css")">
       <link rel="stylesheet" href="styles.css">
       <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/login-style.css")">
@@ -35,7 +39,6 @@
         </div>
 
         @helper.form(routes.CaronaController.createCarona()) {
-
         <div id="input-starting-district" class="input">
             <input type="text" name="startingDistrict" class="form-control" placeholder="@strings.get("newCarona_leaving_neighbordhood")"/>
         </div>
@@ -61,8 +64,11 @@
           <div id="starting-time">@strings.get("newCarona_departure_time")</div>
           <input type="time" name="startingTme" class="form-control"/>
         </div>
+          <div id="input-token" class="input">
+            <input type="text" name="token" class="form-control" value="@token" />
+          </div>
 
-        <button id="btn-register" type="submit" class="login-button">@strings.get("newCarona_botton_create")
+        <button id="btn-register" value="@token" type="submit" class="login-button">@strings.get("newCarona_botton_create")
             <i class="fa fa-chevron-right"></i></button>
         }
       </div>

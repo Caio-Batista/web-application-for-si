@@ -13,7 +13,7 @@ GET     /login                         controllers.UserController.showLogin()
 
 GET     /register                      controllers.UserController.showRegister()
 
-GET     /newCarona                     controllers.CaronaController.showNewCarona()
+GET     /newCarona/:token                     controllers.CaronaController.showNewCarona(token: String)
 
 POST     /newCarona                    controllers.CaronaController.createCarona()
 

@@ -4,7 +4,10 @@ import static controllers.UserController.showRegister;
 import static play.data.Form.form;
 
 import java.util.List;
-
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.impl.crypto.MacProvider;
+import java.security.Key;
 import Models.Solicitations;
 import controllers.Models.User;
 import controllers.Models.Carona;
@@ -20,6 +23,7 @@ public class UserController extends Controller{
 
     private static Form<User> formUser = form(User.class).bindFromRequest();
     private static DBManager db = DBManager.getInstance();
+    private static String token;
     private static User actualUser;
     private static boolean actualPerfilIsDriver = false;
     private static LocalizedStrings strings;
@@ -48,11 +52,18 @@ public class UserController extends Controller{
         User user = getUser();
         if (actualPerfilIsDriver)
         {
-            return ok(views.html.perfilDriver.render(user, formUser, strings));
+            return ok(views.html.perfilDriver.render(token, user, formUser, strings));
         }
-        return ok(views.html.perfilPassenger.render(user, formUser,strings));
+        return ok(views.html.perfilPassenger.render(token, user, formUser,strings));
 
 
+    }
+
+    private static String createJWT(String id, String issuer, String subject, long ttlMillis) {
+        Key key = KeyToken.getInstance().getKey();
+        String s = Jwts.builder().setSubject(id).signWith(SignatureAlgorithm.HS512, key).compact();
+        LogFile.writeInLog(s);
+        return s;
     }
 
     public static Result authenticate() {
@@ -69,6 +80,8 @@ public class UserController extends Controller{
             return showLogin(strings.get("login_email_password_invalid"), true);
         } else {
             User user = db.searchUserByEmail(email);
+            token = createJWT("teste", "nao sei o q eh", "subject", 20000);
+            LogFile.writeInLog(token);
             LogFile.writeInLog(user.getName() + " user logged.");
             session().clear();
             session("email", user.getEmail());
