@@ -68,7 +68,7 @@ public class UserController extends Controller{
     private static String createJWT(String id) {
         Key key = KeyToken.getInstance().getKey();
         String s = Jwts.builder().setSubject(id).signWith(SignatureAlgorithm.HS512, key).compact();
-        LogFile.writeInLog(s);
+        LogFile.writeInLog("Token created");
         return s;
     }
 

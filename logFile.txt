@@ -84,3 +84,8 @@ The user logout.  -  2016/05/28 01:57:28
 eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.tFeOdM5xlG5-re3nU1I8BMyQm5v0vLmkwRGFKANnLsvBtj3Gg4cj7Lg8GdUuOudD77slC-mbor7bSG2OA7Hr0A  -  2016/05/28 01:57:30
 Yago user logged.  -  2016/05/28 01:57:30
 The user logout.  -  2016/05/28 01:57:35
+An user try to loggin, but the email or password is invalid.  -  2016/05/28 08:46:27
+Yago user registred.  -  2016/05/28 08:47:01
+eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxMTUxMTA5MTkifQ.M3fTL9CUajYBhYDxWP1iFA-sZy17TxX9DMYaE6XxZ85FEeWC0Z9QJw7QE3vvu3hYVxscMg_6IgZDTad108PEzg  -  2016/05/28 08:47:06
+Yago user logged.  -  2016/05/28 08:47:06
+The user logout.  -  2016/05/28 08:49:17
